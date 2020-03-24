@@ -8,8 +8,14 @@
       <div class="main-content">
         <h3>Choose your topic:</h3>
         <div class="select-container">
-          <div class="custom-button" @click="choose('fish')">Fish</div>
-          <div class="custom-button" @click="choose('insects')">Insects</div>
+          <div
+            :class="(!!choice && choice === 'fish') || (!!last && last === 'fish') ? 'custom-button active' : 'custom-button'"
+            @click="choose('fish')"
+          >Fish</div>
+          <div
+            :class="(!!choice && choice === 'insects') || (!!last && last === 'insects') ? 'custom-button active' : 'custom-button'"
+            @click="choose('insects')"
+          >Insects</div>
         </div>
       </div>
     </div>
@@ -19,12 +25,14 @@
 export default {
   data() {
     return {
-      choice: null
+      choice: null,
+      last: localStorage.getItem("last")
     };
   },
   methods: {
     choose(stuff) {
       this.choice = stuff;
+      this.last = stuff;
       localStorage.setItem("last", stuff);
       this.$emit("choice", this.choice);
     }
@@ -89,6 +97,15 @@ h3 {
   font-size: 1.5em;
   transition: 0.25s;
   position: relative;
+  user-select: none;
+}
+.custom-button:hover {
+  background-color: #ffe46a;
+  color: #c4161c;
+}
+.custom-button.active {
+  background-color: #ffe46a;
+  color: #c4161c;
 }
 .wip {
   pointer-events: none;
@@ -101,11 +118,7 @@ h3 {
   transform: translate(-50%, -50%) rotateZ(-17deg);
   width: 200px;
 }
-.custom-button:hover {
-  background-color: #ffe46a;
-  color: #c4161c;
-  user-select: none;
-}
+
 @media screen and (max-width: 767px) {
   .select-container {
     flex-wrap: wrap;
