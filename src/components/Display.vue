@@ -1,7 +1,7 @@
 <template>
     <div class="display-container">
-        <div class="menu" v-if="!!data">
-            <h3>{{ data | capitalize }} Guide</h3>
+        <div class="menu" v-if="!!data || !!last">
+            <h3>{{ data || last | capitalize }} Guide</h3>
             <div class="filter">
                 Search:
                 <input type="text" v-model="filterValue" />
@@ -22,90 +22,13 @@
                 </div>
             </div>
         </div>
-        <div v-if="!!data" class="table-container">
-            <table class="data-table">
-                <thead>
-                    <tr class="month-row">
-                        <th class="monthname" colspan="6">
-                            {{ activeMonthData.month }}
-                        </th>
-                    </tr>
-                    <tr class="header-row">
-                        <th>
-                            Captured
-                        </th>
-                        <th>
-                            Name
-                        </th>
-                        <th>
-                            Season
-                        </th>
-                        <th>
-                            Location
-                        </th>
-                        <th>
-                            Time
-                        </th>
-                        <th>
-                            Value
-                        </th>
-                    </tr>
-                </thead>
-                <tbody v-if="sort !== 'month'">
-                    <tr v-for="fish in sortedData" :key="`fish-${fish.name}`" :class="myfishies.includes(fish.name) ? 'content-row caught' : 'content-row'" @click="pep(fish)">
-                        <td class="caught">
-                                <div :class="myfishies.includes(fish.name) ? 'x active' : 'x inactive'">
-                                    X
-                                </div>
-                            </td>
-                        <td>
-                            {{ fish.name }}
-                        </td>
-                        <td>
-                            {{ fish.season }}
-                        </td>
-                        <td>
-                            {{ fish.location }}
-                        </td>
-                        <td>
-                            {{ fish.time }}
-                        </td>
-                        <td>
-                            {{ fish.value }}
-                        </td>
-                    </tr>
-                </tbody>
-                <tbody v-else>
-                        <tr v-for="fish in activeMonthData.fish" :key="`fish-${fish.name}-${index}`" :class="myfishies.includes(fish.name) ? 'content-row caught' : 'content-row'" @click="pep(fish)">
-                            <td class="caught">
-                                <div :class="myfishies.includes(fish.name) ? 'x active' : 'x inactive'">
-                                    X
-                                </div>
-                            </td>
-                            <td>
-                                {{ fish.name }}
-                            </td>
-                            <td>
-                                {{ fish.season }}
-                            </td>
-                            <td>
-                                {{ fish.location }}
-                            </td>
-                            <td>
-                                {{ fish.time }}
-                            </td>
-                            <td>
-                                {{ fish.value }}
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-        </div>
+        <List :payload="payload" />
     </div>
 </template>
 <script>
-
+import List from './List.vue';
 import Fish from '../data/fish.json';
+import Insects from '../data/insects.json';
 
 export default {
     data() {
@@ -115,8 +38,11 @@ export default {
             months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
             fish: Fish,
             activeMonth: 0,
-            myfishies: localStorage.getItem('myfishies') ||''
+            last: localStorage.getItem('last') || ''
         }
+    },
+    components: {
+        List
     },
     props: {
         data: {
@@ -131,78 +57,22 @@ export default {
         }
     },
     computed: {
-        activeMonthData() {
-            return this.sortedData[this.activeMonth];
-        },
-        cleanedFish() {
-            return this.fish.map(fish => {
-                const pattern = /<p>|<\/p>/g;
-                return {
-                    name: fish.name.replace(pattern, ''),
-                    season: fish.season.replace(pattern, ''),
-                    location: fish.location.replace(pattern, ''),
-                    time: fish.time.replace(pattern, '').replace(/(\d) /, '$1 '),
-                    value: fish.value.replace(pattern, '')
-                }
-            })
-        },
-        filteredData() {
-            if (this.data === 'fish') {
-                return this.cleanedFish.filter(fish => fish.name.toUpperCase().includes(this.filterValue.toUpperCase()));
-            } else {
-                return [];
-            }
-        },
-        sortedData() {
-            if (this.sort === 'month') {
-                return this.months.map((element, i) => {
-                    return {
-                        month: element,
-                        fish: this.filteredData.filter(elem => {
-                            const current = i;
-                            let from, to;
-                            let myFish = { ...elem };
-                            const filterValue = /-/.test(elem.season) ? elem.season.split('-') : elem.season;
-                            if (typeof filterValue === 'object') {
-                                this.months.some((month, index) => {
-                                    if (filterValue[0].includes(month)) {
-                                        from = index;
-                                        return true;
-                                    }
-                                });
-                                this.months.some((month, index) => {
-                                    if (filterValue[1].includes(month)) {
-                                        to = index;
-                                        return true;
-                                    }
-                                });
-                                if (from >= current && to >= current && to < from) {
-                                    return myFish;
-                                } else if (current >= from && current <= to) {
-                                    return myFish;
-                                }
-                            } else if (filterValue === 'All year' || filterValue == element) {
-                                return myFish;
-                            }
-                        })
-                    }
-                });
-            } else {
-                return this.filteredData
+        payload() {
+            return {
+                filterValue: this.filterValue,
+                data: this.data,
+                fish: Fish,
+                insects: Insects,
+                activeMonth: this.activeMonth,
+                last: localStorage.getItem('last') || '',
+                sort: this.sort,
+                months: this.months
             }
         }
     },
     methods: {
         sortby(value) {
             this.sort = value;
-        },
-        pep(val) {
-            if (this.myfishies.includes(val.name)) {
-                this.myfishies = this.myfishies.replace(val.name, '');
-            } else {
-                this.myfishies = this.myfishies+val.name;
-            }
-            localStorage.setItem('myfishies', this.myfishies);
         },
         setActiveMonth(month) {
             this.activeMonth = month;

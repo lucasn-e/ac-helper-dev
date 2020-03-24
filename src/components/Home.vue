@@ -15,9 +15,8 @@
                     <div class="custom-button" @click="choose('fish')">
                         Fish
                     </div>
-                    <div class="custom-button wip" @click="choose('insects')">
+                    <div class="custom-button" @click="choose('insects')">
                         Insects
-                        <div class="WIP">Coming Soon!</div>
                     </div>
                 </div>
             </div>
@@ -35,6 +34,7 @@ export default {
     methods: {
         choose(stuff) {
             this.choice = stuff;
+            localStorage.setItem('last', stuff);
             this.$emit('choice', this.choice);
         }
     }
