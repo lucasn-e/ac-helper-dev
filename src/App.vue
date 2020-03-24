@@ -8,17 +8,17 @@
 </template>
 
 <script>
-import Home from './components/Home.vue'
-import Seperator from './components/Seperator.vue';
-import Display from './components/Display.vue';
-import Footer from './components/Footer.vue';
+import Home from "./components/Home.vue";
+import Seperator from "./components/Seperator.vue";
+import Display from "./components/Display.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   data() {
     return {
       choice: null
-    }
+    };
   },
   components: {
     Home,
@@ -31,7 +31,7 @@ export default {
       this.choice = stuff;
     }
   }
-}
+};
 </script>
 
 <style>
@@ -43,7 +43,7 @@ export default {
   color: #2c3e50;
 }
 * {
-  font-family: 'Gorditas', cursive;
+  font-family: "Gorditas", cursive;
 }
 body {
   margin: 0;
