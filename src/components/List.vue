@@ -22,6 +22,7 @@
           @click="setCaught(data)"
         >
           <td class="caught">
+            <img :src="data.image" class="data-image" />
             <div :class="checkCaught(data) ? 'x active' : 'x inactive'">X</div>
           </td>
           <td>{{ data.name }}</td>
@@ -39,6 +40,7 @@
           @click="setCaught(data)"
         >
           <td class="caught">
+            <img :src="data.image" class="data-image" />
             <div :class="checkCaught(data) ? 'x active' : 'x inactive'">X</div>
           </td>
           <td>{{ data.name }}</td>
@@ -119,6 +121,7 @@ export default {
         const pattern = /<p>|<\/p>/g;
         return {
           name: elem.name.replace(pattern, ""),
+          image: elem.image,
           season: elem.season.replace(pattern, ""),
           location: elem.location.replace(pattern, ""),
           time: elem.time.replace(pattern, "").replace(/(\d) /, "$1 "),
@@ -163,7 +166,7 @@ export default {
                 } else if (current >= from && current <= to) {
                   return myData;
                 }
-              } else if (filterValue === "All year" || filterValue == element) {
+              } else if (filterValue === "All Year" || filterValue == element) {
                 return myData;
               }
             })
@@ -178,3 +181,20 @@ export default {
   }
 };
 </script>
+<style scoped>
+.caught {
+  position: relative;
+}
+.x {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4em;
+}
+@media screen and (max-width: 767px) {
+  .data-image {
+    height: 50px;
+  }
+}
+</style>

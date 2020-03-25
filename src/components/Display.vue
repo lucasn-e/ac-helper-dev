@@ -131,6 +131,7 @@ export default {
 }
 tr {
   height: 35px;
+  cursor: pointer;
 }
 .header-row {
   background-color: #ffe46a;
@@ -141,6 +142,9 @@ tr {
 }
 .content-row:nth-child(even) {
   background-color: #dcdcdc;
+}
+.content-row:nth-child(odd) {
+  background-color: #c3c3c3
 }
 .content-row.caught {
   background-color: #b5ff9e;
@@ -182,6 +186,7 @@ tr {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 20;
 }
 .jumpto-link {
   padding: 20px;
