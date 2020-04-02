@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Home @choice="choose" />
+    <Home />
     <Seperator />
-    <Display :data="choice" />
+    <Display />
     <Footer />
   </div>
 </template>
@@ -12,24 +12,18 @@ import Home from "./components/Home.vue";
 import Seperator from "./components/Seperator.vue";
 import Display from "./components/Display.vue";
 import Footer from "./components/Footer.vue";
+import store from "./store/index.js";
 
 export default {
   name: "App",
-  data() {
-    return {
-      choice: null
-    };
-  },
   components: {
     Home,
     Seperator,
     Display,
     Footer
   },
-  methods: {
-    choose(stuff) {
-      this.choice = stuff;
-    }
+  mounted() {
+    store.dispatch("getData");
   }
 };
 </script>

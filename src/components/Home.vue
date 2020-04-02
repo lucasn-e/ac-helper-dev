@@ -9,11 +9,13 @@
         <h3>Choose your topic:</h3>
         <div class="select-container">
           <div
-            :class="(!!choice && choice === 'fish') || (!!last && last === 'fish') ? 'custom-button active' : 'custom-button'"
+            class="custom-button"
+            :class="(!!choice && choice === 'fish') ? 'active' : ''"
             @click="choose('fish')"
           >Fish</div>
           <div
-            :class="(!!choice && choice === 'insects') || (!!last && last === 'insects') ? 'custom-button active' : 'custom-button'"
+            class="custom-button"
+            :class="(!!choice && choice === 'insects') ? 'active' : ''"
             @click="choose('insects')"
           >Insects</div>
         </div>
@@ -22,19 +24,18 @@
   </div>
 </template>
 <script>
+import store from "../store/index.js";
+
 export default {
-  data() {
-    return {
-      choice: null,
-      last: localStorage.getItem("last")
-    };
-  },
   methods: {
-    choose(stuff) {
-      this.choice = stuff;
-      this.last = stuff;
-      localStorage.setItem("last", stuff);
-      this.$emit("choice", this.choice);
+    choose(data) {
+      store.commit("assignDisplayData", data);
+      store.dispatch("storeSelection");
+    }
+  },
+  computed: {
+    choice() {
+      return store.state.displayData;
     }
   }
 };

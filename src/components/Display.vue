@@ -12,15 +12,15 @@
         <div
           class="mini-button"
           @click="sortby('month')"
-          :class="sort === 'month' ? 'active' : ''"
+          :class="sortType === 'month' ? 'active' : ''"
         >Month</div>
         <div
           class="mini-button"
           @click="sortby('name')"
-          :class="sort !== 'month' ? 'active' : ''"
+          :class="sortType !== 'month' ? 'active' : ''"
         >Name</div>
       </div>
-      <div v-if="sort === 'month'" class="jumpto-bar">
+      <div v-if="sortType === 'month'" class="jumpto-bar">
         Display data for:
         <div
           v-for="(month, index) in months"
@@ -35,14 +35,12 @@
 </template>
 <script>
 import List from "./List.vue";
-import Fish from "../data/fish.json";
-import Insects from "../data/insects.json";
+import store from "../store/index.js";
 
 export default {
   data() {
     return {
       filterValue: "",
-      sort: "month",
       months: [
         "Jan",
         "Feb",
@@ -57,7 +55,6 @@ export default {
         "Nov",
         "Dec"
       ],
-      fish: Fish,
       activeMonth: 0,
       last: localStorage.getItem("last") || "",
       count: 0
@@ -65,11 +62,6 @@ export default {
   },
   components: {
     List
-  },
-  props: {
-    data: {
-      type: String
-    }
   },
   filters: {
     capitalize: function(value) {
@@ -79,26 +71,27 @@ export default {
     }
   },
   computed: {
+    data() {
+      return store.state.displayData;
+    },
     payload() {
       return {
         filterValue: this.filterValue,
-        data: this.data,
-        fish: Fish,
-        insects: Insects,
         activeMonth: this.activeMonth,
-        last: localStorage.getItem("last") || "",
-        sort: this.sort,
         months: this.months
       };
+    },
+    sortType() {
+      return store.state.sortType;
     }
   },
   methods: {
     displayCount(value) {
-      console.log(value);
       this.count = value.length;
     },
     sortby(value) {
-      this.sort = value;
+      store.commit("assignSortType", value);
+      store.dispatch("storeSelection");
     },
     setActiveMonth(month) {
       this.activeMonth = month;
@@ -119,6 +112,16 @@ export default {
 }
 .data-table {
   min-width: 55%;
+}
+@media screen and (max-width: 1330px) {
+  .data-table {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .data-table {
+    width: 100%;
+  }
 }
 .menu {
   width: auto;
@@ -144,7 +147,7 @@ tr {
   background-color: #dcdcdc;
 }
 .content-row:nth-child(odd) {
-  background-color: #c3c3c3
+  background-color: #c3c3c3;
 }
 .content-row.caught {
   background-color: #b5ff9e;
@@ -166,11 +169,6 @@ tr {
 }
 .month-row {
   margin-top: 15px;
-}
-.monthname {
-  height: 100px;
-  background-color: #c5a5b8;
-  font-size: 2em;
 }
 .active {
   color: #c4161c;

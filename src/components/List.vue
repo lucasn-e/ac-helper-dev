@@ -1,59 +1,44 @@
 <template>
   <div class="table-container">
-    <table class="data-table">
-      <thead>
-        <tr class="month-row">
-          <th class="monthname" colspan="6">{{ activeMonthData.month }}</th>
-        </tr>
-        <tr class="header-row">
-          <th>Captured</th>
-          <th>Name</th>
-          <th>Season</th>
-          <th>Location</th>
-          <th>Time</th>
-          <th>Value</th>
-        </tr>
-      </thead>
-      <tbody v-if="payload.sort === 'name'">
-        <tr
+    <div class="data-table">
+      <div v-if="sortType === 'month'" class="month-row">
+        <div class="monthname">
+          <p>{{ activeMonthData.month }}</p>
+        </div>
+      </div>
+      <ListItem
+        class="header-row"
+        :header="true"
+        :item="{ captured: 'Captured', name: 'Name', season: 'Season', time: 'Time', location: 'Location', value: 'Value' }"
+      />
+      <template v-if="sortType === 'name'">
+        <ListItem
+          class="content-row"
           v-for="data in sortedData"
-          :key="`data-${data.name}`"
-          :class="checkCaught(data) ? 'content-row caught' : 'content-row'"
-          @click="setCaught(data)"
-        >
-          <td class="caught">
-            <img :src="data.image" class="data-image" />
-            <div :class="checkCaught(data) ? 'x active' : 'x inactive'">X</div>
-          </td>
-          <td>{{ data.name }}</td>
-          <td>{{ data.season }}</td>
-          <td>{{ data.location }}</td>
-          <td>{{ data.time }}</td>
-          <td>{{ data.value }}</td>
-        </tr>
-      </tbody>
-      <tbody v-else>
-        <tr
+          :key="data.name"
+          :header="false"
+          :item="data"
+        />
+      </template>
+      <template v-else>
+        <ListItem
+          class="content-row"
           v-for="data in activeMonthData.data"
-          :key="`data-${data.name}`"
-          :class="checkCaught(data) ? 'content-row caught' : 'content-row'"
-          @click="setCaught(data)"
-        >
-          <td class="caught">
-            <img :src="data.image" class="data-image" />
-            <div :class="checkCaught(data) ? 'x active' : 'x inactive'">X</div>
-          </td>
-          <td>{{ data.name }}</td>
-          <td>{{ data.season }}</td>
-          <td>{{ data.location }}</td>
-          <td>{{ data.time }}</td>
-          <td>{{ data.value }}</td>
-        </tr>
-      </tbody>
-    </table>
+          :key="data.name"
+          :animalType="animalType"
+          :header="false"
+          :item="data"
+        />
+      </template>
+    </div>
   </div>
 </template>
 <script>
+import ListItem from "./ListItem.vue";
+import store from "../store/index.js";
+import Fish from "../data/fish.json";
+import Insects from "../data/insects.json";
+
 export default {
   data() {
     return {
@@ -63,22 +48,15 @@ export default {
       }
     };
   },
+  components: {
+    ListItem
+  },
   props: {
     payload: {
       type: Object
     }
   },
   methods: {
-    checkCaught(val) {
-      if (
-        this.payload.data === "fish" ||
-        localStorage.getItem("last") === "fish"
-      ) {
-        return this.mydata.fishies.includes(val.name);
-      } else {
-        return this.mydata.insecties.includes(val.name);
-      }
-    },
     setCaught(val) {
       const last =
         localStorage.getItem("last") === "fish" ? "myfishies" : "myinsecties";
@@ -99,13 +77,18 @@ export default {
     }
   },
   computed: {
-    usedData() {
-      return localStorage.getItem("last") === "fish"
-        ? this.payload.fish
-        : this.payload.insects;
+    sortType() {
+      return store.state.sortType;
+    },
+    animalType() {
+      return store.state.displayData;
+    },
+    displayData() {
+      if (this.animalType === "fish") return Fish;
+      else return Insects;
     },
     activeMonthData() {
-      if (this.payload.sort === "month") {
+      if (this.sortType === "month") {
         const activeData = this.sortedData[this.payload.activeMonth];
         this.$emit("filteredDataCount", activeData.data);
         return activeData;
@@ -115,29 +98,26 @@ export default {
     },
     cleanedData() {
       let clean = JSON.parse(
-        JSON.stringify(this.usedData).replace(/<p>|<\/p>/g, "")
+        JSON.stringify(this.displayData).replace(/<p>|<\/p>/g, "")
       );
       return clean.map(elem => {
-        const pattern = /<p>|<\/p>/g;
         return {
-          name: elem.name.replace(pattern, ""),
+          name: elem.name,
           image: elem.image,
-          season: elem.season.replace(pattern, ""),
-          location: elem.location.replace(pattern, ""),
-          time: elem.time.replace(pattern, "").replace(/(\d) /, "$1 "),
-          value: elem.value.replace(pattern, "")
+          season: elem.season,
+          location: elem.location,
+          time: elem.time.replace(/(\d) /, "$1 "),
+          value: elem.value
         };
       });
     },
     filteredData() {
-      const filtered = this.cleanedData.filter(elem =>
+      return this.cleanedData.filter(elem =>
         elem.name.toUpperCase().includes(this.payload.filterValue.toUpperCase())
       );
-
-      return filtered;
     },
     sortedData() {
-      if (this.payload.sort === "month") {
+      if (this.sortType === "month") {
         const filtered = this.payload.months.map((element, i) => {
           return {
             month: element,
@@ -182,19 +162,12 @@ export default {
 };
 </script>
 <style scoped>
-.caught {
-  position: relative;
-}
-.x {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 4em;
-}
-@media screen and (max-width: 767px) {
-  .data-image {
-    height: 50px;
-  }
+.monthname {
+  height: 100px;
+  background-color: #c5a5b8;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>
