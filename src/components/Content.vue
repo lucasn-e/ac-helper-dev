@@ -1,7 +1,7 @@
 <template>
   <div class="display-container">
     <div class="menu" v-if="!!displayData">
-      <h3>{{ displayData | capitalize }} Guide</h3>
+      <h3 v-if="!finished">{{ displayData | capitalize }} Guide</h3>
       <template v-if="displayData != 'golden-tools'">
         <div class="filter">
           <label for="search">Search:&nbsp;</label>
@@ -32,8 +32,11 @@
         </div>
       </template>
       <template v-else>
-        <p>Golden Watering Can: Island 5* Rating</p>
-        <p>Golden Slingshot: Complete "It's raining treasure" (300 treasures shot down) -> shoot down Golden Baloon</p>
+        <template v-if="!finished">
+          <p>Golden Watering Can: Island 5* Rating</p>
+          <p>Golden Slingshot: Complete "It's raining treasure" (300 treasures shot down) -> shoot down Golden Baloon</p>
+        </template>
+        <template v-else>CONGRATULATIONS!</template>
       </template>
     </div>
     <List
@@ -41,7 +44,7 @@
       @filteredDataCount="displayCount"
       v-if="displayData != 'golden-tools'"
     />
-    <GoldenTools v-else />
+    <GoldenTools v-else @finished="handleFinished" />
   </div>
 </template>
 <script>
@@ -69,7 +72,8 @@ export default {
         "Dec"
       ],
       activeMonth: 0,
-      count: 0
+      count: 0,
+      finished: false
     };
   },
   components: {
@@ -94,6 +98,9 @@ export default {
     ...mapState(["sortType", "displayData"])
   },
   methods: {
+    handleFinished(value) {
+      this.finished = value;
+    },
     displayCount(value) {
       this.count = value;
     },
@@ -109,6 +116,7 @@ export default {
 </script>
 <style>
 .display-container {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
