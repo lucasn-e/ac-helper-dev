@@ -1,0 +1,15 @@
+{
+    "name": "AC-Helper",
+    "short_name": "AcHelper",
+    "start_url": "index.html",
+    "display": "standalone",
+    "theme_color": "#c4161c",
+    "background_color": "#fff",
+    "icons": [
+        {
+            "src": "wee.png",
+            "sizes": "193x193",
+            "type": "image/png"
+        }
+    ]
+}

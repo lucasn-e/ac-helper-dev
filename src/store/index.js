@@ -37,8 +37,10 @@ const store = new Vuex.Store({
       const fish = localStorage.getItem('myfishies');
       const insects = localStorage.getItem('myinsecties');
       const data = JSON.parse(localStorage.getItem('selection'));
-      commit('assignDisplayData', data.displayData);
-      commit('assignSortType', data.sortType);
+      if (data) {
+        commit('assignDisplayData', data.displayData);
+        commit('assignSortType', data.sortType);
+      }
       commit('storeFish', fish);
       commit('storeInsect', insects);
     },
