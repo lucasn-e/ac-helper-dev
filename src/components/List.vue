@@ -132,13 +132,3 @@ export default {
   }
 };
 </script>
-<style scoped>
-.monthname {
-  height: 100px;
-  background-color: #c5a5b8;
-  font-size: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-</style>
