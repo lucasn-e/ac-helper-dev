@@ -1,25 +1,25 @@
 <template>
   <div id="app">
-    <Home />
+    <Heading />
     <Seperator />
-    <Display />
+    <Content />
     <Footer />
   </div>
 </template>
 
 <script>
-import Home from "./components/Home.vue";
+import Heading from "./components/Heading.vue";
 import Seperator from "./components/Seperator.vue";
-import Display from "./components/Display.vue";
+import Content from "./components/Content.vue";
 import Footer from "./components/Footer.vue";
 import store from "./store/index.js";
 
 export default {
   name: "App",
   components: {
-    Home,
+    Heading,
     Seperator,
-    Display,
+    Content,
     Footer
   },
   mounted() {

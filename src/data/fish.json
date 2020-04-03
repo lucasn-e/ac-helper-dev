@@ -77,7 +77,7 @@
     "season": "Nov - Feb",
     "location": "Sea",
     "time": "9pm - 4am ",
-    "value": "-"
+    "value": "5000"
   },
   {
     "name": "Blue marlin",
@@ -196,7 +196,7 @@
     "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_77_i.png",
     "season": "Nov - Mar",
     "location": "Sea",
-    "time": "- ",
+    "time": "4pm - 9pm ",
     "value": "2500"
   },
   {
@@ -212,8 +212,8 @@
     "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_15_i.png",
     "season": "Mar - Aug",
     "location": "Pond",
-    "time": "- ",
-    "value": "-"
+    "time": "All day",
+    "value": "120"
   },
   {
     "name": "Gar",
@@ -245,7 +245,7 @@
     "season": "Mar - May, Sept - Nov",
     "location": "River (Clifftop)",
     "time": "4pm - 9am ",
-    "value": "-"
+    "value": "15000"
   },
   {
     "name": "Goldfish",
@@ -253,7 +253,7 @@
     "season": "All Year",
     "location": "Pond",
     "time": "All day ",
-    "value": "-"
+    "value": "1300"
   },
   {
     "name": "Great white shark",
@@ -277,7 +277,7 @@
     "season": "June - Sept",
     "location": "Sea",
     "time": "Morning, Evening, Night ",
-    "value": "-"
+    "value": "8000"
   },
   {
     "name": "Horse mackerel",
@@ -316,7 +316,7 @@
     "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_17_i.png",
     "season": "Mar - May",
     "location": "River",
-    "time": "All day ",
+    "time": "All day",
     "value": "400"
   },
   {
@@ -324,8 +324,8 @@
     "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_69_i.png",
     "season": "May - Oct",
     "location": "Pier",
-    "time": "- ",
-    "value": "-"
+    "time": "All day",
+    "value": "12000"
   },
   {
     "name": "Mitten crab",
@@ -333,7 +333,7 @@
     "season": "Sept - Oct",
     "location": "River",
     "time": "Morning, Evening, Night ",
-    "value": "-"
+    "value": "2000"
   },
   {
     "name": "Moray eel",
@@ -341,7 +341,7 @@
     "season": "Aug - Oct",
     "location": "Sea",
     "time": "All day ",
-    "value": "-"
+    "value": "2000"
   },
   {
     "name": "Napoleonfish",
@@ -349,7 +349,7 @@
     "season": "July - Aug",
     "location": "Sea",
     "time": "4am - 9pm ",
-    "value": "-"
+    "value": "10000"
   },
   {
     "name": "Neon tetra",
@@ -420,8 +420,8 @@
     "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_25_i.png",
     "season": "Dec - Feb",
     "location": "River",
-    "time": "- ",
-    "value": "-"
+    "time": "All day",
+    "value": "400"
   },
   {
     "name": "Pop-eyed goldfish",
@@ -429,7 +429,7 @@
     "season": "All Year",
     "location": "Pond",
     "time": "Afternoon ",
-    "value": "-"
+    "value": "1300"
   },
   {
     "name": "Puffer fish",
@@ -445,7 +445,7 @@
     "season": "May - Oct",
     "location": "River",
     "time": "Afternoon ",
-    "value": "-"
+    "value": "800"
   },
   {
     "name": "Ranchu goldfish",
@@ -461,7 +461,7 @@
     "season": "Aug - Nov",
     "location": "Sea",
     "time": "4am - 9pm ",
-    "value": "-"
+    "value": "3000"
   },
   {
     "name": "Red Snapper",
@@ -485,7 +485,7 @@
     "season": "June - Sept",
     "location": "River",
     "time": "Night ",
-    "value": "-"
+    "value": "4000"
   },
   {
     "name": "Salmon",
@@ -533,7 +533,7 @@
     "season": "Apr - Oct",
     "location": "River",
     "time": "Night ",
-    "value": "-"
+    "value": "5000"
   },
   {
     "name": "Soft-shelled turtle",
@@ -557,7 +557,7 @@
     "season": "Dec - Mar",
     "location": "River (Clifftop)",
     "time": "4pm - 9am ",
-    "value": "-"
+    "value": "15000"
   },
   {
     "name": "Sturgeon",
@@ -573,7 +573,7 @@
     "season": "June - Sept",
     "location": "Sea",
     "time": "All day ",
-    "value": "-"
+    "value": "1500"
   },
   {
     "name": "Surgeonfish",
@@ -621,7 +621,7 @@
     "season": "June - Sept",
     "location": "Sea",
     "time": "All day ",
-    "value": "-"
+    "value": "13000"
   },
   {
     "name": "Yellow perch",

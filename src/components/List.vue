@@ -11,43 +11,22 @@
         :header="true"
         :item="{ captured: 'Captured', name: 'Name', season: 'Season', time: 'Time', location: 'Location', value: 'Value' }"
       />
-      <template v-if="sortType === 'name'">
-        <ListItem
-          class="content-row"
-          v-for="data in sortedData"
-          :key="data.name"
-          :header="false"
-          :item="data"
-        />
-      </template>
-      <template v-else>
-        <ListItem
-          class="content-row"
-          v-for="data in activeMonthData.data"
-          :key="data.name"
-          :animalType="animalType"
-          :header="false"
-          :item="data"
-        />
-      </template>
+      <ListItem
+        class="content-row"
+        v-for="data in sortType === 'name' ? sortedData : activeMonthData.data"
+        :key="data.name"
+        :item="data"
+      />
     </div>
   </div>
 </template>
 <script>
 import ListItem from "./ListItem.vue";
-import store from "../store/index.js";
 import Fish from "../data/fish.json";
 import Insects from "../data/insects.json";
+import { mapState } from "vuex";
 
 export default {
-  data() {
-    return {
-      mydata: {
-        fishies: localStorage.getItem("myfishies") || "",
-        insecties: localStorage.getItem("myinsecties") || ""
-      }
-    };
-  },
   components: {
     ListItem
   },
@@ -56,37 +35,90 @@ export default {
       type: Object
     }
   },
-  methods: {
-    setCaught(val) {
-      const last =
-        localStorage.getItem("last") === "fish" ? "myfishies" : "myinsecties";
-      let data = localStorage.getItem(last) || "";
-
-      if (data.includes(val.name)) {
-        data = data.replace(val.name, "");
-      } else {
-        data = data + val.name;
-      }
-      if (last === "myfishies") {
-        this.mydata.fishies = data;
-      } else {
-        this.mydata.insecties = data;
-      }
-
-      localStorage.setItem(last, data);
-    }
-  },
   computed: {
-    sortType() {
-      return store.state.sortType;
-    },
     animalType() {
-      return store.state.displayData;
-    },
-    displayData() {
-      if (this.animalType === "fish") return Fish;
+      if (this.displayData === "fish") return Fish;
       else return Insects;
     },
+    // make sure the JSON doesn't have any html tags (only <p>)
+    cleanedData() {
+      let clean = JSON.parse(
+        JSON.stringify(this.animalType).replace(/<p>|<\/p>/g, "")
+      );
+      return clean.map(elem => {
+        return {
+          name: elem.name,
+          image: elem.image,
+          season: elem.season,
+          location: elem.location,
+          time: elem.time.replace(/(\d\w\w) /, "$1 - "),
+          value: elem.value
+        };
+      });
+    },
+    // return array consisting only of elements that match the "Search" <input>
+    filteredData() {
+      return this.cleanedData.filter(elem =>
+        elem.name.toUpperCase().includes(this.payload.filterValue.toUpperCase())
+      );
+    },
+    // sort data by month or do nothing
+    sortedData() {
+      if (this.sortType === "month") {
+        // create new array [{ month: STRING, data: ARRAY }] each object represents a month and the corresponding elements
+        const filtered = this.payload.months.map((element, i) => {
+          return {
+            month: element,
+            data: this.filteredData.filter(elem => {
+              const current = i;
+              let from, to;
+              let myData = { ...elem };
+              /*
+               * elem.season is a string containing either: the name of a single month, "All Year" or a range of months
+               * if it's a range of months, we want to split them into an array in order to more efficiently sort elements by them
+               */
+              const filterValue = /-/.test(elem.season)
+                ? elem.season.split("-")
+                : elem.season;
+              // arrays are objects in javascript because life is beautiful
+              if (typeof filterValue === "object") {
+                // [].prototype.some() breaks out of the loop if the return value is true
+                this.payload.months.some((month, index) => {
+                  // save the index of the month if the month name is the same as the month range starting point
+                  if (filterValue[0].includes(month)) {
+                    from = index;
+                    return true;
+                  }
+                });
+                this.payload.months.some((month, index) => {
+                  // save the index of the month if the month name is the same as the month range end
+                  if (filterValue[1].includes(month)) {
+                    to = index;
+                    return true;
+                  }
+                });
+                // in case of a month range spreading over the end of a year (Nov - Feb for example) and the selected month falls in between
+                if (from >= current && to >= current && to < from) {
+                  return myData;
+                  // if the selected month falls in between the range
+                } else if (current >= from && current <= to) {
+                  return myData;
+                }
+                // if the element can be found in either the selected month or all year round
+              } else if (filterValue === "All Year" || filterValue == element) {
+                return myData;
+              }
+            })
+          };
+        });
+        return filtered;
+      } else {
+        // emit the amount of items that remain after the "Search" <input> filter was applied into any component that imports this one
+        this.$emit("filteredDataCount", this.filteredData.length);
+        return this.filteredData;
+      }
+    },
+    // return the data corresponding to the user selected month
     activeMonthData() {
       if (this.sortType === "month") {
         const activeData = this.sortedData[this.payload.activeMonth];
@@ -96,68 +128,7 @@ export default {
         return [];
       }
     },
-    cleanedData() {
-      let clean = JSON.parse(
-        JSON.stringify(this.displayData).replace(/<p>|<\/p>/g, "")
-      );
-      return clean.map(elem => {
-        return {
-          name: elem.name,
-          image: elem.image,
-          season: elem.season,
-          location: elem.location,
-          time: elem.time.replace(/(\d) /, "$1 "),
-          value: elem.value
-        };
-      });
-    },
-    filteredData() {
-      return this.cleanedData.filter(elem =>
-        elem.name.toUpperCase().includes(this.payload.filterValue.toUpperCase())
-      );
-    },
-    sortedData() {
-      if (this.sortType === "month") {
-        const filtered = this.payload.months.map((element, i) => {
-          return {
-            month: element,
-            data: this.filteredData.filter(elem => {
-              const current = i;
-              let from, to;
-              let myData = { ...elem };
-              const filterValue = /-/.test(elem.season)
-                ? elem.season.split("-")
-                : elem.season;
-              if (typeof filterValue === "object") {
-                this.payload.months.some((month, index) => {
-                  if (filterValue[0].includes(month)) {
-                    from = index;
-                    return true;
-                  }
-                });
-                this.payload.months.some((month, index) => {
-                  if (filterValue[1].includes(month)) {
-                    to = index;
-                    return true;
-                  }
-                });
-                if (from >= current && to >= current && to < from) {
-                  return myData;
-                } else if (current >= from && current <= to) {
-                  return myData;
-                }
-              } else if (filterValue === "All Year" || filterValue == element) {
-                return myData;
-              }
-            })
-          };
-        });
-        return filtered;
-      } else {
-        this.$emit("filteredDataCount", this.filteredData);
-        return this.filteredData;
-      }
-    }
+    ...mapState(["displayData", "sortType", "caught"])
   }
 };
 </script>

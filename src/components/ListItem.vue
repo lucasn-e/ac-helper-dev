@@ -6,7 +6,7 @@
     <template v-else>
       <div class="column">
         <img :src="item.image" class="data-image" :alt="`Image of ${item.name}`" />
-        <div :class="isCaptured ? 'x active' : 'x inactive'">X</div>
+        <div :class="caught[displayData].includes(item.name) ? 'x active' : 'x inactive'">X</div>
       </div>
     </template>
     <div class="column namecol" :class="{'head': header}">
@@ -28,6 +28,7 @@
 </template>
 <script>
 import store from "../store/index.js";
+import { mapState } from "vuex";
 
 export default {
   props: {
@@ -35,15 +36,15 @@ export default {
       type: Object
     },
     header: {
-      type: Boolean
-    },
-    animalType: {
-      type: String
+      type: Boolean,
+      default: false
     }
   },
   methods: {
+    // commit the selected fish or insect to the store and dispatch the action which saves our data to localStorage
     setCaptured() {
-      if (this.animalType === "fish") {
+      if (!!this.header) return;
+      if (this.displayData === "fish") {
         store.commit("storeFish", this.item.name);
       } else {
         store.commit("storeInsect", this.item.name);
@@ -52,17 +53,11 @@ export default {
     }
   },
   computed: {
-    storedFish() {
-      return store.state.fish;
-    },
-    storedInsects() {
-      return store.state.insects;
-    },
     listItemClass() {
-      let className;
+      let className = "";
       if (this.sortType === "month" && this.header) {
         className = "monthfilter";
-      } else if (this.isCaptured) {
+      } else if (this.caught[this.displayData].includes(this.item.name)) {
         className = "captured";
       }
       return className;
@@ -70,13 +65,7 @@ export default {
     sortType() {
       return store.state.sortType;
     },
-    isCaptured() {
-      if (this.animalType === "fish") {
-        return store.state.fish.includes(this.item.name);
-      } else {
-        return store.state.insects.includes(this.item.name);
-      }
-    }
+    ...mapState(["displayData", "caught"])
   }
 };
 </script>
@@ -114,10 +103,8 @@ export default {
   top: 0;
   z-index: 1;
 }
-@media screen and (min-width: 768px) {
-  .listitem.header-row.monthfilter {
-    top: 75px;
-  }
+.data-image {
+  height: 100px;
 }
 .caught {
   position: relative;
@@ -136,6 +123,11 @@ export default {
   .column {
     width: 75px;
     font-size: 0.8em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .listitem.header-row.monthfilter {
+    top: 75px;
   }
 }
 </style>

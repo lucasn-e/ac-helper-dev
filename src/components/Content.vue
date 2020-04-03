@@ -1,41 +1,54 @@
 <template>
   <div class="display-container">
-    <div class="menu" v-if="!!data || !!last">
-      <h3>{{ data || last | capitalize }} Guide</h3>
-      <div class="filter">
-        <label for="search">Search:</label>
-        <input name="search" id="search" type="text" class="filter-input" v-model="filterValue" />
-        <div class="result-count" v-if="filterValue.length > 0">{{ count }} Results</div>
-      </div>
-      <div class="sortby">
-        Sort by:
-        <div
-          class="mini-button"
-          @click="sortby('month')"
-          :class="sortType === 'month' ? 'active' : ''"
-        >Month</div>
-        <div
-          class="mini-button"
-          @click="sortby('name')"
-          :class="sortType !== 'month' ? 'active' : ''"
-        >Name</div>
-      </div>
-      <div v-if="sortType === 'month'" class="jumpto-bar">
-        Display data for:
-        <div
-          v-for="(month, index) in months"
-          :key="month"
-          @click="setActiveMonth(index)"
-          :class="activeMonth == index ? 'jumpto-link active' : 'jumpto-link'"
-        >{{ month }}</div>
-      </div>
+    <div class="menu" v-if="!!displayData">
+      <h3>{{ displayData | capitalize }} Guide</h3>
+      <template v-if="displayData != 'golden-tools'">
+        <div class="filter">
+          <label for="search">Search:&nbsp;</label>
+          <input name="search" id="search" type="text" class="filter-input" v-model="filterValue" />
+          <div class="result-count" v-if="filterValue.length > 0">{{ count }} Results</div>
+        </div>
+        <div class="sortby">
+          Sort by:
+          <div
+            class="mini-button"
+            @click="sortby('month')"
+            :class="sortType === 'month' ? 'active' : ''"
+          >Month</div>
+          <div
+            class="mini-button"
+            @click="sortby('name')"
+            :class="sortType !== 'month' ? 'active' : ''"
+          >Name</div>
+        </div>
+        <div v-if="sortType === 'month'" class="jumpto-bar">
+          Display data for:
+          <div
+            v-for="(month, index) in months"
+            :key="month"
+            @click="setActiveMonth(index)"
+            :class="activeMonth == index ? 'jumpto-link active' : 'jumpto-link'"
+          >{{ month }}</div>
+        </div>
+      </template>
+      <template v-else>
+        <p>Golden Watering Can: Island 5* Rating</p>
+        <p>Golden Slingshot: Complete "It's raining treasure" (300 treasures shot down) -> shoot down Golden Baloon</p>
+      </template>
     </div>
-    <List :payload="payload" @filteredDataCount="displayCount" />
+    <List
+      :payload="payload"
+      @filteredDataCount="displayCount"
+      v-if="displayData != 'golden-tools'"
+    />
+    <GoldenTools v-else />
   </div>
 </template>
 <script>
 import List from "./List.vue";
+import GoldenTools from "./GoldenTools.vue";
 import store from "../store/index.js";
+import { mapState } from "vuex";
 
 export default {
   data() {
@@ -56,12 +69,12 @@ export default {
         "Dec"
       ],
       activeMonth: 0,
-      last: localStorage.getItem("last") || "",
       count: 0
     };
   },
   components: {
-    List
+    List,
+    GoldenTools
   },
   filters: {
     capitalize: function(value) {
@@ -71,9 +84,6 @@ export default {
     }
   },
   computed: {
-    data() {
-      return store.state.displayData;
-    },
     payload() {
       return {
         filterValue: this.filterValue,
@@ -81,13 +91,11 @@ export default {
         months: this.months
       };
     },
-    sortType() {
-      return store.state.sortType;
-    }
+    ...mapState(["sortType", "displayData"])
   },
   methods: {
     displayCount(value) {
-      this.count = value.length;
+      this.count = value;
     },
     sortby(value) {
       store.commit("assignSortType", value);

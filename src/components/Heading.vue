@@ -18,6 +18,11 @@
             :class="(!!choice && choice === 'insects') ? 'active' : ''"
             @click="choose('insects')"
           >Insects</div>
+          <div
+            class="custom-button"
+            :class="(!!choice && choice === 'golden-tools') ? 'active' : ''"
+            @click="choose('golden-tools')"
+          >Golden Tools</div>
         </div>
       </div>
     </div>
@@ -25,6 +30,7 @@
 </template>
 <script>
 import store from "../store/index.js";
+import { mapState } from "vuex";
 
 export default {
   methods: {
@@ -34,9 +40,7 @@ export default {
     }
   },
   computed: {
-    choice() {
-      return store.state.displayData;
-    }
+    ...mapState({ choice: "displayData" })
   }
 };
 </script>
