@@ -5,7 +5,7 @@
     </template>
     <template v-else>
       <div class="column">
-        <img :src="item.image" class="data-image" />
+        <img :src="item.image" class="data-image" :alt="`Image of ${item.name}`" />
         <div :class="isCaptured ? 'x active' : 'x inactive'">X</div>
       </div>
     </template>

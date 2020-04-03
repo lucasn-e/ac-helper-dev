@@ -1,0 +1,15 @@
+{
+    "name": "AC-Helper",
+    "short_name": "AcHelper",
+    "start_url": "index.html",
+    "display": "standalone",
+    "theme_color": "#c4161c",
+    "background_color": "#fff",
+    "icons": [
+        {
+            "src": "src/assets/wee.png", // usually kept in the static/icons folder
+            "sizes": "193x193", // enter the size of the image 
+            "type": "image/png" // enter the type of the image eg: image/png,
+        }
+    ]
+}

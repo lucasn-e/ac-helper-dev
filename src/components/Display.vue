@@ -3,8 +3,8 @@
     <div class="menu" v-if="!!data || !!last">
       <h3>{{ data || last | capitalize }} Guide</h3>
       <div class="filter">
-        Search:
-        <input type="text" class="filter-input" v-model="filterValue" />
+        <label for="search">Search:</label>
+        <input name="search" id="search" type="text" class="filter-input" v-model="filterValue" />
         <div class="result-count" v-if="filterValue.length > 0">{{ count }} Results</div>
       </div>
       <div class="sortby">
