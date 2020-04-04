@@ -41,7 +41,7 @@
           <div class="fullwidth-container">
             <div class="custom-button mini" @click="toggleFeedback">Feedback</div>
           </div>
-          <form class="form" data-netlify="true" method="POST" name="feedback">
+          <form class="form" data-netlify="true" method="POST" name="contact">
             <label for="name">
               Name:
               <input type="text" name="name" id="name" />
@@ -54,7 +54,7 @@
               Message:
               <textarea name="message" id="message"></textarea>
             </label>
-            <button type="submit" class="custom-button mini">Send</button>
+            <button type="submit" class="custom-button mini" @click="formSent">Send</button>
           </form>
         </div>
       </div>
@@ -78,6 +78,9 @@ export default {
     };
   },
   methods: {
+    formSent() {
+      this.feedbackOpenClose = "";
+    },
     choose(data) {
       store.commit("assignDisplayData", data);
       store.dispatch("storeSelection");
