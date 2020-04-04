@@ -37,7 +37,11 @@
             <input type="text" id="import-export" name="import-export" v-model="importExport" />
           </label>
         </div>
-        <div class="feedback" :class="feedbackOpenClose">
+        <div
+          v-if="window.location == 'https://ac-helper.com/' || window.location == 'localhost:8080'"
+          class="feedback"
+          :class="feedbackOpenClose"
+        >
           <div class="fullwidth-container">
             <div class="custom-button mini" @click="toggleFeedback">Feedback</div>
           </div>
