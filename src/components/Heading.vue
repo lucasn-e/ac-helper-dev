@@ -183,8 +183,8 @@ export default {
   computed: {
     showFeedback() {
       return (
-        window.location == "https://ac-helper.com/" ||
-        window.location == "localhost:8080"
+        window.location.href == "https://ac-helper.com/" ||
+        window.location.href == "localhost:8080"
       );
     },
     ...mapState({ choice: "displayData" })
