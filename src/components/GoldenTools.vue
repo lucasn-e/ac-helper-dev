@@ -3,7 +3,7 @@
     <div class="golden-tool">
       <h3>Golden Axe</h3>
       <p v-if="counts.axeCount < 100">Break 100 axes of any kind to unlock. Track your status!</p>
-      <p v-else>Congrats on breaking 100 axes and unlocking the golden axe!</p>
+      <p v-else>Congrats on breaking 100 axes and earning the golden axe!</p>
       <div class="controls-container">
         <div class="reduce-btn btn" @click="decrement('axeCount')">-</div>
         <label for="broken-axe-count"></label>
@@ -23,7 +23,7 @@
       <p
         v-if="counts.shovelCount < 30"
       >Save Gulliver 30 times to receive the DIY recipe! Track your status!</p>
-      <p v-else>Congrats on saving Gulliver 30 times and receiving the golden shovel!</p>
+      <p v-else>Congrats on saving Gulliver 30 times and earning the golden shovel!</p>
       <div class="controls-container">
         <div class="reduce-btn btn" @click="decrement('shovelCount')">-</div>
         <label for="broken-shovel-count"></label>
@@ -38,6 +38,47 @@
         <div class="add-btn btn" @click="increment('shovelCount', 30)">+</div>
       </div>
     </div>
+
+    <div class="golden-tool">
+      <h3>Golden Watering Can</h3>
+      <p v-if="counts.wateringcanCount < 5">Reach a 5* Rating at Isabelle! Track your stars!</p>
+      <p v-else>Congrats on reaching a 5* island rating and earning the golden watering can!</p>
+      <div class="controls-container">
+        <div class="reduce-btn btn" @click="decrement('wateringcanCount')">-</div>
+        <label for="broken-shovel-count"></label>
+        <input
+          class="count-input"
+          name="wateringcanCount-count"
+          id="wateringcanCount-count"
+          type="text"
+          @keyup="handleInput('wateringcanCount', 5)"
+          v-model="counts.wateringcanCount"
+        />
+        <div class="add-btn btn" @click="increment('wateringcanCount', 5)">+</div>
+      </div>
+    </div>
+
+    <div class="golden-tool">
+      <h3>Golden Slingshot</h3>
+      <p
+        v-if="counts.balloonCount < 300"
+      >Shoot down 300 Balloons ("It's raining treasure" achievement)! Track your status!</p>
+      <p v-else>Congrats on shooting down 300 balloons and earning the golden slingshot!</p>
+      <div class="controls-container">
+        <div class="reduce-btn btn" @click="decrement('balloonCount')">-</div>
+        <label for="balloon-count"></label>
+        <input
+          class="count-input"
+          name="balloon-count"
+          id="balloon-count"
+          type="text"
+          @keyup="handleInput('balloonCount', 300)"
+          v-model="counts.balloonCount"
+        />
+        <div class="add-btn btn" @click="increment('balloonCount', 300)">+</div>
+      </div>
+    </div>
+
     <div class="golden-tool">
       <h3>Golden Fishing Rod</h3>
       <p v-if="caught.fish.length < 80">Catch all Fish! Track your status!</p>
@@ -63,7 +104,9 @@ export default {
     return {
       counts: {
         ["axeCount"]: localStorage.getItem("axeCount") || 0,
-        ["shovelCount"]: localStorage.getItem("shovelCount") || 0
+        ["shovelCount"]: localStorage.getItem("shovelCount") || 0,
+        ["balloonCount"]: localStorage.getItem("balloonCount") || 0,
+        ["wateringcanCount"]: localStorage.getItem("wateringcanCount") || 0
       }
     };
   },

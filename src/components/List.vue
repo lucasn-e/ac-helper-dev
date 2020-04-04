@@ -1,11 +1,6 @@
 <template>
   <div class="table-container">
     <div class="data-table">
-      <div v-if="sortType === 'month'" class="month-row">
-        <div class="monthname">
-          <p>{{ activeMonthData.month }}</p>
-        </div>
-      </div>
       <ListItem
         class="header-row"
         :header="true"

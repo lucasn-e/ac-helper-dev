@@ -1,6 +1,6 @@
 <template>
   <div class="display-container">
-    <div class="menu" v-if="!!displayData">
+    <div class="menu" id="waypoint1" v-if="!!displayData">
       <h3 v-if="!finished">{{ displayData | capitalize }} Guide</h3>
       <template v-if="displayData != 'golden-tools'">
         <div class="filter">
@@ -32,11 +32,7 @@
         </div>
       </template>
       <template v-else>
-        <template v-if="!finished">
-          <p>Golden Watering Can: Island 5* Rating</p>
-          <p>Golden Slingshot: Complete "It's raining treasure" (300 treasures shot down) -> shoot down Golden Baloon</p>
-        </template>
-        <template v-else>CONGRATULATIONS!</template>
+        <template v-if="!!finished">CONGRATULATIONS!</template>
       </template>
     </div>
     <List
