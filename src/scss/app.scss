@@ -1,14 +1,18 @@
 @font-face {
-  font-display: optional;
+  font-display: swap;
   font-family: "Gorditas";
   src: url(~@/assets/fonts/Gorditas-Regular.ttf);
 }
 @font-face {
-  font-display: optional;
+  font-display: swap;
   font-family: "Roboto";
   src: url(~@/assets/fonts/Roboto-Regular.ttf);
 }
-
+.fullwidth-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 #app {
   font-family: "Gorditas", "Roboto", cursive, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -78,6 +82,13 @@ h3 {
   transition: 0.25s;
   position: relative;
   user-select: none;
+  &.mini {
+    padding: 10px 0;
+    width: 25%;
+    font-size: 1em;
+    outline: none;
+    border: none;
+  }
 }
 .custom-button:hover {
   background-color: #ffe46a;
@@ -98,6 +109,74 @@ h3 {
   transform: translate(-50%, -50%) rotateZ(-17deg);
   width: 200px;
 }
+.import-export {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  label {
+    width: 100%;
+  }
+  input {
+    min-width: 200px;
+    max-width: 500px;
+    width: 50%;
+  }
+}
+.error {
+  width: 100%;
+  color: red;
+  background-color: #fff;
+  border-radius: 22px;
+  transition: .125s;
+}
+.feedback {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-top: 15px;
+  }
+  &.open {
+    .form {
+      transform: scaleY(1);
+      max-height: 500px;
+    }
+  }
+  .form {
+    max-width: 500px;
+    width: 75%;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      max-width: 100%;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scaleY(0);
+    max-height: 0px;
+    transition: .5s;
+    label {
+      width: 100%;
+      margin: 5px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      input, textarea {
+        padding: 5px;
+        font-size: 1em;
+        min-width: 60%;
+        font-family: "Roboto"
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 767px) {
   .select-container {
@@ -105,6 +184,7 @@ h3 {
   }
   .header {
     width: 85%;
+    margin-top: 15px;
   }
 }
 /* Content.vue */

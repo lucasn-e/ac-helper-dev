@@ -96,29 +96,37 @@ export default {
       localStorage.setItem("axeCount", 0);
       this.$emit("finished", false);
     },
+    // make sure to remove all non-numbers, not to overshoot the max not to go negative
     handleInput(value, max) {
       if (/[a-z]/.test(this.counts[value])) {
+        // convert to string so we can s/regexp/replace
         this.counts[value] = this.counts[value]
           .toString()
           .replace(/[a-z]/g, "");
+        // if, after the removal of the non-number character the value is not a number, turn it into a 0
         this.counts[value] = isNaN(parseInt(this.counts[value]))
           ? 0
           : parseInt(this.counts[value]);
+        // prevent overshoot
       } else if (this.counts[value] > max) {
         this.counts[value] = max;
+        // prevent negative
       } else if (this.counts[value] < 0) {
         this.counts[value] = 0;
       }
+      // store to localstorage
       localStorage.setItem(value, this.counts[value]);
     },
     increment(stuff, max) {
+      // make sure not to overshoot the max and increment by 1 otherwise
       if (this.counts[stuff] === max) return;
-      this.counts[stuff] = this.counts[stuff] + 1;
+      this.counts[stuff] = parseInt(this.counts[stuff]) + 1;
       localStorage.setItem(stuff, this.counts[stuff]);
     },
     decrement(stuff) {
+      // make sure not to go negative and increment by 1 otherwise
       if (this.counts[stuff] === 0) return;
-      this.counts[stuff] = this.counts[stuff] - 1;
+      this.counts[stuff] = parseInt(this.counts[stuff]) - 1;
       localStorage.setItem(stuff, this.counts[stuff]);
     }
   }
