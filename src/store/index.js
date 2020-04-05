@@ -39,6 +39,12 @@ const store = new Vuex.Store({
         state.caught.insects = typeof data === 'string' ? [data, ...state.caught.insects] : [...data, ...state.caught.insects];
       }
     },
+    storeFishRaw(state, data) {
+      state.caught.fish = data;
+    },
+    storeInsectsRaw(state, data) {
+      state.caught.insects = data;
+    }
   },
   actions: {
     // get all data from localstorage and save to store

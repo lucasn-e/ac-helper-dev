@@ -5,6 +5,10 @@
         class="header-row"
         :header="true"
         :item="{ captured: 'Captured', name: 'Name', season: 'Season', time: 'Time', location: 'Location', value: 'Value' }"
+        @sortByValue="sortByValue"
+        @sortByName="sortByName"
+        :sorting="sorting"
+        :sorted="sorted"
       />
       <ListItem
         class="content-row"
@@ -22,6 +26,14 @@ import Insects from "../data/insects.json";
 import { mapState } from "vuex";
 
 export default {
+  data() {
+    return {
+      fish: Fish,
+      insects: Insects,
+      sorted: "ascending",
+      sorting: "name"
+    };
+  },
   components: {
     ListItem
   },
@@ -30,17 +42,33 @@ export default {
       type: Object
     }
   },
+  methods: {
+    sortByValue() {
+      if (this.sorting === "value") {
+        this.sorted = this.sorted === "ascending" ? "descending" : "ascending";
+      } else {
+        this.sorting = "value";
+      }
+    },
+    sortByName() {
+      if (this.sorting === "name") {
+        this.sorted = this.sorted === "ascending" ? "descending" : "ascending";
+      } else {
+        this.sorting = "name";
+      }
+    }
+  },
   computed: {
     animalType() {
-      if (this.displayData === "fish") return Fish;
-      else return Insects;
+      if (this.displayData === "fish") return this.fish;
+      else return this.insects;
     },
     // make sure the JSON doesn't have any html tags (only <p>)
     cleanedData() {
       let clean = JSON.parse(
         JSON.stringify(this.animalType).replace(/<p>|<\/p>/g, "")
       );
-      return clean.map(elem => {
+      clean = clean.map(elem => {
         return {
           name: elem.name,
           image: elem.image,
@@ -50,6 +78,18 @@ export default {
           value: elem.value
         };
       });
+      let sorted = clean.sort((a, b) => {
+        if (this.sorting === "name") {
+          return a.name[0] - b.name[0];
+        } else if (this.sorting === "value") {
+          return a.value - b.value;
+        }
+      });
+      if (this.sorted === "ascending") {
+        return sorted;
+      } else {
+        return sorted.reverse();
+      }
     },
     // return array consisting only of elements that match the "Search" <input>
     filteredData() {

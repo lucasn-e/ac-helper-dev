@@ -9,8 +9,15 @@
         <div :class="caught[displayData].includes(item.name) ? 'x active' : 'x inactive'">X</div>
       </div>
     </template>
-    <div class="column namecol" :class="{'head': header}">
-      <p class="columntext">{{ item.name }}</p>
+    <div class="column namecol" :class="{'head': header}" @click="sortByName">
+      <p class="columntext">
+        {{ item.name }}
+        <span
+          class="sortingArrow"
+          :class="sorted"
+          v-if="sorting === 'name' && !!header"
+        ></span>
+      </p>
     </div>
     <div class="column" :class="{'head': header}">
       <p class="columntext">{{ item.season }}</p>
@@ -21,8 +28,15 @@
     <div class="column" :class="{'head': header}">
       <p class="columntext">{{ item.time }}</p>
     </div>
-    <div class="column" :class="{'head': header}">
-      <p class="columntext">{{ item.value }}</p>
+    <div class="column" :class="{'head': header}" @click="sortByValue">
+      <p class="columntext">
+        {{ item.value }}
+        <span
+          class="sortingArrow"
+          :class="sorted === 'ascending' ? 'descending' : 'ascending'"
+          v-if="sorting === 'value' && !!header"
+        ></span>
+      </p>
     </div>
   </div>
 </template>
@@ -38,9 +52,25 @@ export default {
     header: {
       type: Boolean,
       default: false
+    },
+    sorting: {
+      type: String,
+      default: "name"
+    },
+    sorted: {
+      type: String,
+      default: "ascending"
     }
   },
   methods: {
+    sortByName() {
+      if (!this.header) return;
+      this.$emit("sortByName");
+    },
+    sortByValue() {
+      if (!this.header) return;
+      this.$emit("sortByValue");
+    },
     // commit the selected fish or insect to the store and dispatch the action which saves our data to localStorage
     setCaptured() {
       if (!!this.header) return;

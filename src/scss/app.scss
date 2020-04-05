@@ -461,6 +461,39 @@ tr {
   justify-content: center;
   align-items: center;
   width: 100px;
+  &.head {
+    .columntext {
+      user-select: none;
+      position: relative;
+      .sortingArrow {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border-bottom: 1px solid #222;
+        border-right: 1px solid #222;
+        right: -15px;
+        top: 18%;
+        transition: .125s;
+        @media screen and (max-width: 767px) {
+          width: 4px;
+          height: 4px;
+          right: -9px;
+          top: 30%;
+        }
+        &.ascending {
+          transform: rotateZ(45deg);
+        }
+        &.descending {
+          transform: rotateZ(-135deg);
+          top: 38%;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    width: 75px;
+    font-size: 0.8em;
+  }
 }
 .listitem.header-row {
   position: sticky;
@@ -469,6 +502,7 @@ tr {
 }
 .data-image {
   height: 100px;
+  user-select: none;
 }
 .caught {
   position: relative;
@@ -479,14 +513,11 @@ tr {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4em;
+  user-select: none;
 }
 @media screen and (max-width: 767px) {
   .data-image {
     height: 50px;
-  }
-  .column {
-    width: 75px;
-    font-size: 0.8em;
   }
 }
 @media screen and (min-width: 768px) {
