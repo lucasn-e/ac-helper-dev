@@ -1,7 +1,7 @@
 [
   {
     "name": "Anchovy",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_56_i.png",
+    "image": "/fish/Anchovy.png",
     "season": "All Year",
     "location": "Sea",
     "time": "Morning, Afternoon, Evening ",
@@ -9,7 +9,7 @@
   },
   {
     "name": "Angelfish",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_36_i.png",
+    "image": "/fish/Angelfish.png",
     "season": "May - Oct",
     "location": "River",
     "time": "Morning, Evening, Night ",
@@ -17,7 +17,7 @@
   },
   {
     "name": "Arapaima",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_44_i.png",
+    "image": "/fish/Arapaima.png",
     "season": "June - Sept",
     "location": "River",
     "time": "Morning, Evening, Night ",
@@ -25,7 +25,7 @@
   },
   {
     "name": "Arowana",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_41_i.png",
+    "image": "/fish/Arowana.png",
     "season": "June - Sept",
     "location": "River",
     "time": "Morning, Evening, Night ",
@@ -33,7 +33,7 @@
   },
   {
     "name": "Barred knifejaw",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_58_i.png",
+    "image": "/fish/Barred knifejaw.png",
     "season": "Mar - Nov",
     "location": "Sea",
     "time": "All day ",
@@ -41,7 +41,7 @@
   },
   {
     "name": "Barreleye",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_79_i.png",
+    "image": "/fish/Barreleye.png",
     "season": "All Year",
     "location": "Sea",
     "time": "9pm - 4am ",
@@ -49,7 +49,7 @@
   },
   {
     "name": "Betta",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_37_i.png",
+    "image": "/fish/Betta.png",
     "season": "May - Oct",
     "location": "River",
     "time": "9am - 4pm ",
@@ -57,7 +57,7 @@
   },
   {
     "name": "Bitterling",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_1_i.png",
+    "image": "/fish/Bitterling.png",
     "season": "Nov - Mar",
     "location": "River",
     "time": "All day ",
@@ -65,7 +65,7 @@
   },
   {
     "name": "Black bass",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_22_i.png",
+    "image": "/fish/Black bass.png",
     "season": "All Year",
     "location": "River",
     "time": "All day ",
@@ -73,7 +73,7 @@
   },
   {
     "name": "Blowfish",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_54_i.png",
+    "image": "/fish/Blowfish.png",
     "season": "Nov - Feb",
     "location": "Sea",
     "time": "9pm - 4am ",
@@ -81,7 +81,7 @@
   },
   {
     "name": "Blue marlin",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_67_i.png",
+    "image": "/fish/Blue marlin.png",
     "season": "Nov - Apr, July - Sept",
     "location": "Pier",
     "time": "All day ",
@@ -89,7 +89,7 @@
   },
   {
     "name": "Bluegill",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_20_i.png",
+    "image": "/fish/Bluegill.png",
     "season": "All Year",
     "location": "River",
     "time": "Afternoon ",
@@ -97,7 +97,7 @@
   },
   {
     "name": "Butterfly Fish",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_51_i.png",
+    "image": "/fish/Butterfly Fish.png",
     "season": "Apr - Sept",
     "location": "Sea",
     "time": "All day ",
@@ -105,7 +105,7 @@
   },
   {
     "name": "Carp",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_5_i.png",
+    "image": "/fish/Carp.png",
     "season": "All Year",
     "location": "Pond",
     "time": "All day ",
@@ -113,7 +113,7 @@
   },
   {
     "name": "Catfish",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_18_i.png",
+    "image": "/fish/Catfish.png",
     "season": "May - Oct",
     "location": "Pond",
     "time": "Morning, Evening, Night ",
@@ -121,7 +121,7 @@
   },
   {
     "name": "Char",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_28_i.png",
+    "image": "/fish/Char.png",
     "season": "Mar - June, Sept - Nov",
     "location": "River (Clifftop)",
     "time": "4pm - 9am ",
@@ -129,7 +129,7 @@
   },
   {
     "name": "Cherry salmon",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_27_i.png",
+    "image": "/fish/Cherry salmon.png",
     "season": "Mar - June, Sept - Nov",
     "location": "River (Clifftop)",
     "time": "4pm - 9am ",
@@ -137,7 +137,7 @@
   },
   {
     "name": "Clown fish",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_49_i.png",
+    "image": "/fish/Clown fish.png",
     "season": "Apr - Sept",
     "location": "Sea",
     "time": "All day ",
@@ -145,7 +145,7 @@
   },
   {
     "name": "Coelacanth",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_80_i.png",
+    "image": "/fish/Coelacanth.png",
     "season": "All Year",
     "location": "Sea",
     "time": "All day Rainy day",
@@ -153,7 +153,7 @@
   },
   {
     "name": "Crawfish",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_11_i.png",
+    "image": "/fish/Crawfish.png",
     "season": "Apr - Sept",
     "location": "Pond",
     "time": "All day ",
@@ -161,7 +161,7 @@
   },
   {
     "name": "Crucian carp",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_3_i.png",
+    "image": "/fish/Crucian carp.png",
     "season": "All Year",
     "location": "River",
     "time": "All day ",
@@ -169,7 +169,7 @@
   },
   {
     "name": "Dab",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_61_i.png",
+    "image": "/fish/Dab.png",
     "season": "Oct - Apr",
     "location": "Sea",
     "time": "All day ",
@@ -177,7 +177,7 @@
   },
   {
     "name": "Dace",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_4_i.png",
+    "image": "/fish/Dace.png",
     "season": "All Year",
     "location": "River",
     "time": "Morning, Evening, Night ",
@@ -185,7 +185,7 @@
   },
   {
     "name": "Dorado",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_42_i.png",
+    "image": "/fish/Dorado.png",
     "season": "June - Sept",
     "location": "River",
     "time": "4am - 9pm ",
@@ -193,7 +193,7 @@
   },
   {
     "name": "Football fish",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_77_i.png",
+    "image": "/fish/Football fish.png",
     "season": "Nov - Mar",
     "location": "Sea",
     "time": "4pm - 9pm ",
@@ -201,7 +201,7 @@
   },
   {
     "name": "Freshwater goby",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_16_i.png",
+    "image": "/fish/Freshwater goby.png",
     "season": "All Year",
     "location": "River",
     "time": "Morning, Evening, Night ",
@@ -209,7 +209,7 @@
   },
   {
     "name": "Frog",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_15_i.png",
+    "image": "/fish/Frog.png",
     "season": "Mar - Aug",
     "location": "Pond",
     "time": "All day",
@@ -217,7 +217,7 @@
   },
   {
     "name": "Gar",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_43_i.png",
+    "image": "/fish/Gar.png",
     "season": "June - Sept",
     "location": "Pond",
     "time": "Morning, Evening, Night ",
@@ -225,7 +225,7 @@
   },
   {
     "name": "Giant snakehead",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_19_i.png",
+    "image": "/fish/Giant snakehead.png",
     "season": "June - Aug",
     "location": "Pond",
     "time": "9am - 4pm ",
@@ -233,7 +233,7 @@
   },
   {
     "name": "Giant trevally",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_68_i.png",
+    "image": "/fish/Giant trevally.png",
     "season": "May - Oct",
     "location": "Pier",
     "time": "All day ",
@@ -241,7 +241,7 @@
   },
   {
     "name": "Golden trout",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_29_i.png",
+    "image": "/fish/Golden trout.png",
     "season": "Mar - May, Sept - Nov",
     "location": "River (Clifftop)",
     "time": "4pm - 9am ",
@@ -249,7 +249,7 @@
   },
   {
     "name": "Goldfish",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_7_i.png",
+    "image": "/fish/Goldfish.png",
     "season": "All Year",
     "location": "Pond",
     "time": "All day ",
@@ -257,7 +257,7 @@
   },
   {
     "name": "Great white shark",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_74_i.png",
+    "image": "/fish/Great white shark.png",
     "season": "June - Sept",
     "location": "Sea",
     "time": "Morning, Evening, Night ",
@@ -265,7 +265,7 @@
   },
   {
     "name": "Guppy",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_34_i.png",
+    "image": "/fish/Guppy.png",
     "season": "Apr - Nov",
     "location": "River",
     "time": "9am - 4pm ",
@@ -273,7 +273,7 @@
   },
   {
     "name": "Hammerhead shark",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_73_i.png",
+    "image": "/fish/Hammerhead shark.png",
     "season": "June - Sept",
     "location": "Sea",
     "time": "Morning, Evening, Night ",
@@ -281,7 +281,7 @@
   },
   {
     "name": "Horse mackerel",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_57_i.png",
+    "image": "/fish/Horse mackerel.png",
     "season": "All Year",
     "location": "Sea",
     "time": "All day ",
@@ -289,7 +289,7 @@
   },
   {
     "name": "Killifish",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_10_i.png",
+    "image": "/fish/Killifish.png",
     "season": "Apr - Aug",
     "location": "Pond",
     "time": "All day ",
@@ -297,7 +297,7 @@
   },
   {
     "name": "King salmon",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_32_i.png",
+    "image": "/fish/King salmon.png",
     "season": "Sept",
     "location": "River (Mouth)",
     "time": "All day ",
@@ -305,7 +305,7 @@
   },
   {
     "name": "Koi",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_6_i.png",
+    "image": "/fish/Koi.png",
     "season": "All Year",
     "location": "Pond",
     "time": "Morning, Evening, Night ",
@@ -313,7 +313,7 @@
   },
   {
     "name": "Loach",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_17_i.png",
+    "image": "/fish/Loach.png",
     "season": "Mar - May",
     "location": "River",
     "time": "All day",
@@ -321,7 +321,7 @@
   },
   {
     "name": "Mahi-mahi",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_69_i.png",
+    "image": "/fish/Mahi-mahi.png",
     "season": "May - Oct",
     "location": "Pier",
     "time": "All day",
@@ -329,7 +329,7 @@
   },
   {
     "name": "Mitten crab",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_33_i.png",
+    "image": "/fish/Mitten crab.png",
     "season": "Sept - Oct",
     "location": "River",
     "time": "Morning, Evening, Night ",
@@ -337,7 +337,7 @@
   },
   {
     "name": "Moray eel",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_64_i.png",
+    "image": "/fish/Moray eel.png",
     "season": "Aug - Oct",
     "location": "Sea",
     "time": "All day ",
@@ -345,7 +345,7 @@
   },
   {
     "name": "Napoleonfish",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_52_i.png",
+    "image": "/fish/Napoleonfish.png",
     "season": "July - Aug",
     "location": "Sea",
     "time": "4am - 9pm ",
@@ -353,7 +353,7 @@
   },
   {
     "name": "Neon tetra",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_38_i.png",
+    "image": "/fish/Neon tetra.png",
     "season": "Apr - Nov",
     "location": "River",
     "time": "9am - 4pm ",
@@ -361,7 +361,7 @@
   },
   {
     "name": "Nibble fish",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_35_i.png",
+    "image": "/fish/Nibble fish.png",
     "season": "May - Sept",
     "location": "River",
     "time": "9am - 4pm ",
@@ -369,7 +369,7 @@
   },
   {
     "name": "Oarfish",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_78_i.png",
+    "image": "/fish/Oarfish.png",
     "season": "Dec - May",
     "location": "Sea",
     "time": "All day ",
@@ -377,7 +377,7 @@
   },
   {
     "name": "Ocean sunfish",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_70_i.png",
+    "image": "/fish/Ocean sunfish.png",
     "season": "July - Sept",
     "location": "Sea",
     "time": "Morning, Afternoon, Evening ",
@@ -385,7 +385,7 @@
   },
   {
     "name": "Olive flounder",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_62_i.png",
+    "image": "/fish/Olive flounder.png",
     "season": "All Year",
     "location": "Sea",
     "time": "All day ",
@@ -393,7 +393,7 @@
   },
   {
     "name": "Pale chub",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_2_i.png",
+    "image": "/fish/Pale chub.png",
     "season": "All Year",
     "location": "River",
     "time": "Afternoon ",
@@ -401,7 +401,7 @@
   },
   {
     "name": "Pike",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_24_i.png",
+    "image": "/fish/Pike.png",
     "season": "Sept - Dec",
     "location": "River",
     "time": "All day ",
@@ -409,7 +409,7 @@
   },
   {
     "name": "Piranha",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_40_i.png",
+    "image": "/fish/Piranha.png",
     "season": "June - Sept",
     "location": "River",
     "time": "Afternoon, Night ",
@@ -417,7 +417,7 @@
   },
   {
     "name": "Pond smelt",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_25_i.png",
+    "image": "/fish/Pond smelt.png",
     "season": "Dec - Feb",
     "location": "River",
     "time": "All day",
@@ -425,7 +425,7 @@
   },
   {
     "name": "Pop-eyed goldfish",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_8_i.png",
+    "image": "/fish/Pop-eyed goldfish.png",
     "season": "All Year",
     "location": "Pond",
     "time": "Afternoon ",
@@ -433,7 +433,7 @@
   },
   {
     "name": "Puffer fish",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_55_i.png",
+    "image": "/fish/Puffer fish.png",
     "season": "July - Sept",
     "location": "Sea",
     "time": "All day ",
@@ -441,7 +441,7 @@
   },
   {
     "name": "Rainbowfish",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_39_i.png",
+    "image": "/fish/Rainbowfish.png",
     "season": "May - Oct",
     "location": "River",
     "time": "Afternoon ",
@@ -449,7 +449,7 @@
   },
   {
     "name": "Ranchu goldfish",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_9_i.png",
+    "image": "/fish/Ranchu goldfish.png",
     "season": "All Year",
     "location": "Pond",
     "time": "9am - 4pm ",
@@ -457,7 +457,7 @@
   },
   {
     "name": "Ray",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_71_i.png",
+    "image": "/fish/Ray.png",
     "season": "Aug - Nov",
     "location": "Sea",
     "time": "4am - 9pm ",
@@ -465,7 +465,7 @@
   },
   {
     "name": "Red Snapper",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_60_i.png",
+    "image": "/fish/Red Snapper.png",
     "season": "All Year",
     "location": "Sea",
     "time": "All day ",
@@ -473,7 +473,7 @@
   },
   {
     "name": "Ribbon eel",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_65_i.png",
+    "image": "/fish/Ribbon eel.png",
     "season": "June - Oct",
     "location": "Sea",
     "time": "All day ",
@@ -481,7 +481,7 @@
   },
   {
     "name": "Saddled bichir",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_45_i.png",
+    "image": "/fish/Saddled bichir.png",
     "season": "June - Sept",
     "location": "River",
     "time": "Night ",
@@ -489,7 +489,7 @@
   },
   {
     "name": "Salmon",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_31_i.png",
+    "image": "/fish/Salmon.png",
     "season": "Sept",
     "location": "River (Mouth)",
     "time": "All day ",
@@ -497,7 +497,7 @@
   },
   {
     "name": "Saw Shark",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_72_i.png",
+    "image": "/fish/Saw Shark.png",
     "season": "June - Sept",
     "location": "Sea",
     "time": "Morning, Evening, Night ",
@@ -505,7 +505,7 @@
   },
   {
     "name": "Sea bass",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_59_i.png",
+    "image": "/fish/Sea bass.png",
     "season": "All Year",
     "location": "Sea",
     "time": "All day ",
@@ -513,7 +513,7 @@
   },
   {
     "name": "Sea butterfly",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_47_i.png",
+    "image": "/fish/Sea butterfly.png",
     "season": "Dec - Mar",
     "location": "Sea",
     "time": "All day ",
@@ -521,7 +521,7 @@
   },
   {
     "name": "Sea horse",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_48_i.png",
+    "image": "/fish/Sea horse.png",
     "season": "Apr - Nov",
     "location": "Sea",
     "time": "All day ",
@@ -529,7 +529,7 @@
   },
   {
     "name": "Snapping turtle",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_13_i.png",
+    "image": "/fish/Snapping turtle.png",
     "season": "Apr - Oct",
     "location": "River",
     "time": "Night ",
@@ -537,7 +537,7 @@
   },
   {
     "name": "Soft-shelled turtle",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_12_i.png",
+    "image": "/fish/Soft-shelled turtle.png",
     "season": "Aug - Sept",
     "location": "River",
     "time": "Morning, Evening, Night ",
@@ -545,7 +545,7 @@
   },
   {
     "name": "Squid",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_63_i.png",
+    "image": "/fish/Squid.png",
     "season": "Dec - Aug",
     "location": "Sea",
     "time": "All day ",
@@ -553,7 +553,7 @@
   },
   {
     "name": "String fish",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_30_i.png",
+    "image": "/fish/String fish.png",
     "season": "Dec - Mar",
     "location": "River (Clifftop)",
     "time": "4pm - 9am ",
@@ -561,7 +561,7 @@
   },
   {
     "name": "Sturgeon",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_46_i.png",
+    "image": "/fish/Sturgeon.png",
     "season": "Sept - Mar",
     "location": "River (Mouth)",
     "time": "All day ",
@@ -569,7 +569,7 @@
   },
   {
     "name": "Suckerfish",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_76_i.png",
+    "image": "/fish/Suckerfish.png",
     "season": "June - Sept",
     "location": "Sea",
     "time": "All day ",
@@ -577,7 +577,7 @@
   },
   {
     "name": "Surgeonfish",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_50_i.png",
+    "image": "/fish/Surgeonfish.png",
     "season": "Apr - Sept",
     "location": "Sea",
     "time": "All day ",
@@ -585,7 +585,7 @@
   },
   {
     "name": "Sweetfsh",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_26_i.png",
+    "image": "/fish/Sweetfsh.png",
     "season": "July - Sept",
     "location": "River",
     "time": "All day ",
@@ -593,7 +593,7 @@
   },
   {
     "name": "Tadpole",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_14_i.png",
+    "image": "/fish/Tadpole.png",
     "season": "Mar - July",
     "location": "Pond",
     "time": "All day ",
@@ -601,7 +601,7 @@
   },
   {
     "name": "Tilapia",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_23_i.png",
+    "image": "/fish/Tilapia.png",
     "season": "June - Oct",
     "location": "River",
     "time": "All day ",
@@ -609,7 +609,7 @@
   },
   {
     "name": "Tuna",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_66_i.png",
+    "image": "/fish/Tuna.png",
     "season": "Nov - Apr",
     "location": "Pier",
     "time": "All day ",
@@ -617,7 +617,7 @@
   },
   {
     "name": "Whale shark",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_75_i.png",
+    "image": "/fish/Whale shark.png",
     "season": "June - Sept",
     "location": "Sea",
     "time": "All day ",
@@ -625,7 +625,7 @@
   },
   {
     "name": "Yellow perch",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_21_i.png",
+    "image": "/fish/Yellow perch.png",
     "season": "Oct - Mar",
     "location": "River",
     "time": "All day ",
@@ -633,7 +633,7 @@
   },
   {
     "name": "Zebra turkeyfish",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/sakana_53_i.png",
+    "image": "/fish/Zebra turkeyfish.png",
     "season": "Apr - Nov",
     "location": "Sea",
     "time": "All day ",

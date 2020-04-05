@@ -5,7 +5,7 @@
     </template>
     <template v-else>
       <div class="column">
-        <img :src="item.image" class="data-image" :alt="`Image of ${item.name}`" />
+        <img :src="getImgUrl(item.image)" class="data-image" :alt="`Image of ${item.name}`" />
         <div :class="caught[displayData].includes(item.name) ? 'x active' : 'x inactive'">X</div>
       </div>
     </template>
@@ -80,6 +80,9 @@ export default {
         store.commit("storeInsect", this.item.name);
       }
       store.dispatch("storeData");
+    },
+    getImgUrl(img) {
+      return require("../assets" + img);
     }
   },
   computed: {

@@ -42,6 +42,10 @@ export default {
       type: Object
     }
   },
+  mounted() {
+    window.fish = Fish;
+    window.insects = Insects;
+  },
   methods: {
     sortByValue() {
       if (this.sorting === "value") {
