@@ -43,7 +43,7 @@
       </label>
       <div v-if="showSuccess && !showCode" class="import-code">Successfully imported!</div>
     </div>
-    <div v-if="showFeedback" class="feedback" :class="feedbackOpenClose">
+    <!--<div v-if="showFeedback" class="feedback" :class="feedbackOpenClose">
       <div class="fullwidth-container">
         <div class="custom-button mini" @click="toggleFeedback">Feedback</div>
       </div>
@@ -63,7 +63,7 @@
         </label>
         <button type="submit" class="custom-button mini">Send</button>
       </form>
-    </div>
+    </div>-->
   </div>
 </template>
 <script>
