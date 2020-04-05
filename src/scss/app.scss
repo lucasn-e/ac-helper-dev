@@ -14,7 +14,7 @@
   justify-content: center;
 }
 #app {
-  background-image: url(~@/assets/bg.png); 
+  background-image: url(~@/assets/bg.jpg); 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top;
@@ -25,7 +25,7 @@
   text-align: center;
   color: #2c3e50;
   @media screen and (max-width: 767px) {
-    background-image: url(~@/assets/mobile_bg.png);
+    background-image: url(~@/assets/mobile_bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top;

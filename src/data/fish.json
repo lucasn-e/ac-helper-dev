@@ -1,7 +1,7 @@
 [
   {
     "name": "Anchovy",
-    "image": "/fish/Anchovy.png",
+    "image": "/fish/jpg/Anchovy.jpg",
     "season": "All Year",
     "location": "Sea",
     "time": "Morning, Afternoon, Evening ",
@@ -9,7 +9,7 @@
   },
   {
     "name": "Angelfish",
-    "image": "/fish/Angelfish.png",
+    "image": "/fish/jpg/Angelfish.jpg",
     "season": "May - Oct",
     "location": "River",
     "time": "Morning, Evening, Night ",
@@ -17,7 +17,7 @@
   },
   {
     "name": "Arapaima",
-    "image": "/fish/Arapaima.png",
+    "image": "/fish/jpg/Arapaima.jpg",
     "season": "June - Sept",
     "location": "River",
     "time": "Morning, Evening, Night ",
@@ -25,7 +25,7 @@
   },
   {
     "name": "Arowana",
-    "image": "/fish/Arowana.png",
+    "image": "/fish/jpg/Arowana.jpg",
     "season": "June - Sept",
     "location": "River",
     "time": "Morning, Evening, Night ",
@@ -33,7 +33,7 @@
   },
   {
     "name": "Barred knifejaw",
-    "image": "/fish/Barred knifejaw.png",
+    "image": "/fish/jpg/Barred knifejaw.jpg",
     "season": "Mar - Nov",
     "location": "Sea",
     "time": "All day ",
@@ -41,7 +41,7 @@
   },
   {
     "name": "Barreleye",
-    "image": "/fish/Barreleye.png",
+    "image": "/fish/jpg/Barreleye.jpg",
     "season": "All Year",
     "location": "Sea",
     "time": "9pm - 4am ",
@@ -49,7 +49,7 @@
   },
   {
     "name": "Betta",
-    "image": "/fish/Betta.png",
+    "image": "/fish/jpg/Betta.jpg",
     "season": "May - Oct",
     "location": "River",
     "time": "9am - 4pm ",
@@ -57,7 +57,7 @@
   },
   {
     "name": "Bitterling",
-    "image": "/fish/Bitterling.png",
+    "image": "/fish/jpg/Bitterling.jpg",
     "season": "Nov - Mar",
     "location": "River",
     "time": "All day ",
@@ -65,7 +65,7 @@
   },
   {
     "name": "Black bass",
-    "image": "/fish/Black bass.png",
+    "image": "/fish/jpg/Black bass.jpg",
     "season": "All Year",
     "location": "River",
     "time": "All day ",
@@ -73,7 +73,7 @@
   },
   {
     "name": "Blowfish",
-    "image": "/fish/Blowfish.png",
+    "image": "/fish/jpg/Blowfish.jpg",
     "season": "Nov - Feb",
     "location": "Sea",
     "time": "9pm - 4am ",
@@ -81,7 +81,7 @@
   },
   {
     "name": "Blue marlin",
-    "image": "/fish/Blue marlin.png",
+    "image": "/fish/jpg/Blue marlin.jpg",
     "season": "Nov - Apr, July - Sept",
     "location": "Pier",
     "time": "All day ",
@@ -89,7 +89,7 @@
   },
   {
     "name": "Bluegill",
-    "image": "/fish/Bluegill.png",
+    "image": "/fish/jpg/Bluegill.jpg",
     "season": "All Year",
     "location": "River",
     "time": "Afternoon ",
@@ -97,7 +97,7 @@
   },
   {
     "name": "Butterfly Fish",
-    "image": "/fish/Butterfly Fish.png",
+    "image": "/fish/jpg/Butterfly Fish.jpg",
     "season": "Apr - Sept",
     "location": "Sea",
     "time": "All day ",
@@ -105,7 +105,7 @@
   },
   {
     "name": "Carp",
-    "image": "/fish/Carp.png",
+    "image": "/fish/jpg/Carp.jpg",
     "season": "All Year",
     "location": "Pond",
     "time": "All day ",
@@ -113,7 +113,7 @@
   },
   {
     "name": "Catfish",
-    "image": "/fish/Catfish.png",
+    "image": "/fish/jpg/Catfish.jpg",
     "season": "May - Oct",
     "location": "Pond",
     "time": "Morning, Evening, Night ",
@@ -121,7 +121,7 @@
   },
   {
     "name": "Char",
-    "image": "/fish/Char.png",
+    "image": "/fish/jpg/Char.jpg",
     "season": "Mar - June, Sept - Nov",
     "location": "River (Clifftop)",
     "time": "4pm - 9am ",
@@ -129,7 +129,7 @@
   },
   {
     "name": "Cherry salmon",
-    "image": "/fish/Cherry salmon.png",
+    "image": "/fish/jpg/Cherry salmon.jpg",
     "season": "Mar - June, Sept - Nov",
     "location": "River (Clifftop)",
     "time": "4pm - 9am ",
@@ -137,7 +137,7 @@
   },
   {
     "name": "Clown fish",
-    "image": "/fish/Clown fish.png",
+    "image": "/fish/jpg/Clown fish.jpg",
     "season": "Apr - Sept",
     "location": "Sea",
     "time": "All day ",
@@ -145,7 +145,7 @@
   },
   {
     "name": "Coelacanth",
-    "image": "/fish/Coelacanth.png",
+    "image": "/fish/jpg/Coelacanth.jpg",
     "season": "All Year",
     "location": "Sea",
     "time": "All day Rainy day",
@@ -153,7 +153,7 @@
   },
   {
     "name": "Crawfish",
-    "image": "/fish/Crawfish.png",
+    "image": "/fish/jpg/Crawfish.jpg",
     "season": "Apr - Sept",
     "location": "Pond",
     "time": "All day ",
@@ -161,7 +161,7 @@
   },
   {
     "name": "Crucian carp",
-    "image": "/fish/Crucian carp.png",
+    "image": "/fish/jpg/Crucian carp.jpg",
     "season": "All Year",
     "location": "River",
     "time": "All day ",
@@ -169,7 +169,7 @@
   },
   {
     "name": "Dab",
-    "image": "/fish/Dab.png",
+    "image": "/fish/jpg/Dab.jpg",
     "season": "Oct - Apr",
     "location": "Sea",
     "time": "All day ",
@@ -177,7 +177,7 @@
   },
   {
     "name": "Dace",
-    "image": "/fish/Dace.png",
+    "image": "/fish/jpg/Dace.jpg",
     "season": "All Year",
     "location": "River",
     "time": "Morning, Evening, Night ",
@@ -185,7 +185,7 @@
   },
   {
     "name": "Dorado",
-    "image": "/fish/Dorado.png",
+    "image": "/fish/jpg/Dorado.jpg",
     "season": "June - Sept",
     "location": "River",
     "time": "4am - 9pm ",
@@ -193,7 +193,7 @@
   },
   {
     "name": "Football fish",
-    "image": "/fish/Football fish.png",
+    "image": "/fish/jpg/Football fish.jpg",
     "season": "Nov - Mar",
     "location": "Sea",
     "time": "4pm - 9pm ",
@@ -201,7 +201,7 @@
   },
   {
     "name": "Freshwater goby",
-    "image": "/fish/Freshwater goby.png",
+    "image": "/fish/jpg/Freshwater goby.jpg",
     "season": "All Year",
     "location": "River",
     "time": "Morning, Evening, Night ",
@@ -209,7 +209,7 @@
   },
   {
     "name": "Frog",
-    "image": "/fish/Frog.png",
+    "image": "/fish/jpg/Frog.jpg",
     "season": "Mar - Aug",
     "location": "Pond",
     "time": "All day",
@@ -217,7 +217,7 @@
   },
   {
     "name": "Gar",
-    "image": "/fish/Gar.png",
+    "image": "/fish/jpg/Gar.jpg",
     "season": "June - Sept",
     "location": "Pond",
     "time": "Morning, Evening, Night ",
@@ -225,7 +225,7 @@
   },
   {
     "name": "Giant snakehead",
-    "image": "/fish/Giant snakehead.png",
+    "image": "/fish/jpg/Giant snakehead.jpg",
     "season": "June - Aug",
     "location": "Pond",
     "time": "9am - 4pm ",
@@ -233,7 +233,7 @@
   },
   {
     "name": "Giant trevally",
-    "image": "/fish/Giant trevally.png",
+    "image": "/fish/jpg/Giant trevally.jpg",
     "season": "May - Oct",
     "location": "Pier",
     "time": "All day ",
@@ -241,7 +241,7 @@
   },
   {
     "name": "Golden trout",
-    "image": "/fish/Golden trout.png",
+    "image": "/fish/jpg/Golden trout.jpg",
     "season": "Mar - May, Sept - Nov",
     "location": "River (Clifftop)",
     "time": "4pm - 9am ",
@@ -249,7 +249,7 @@
   },
   {
     "name": "Goldfish",
-    "image": "/fish/Goldfish.png",
+    "image": "/fish/jpg/Goldfish.jpg",
     "season": "All Year",
     "location": "Pond",
     "time": "All day ",
@@ -257,7 +257,7 @@
   },
   {
     "name": "Great white shark",
-    "image": "/fish/Great white shark.png",
+    "image": "/fish/jpg/Great white shark.jpg",
     "season": "June - Sept",
     "location": "Sea",
     "time": "Morning, Evening, Night ",
@@ -265,7 +265,7 @@
   },
   {
     "name": "Guppy",
-    "image": "/fish/Guppy.png",
+    "image": "/fish/jpg/Guppy.jpg",
     "season": "Apr - Nov",
     "location": "River",
     "time": "9am - 4pm ",
@@ -273,7 +273,7 @@
   },
   {
     "name": "Hammerhead shark",
-    "image": "/fish/Hammerhead shark.png",
+    "image": "/fish/jpg/Hammerhead shark.jpg",
     "season": "June - Sept",
     "location": "Sea",
     "time": "Morning, Evening, Night ",
@@ -281,7 +281,7 @@
   },
   {
     "name": "Horse mackerel",
-    "image": "/fish/Horse mackerel.png",
+    "image": "/fish/jpg/Horse mackerel.jpg",
     "season": "All Year",
     "location": "Sea",
     "time": "All day ",
@@ -289,7 +289,7 @@
   },
   {
     "name": "Killifish",
-    "image": "/fish/Killifish.png",
+    "image": "/fish/jpg/Killifish.jpg",
     "season": "Apr - Aug",
     "location": "Pond",
     "time": "All day ",
@@ -297,7 +297,7 @@
   },
   {
     "name": "King salmon",
-    "image": "/fish/King salmon.png",
+    "image": "/fish/jpg/King salmon.jpg",
     "season": "Sept",
     "location": "River (Mouth)",
     "time": "All day ",
@@ -305,7 +305,7 @@
   },
   {
     "name": "Koi",
-    "image": "/fish/Koi.png",
+    "image": "/fish/jpg/Koi.jpg",
     "season": "All Year",
     "location": "Pond",
     "time": "Morning, Evening, Night ",
@@ -313,7 +313,7 @@
   },
   {
     "name": "Loach",
-    "image": "/fish/Loach.png",
+    "image": "/fish/jpg/Loach.jpg",
     "season": "Mar - May",
     "location": "River",
     "time": "All day",
@@ -321,7 +321,7 @@
   },
   {
     "name": "Mahi-mahi",
-    "image": "/fish/Mahi-mahi.png",
+    "image": "/fish/jpg/Mahi-mahi.jpg",
     "season": "May - Oct",
     "location": "Pier",
     "time": "All day",
@@ -329,7 +329,7 @@
   },
   {
     "name": "Mitten crab",
-    "image": "/fish/Mitten crab.png",
+    "image": "/fish/jpg/Mitten crab.jpg",
     "season": "Sept - Oct",
     "location": "River",
     "time": "Morning, Evening, Night ",
@@ -337,7 +337,7 @@
   },
   {
     "name": "Moray eel",
-    "image": "/fish/Moray eel.png",
+    "image": "/fish/jpg/Moray eel.jpg",
     "season": "Aug - Oct",
     "location": "Sea",
     "time": "All day ",
@@ -345,7 +345,7 @@
   },
   {
     "name": "Napoleonfish",
-    "image": "/fish/Napoleonfish.png",
+    "image": "/fish/jpg/Napoleonfish.jpg",
     "season": "July - Aug",
     "location": "Sea",
     "time": "4am - 9pm ",
@@ -353,7 +353,7 @@
   },
   {
     "name": "Neon tetra",
-    "image": "/fish/Neon tetra.png",
+    "image": "/fish/jpg/Neon tetra.jpg",
     "season": "Apr - Nov",
     "location": "River",
     "time": "9am - 4pm ",
@@ -361,7 +361,7 @@
   },
   {
     "name": "Nibble fish",
-    "image": "/fish/Nibble fish.png",
+    "image": "/fish/jpg/Nibble fish.jpg",
     "season": "May - Sept",
     "location": "River",
     "time": "9am - 4pm ",
@@ -369,7 +369,7 @@
   },
   {
     "name": "Oarfish",
-    "image": "/fish/Oarfish.png",
+    "image": "/fish/jpg/Oarfish.jpg",
     "season": "Dec - May",
     "location": "Sea",
     "time": "All day ",
@@ -377,7 +377,7 @@
   },
   {
     "name": "Ocean sunfish",
-    "image": "/fish/Ocean sunfish.png",
+    "image": "/fish/jpg/Ocean sunfish.jpg",
     "season": "July - Sept",
     "location": "Sea",
     "time": "Morning, Afternoon, Evening ",
@@ -385,7 +385,7 @@
   },
   {
     "name": "Olive flounder",
-    "image": "/fish/Olive flounder.png",
+    "image": "/fish/jpg/Olive flounder.jpg",
     "season": "All Year",
     "location": "Sea",
     "time": "All day ",
@@ -393,7 +393,7 @@
   },
   {
     "name": "Pale chub",
-    "image": "/fish/Pale chub.png",
+    "image": "/fish/jpg/Pale chub.jpg",
     "season": "All Year",
     "location": "River",
     "time": "Afternoon ",
@@ -401,7 +401,7 @@
   },
   {
     "name": "Pike",
-    "image": "/fish/Pike.png",
+    "image": "/fish/jpg/Pike.jpg",
     "season": "Sept - Dec",
     "location": "River",
     "time": "All day ",
@@ -409,7 +409,7 @@
   },
   {
     "name": "Piranha",
-    "image": "/fish/Piranha.png",
+    "image": "/fish/jpg/Piranha.jpg",
     "season": "June - Sept",
     "location": "River",
     "time": "Afternoon, Night ",
@@ -417,7 +417,7 @@
   },
   {
     "name": "Pond smelt",
-    "image": "/fish/Pond smelt.png",
+    "image": "/fish/jpg/Pond smelt.jpg",
     "season": "Dec - Feb",
     "location": "River",
     "time": "All day",
@@ -425,7 +425,7 @@
   },
   {
     "name": "Pop-eyed goldfish",
-    "image": "/fish/Pop-eyed goldfish.png",
+    "image": "/fish/jpg/Pop-eyed goldfish.jpg",
     "season": "All Year",
     "location": "Pond",
     "time": "Afternoon ",
@@ -433,7 +433,7 @@
   },
   {
     "name": "Puffer fish",
-    "image": "/fish/Puffer fish.png",
+    "image": "/fish/jpg/Puffer fish.jpg",
     "season": "July - Sept",
     "location": "Sea",
     "time": "All day ",
@@ -441,7 +441,7 @@
   },
   {
     "name": "Rainbowfish",
-    "image": "/fish/Rainbowfish.png",
+    "image": "/fish/jpg/Rainbowfish.jpg",
     "season": "May - Oct",
     "location": "River",
     "time": "Afternoon ",
@@ -449,7 +449,7 @@
   },
   {
     "name": "Ranchu goldfish",
-    "image": "/fish/Ranchu goldfish.png",
+    "image": "/fish/jpg/Ranchu goldfish.jpg",
     "season": "All Year",
     "location": "Pond",
     "time": "9am - 4pm ",
@@ -457,7 +457,7 @@
   },
   {
     "name": "Ray",
-    "image": "/fish/Ray.png",
+    "image": "/fish/jpg/Ray.jpg",
     "season": "Aug - Nov",
     "location": "Sea",
     "time": "4am - 9pm ",
@@ -465,7 +465,7 @@
   },
   {
     "name": "Red Snapper",
-    "image": "/fish/Red Snapper.png",
+    "image": "/fish/jpg/Red Snapper.jpg",
     "season": "All Year",
     "location": "Sea",
     "time": "All day ",
@@ -473,7 +473,7 @@
   },
   {
     "name": "Ribbon eel",
-    "image": "/fish/Ribbon eel.png",
+    "image": "/fish/jpg/Ribbon eel.jpg",
     "season": "June - Oct",
     "location": "Sea",
     "time": "All day ",
@@ -481,7 +481,7 @@
   },
   {
     "name": "Saddled bichir",
-    "image": "/fish/Saddled bichir.png",
+    "image": "/fish/jpg/Saddled bichir.jpg",
     "season": "June - Sept",
     "location": "River",
     "time": "Night ",
@@ -489,7 +489,7 @@
   },
   {
     "name": "Salmon",
-    "image": "/fish/Salmon.png",
+    "image": "/fish/jpg/Salmon.jpg",
     "season": "Sept",
     "location": "River (Mouth)",
     "time": "All day ",
@@ -497,7 +497,7 @@
   },
   {
     "name": "Saw Shark",
-    "image": "/fish/Saw Shark.png",
+    "image": "/fish/jpg/Saw Shark.jpg",
     "season": "June - Sept",
     "location": "Sea",
     "time": "Morning, Evening, Night ",
@@ -505,7 +505,7 @@
   },
   {
     "name": "Sea bass",
-    "image": "/fish/Sea bass.png",
+    "image": "/fish/jpg/Sea bass.jpg",
     "season": "All Year",
     "location": "Sea",
     "time": "All day ",
@@ -513,7 +513,7 @@
   },
   {
     "name": "Sea butterfly",
-    "image": "/fish/Sea butterfly.png",
+    "image": "/fish/jpg/Sea butterfly.jpg",
     "season": "Dec - Mar",
     "location": "Sea",
     "time": "All day ",
@@ -521,7 +521,7 @@
   },
   {
     "name": "Sea horse",
-    "image": "/fish/Sea horse.png",
+    "image": "/fish/jpg/Sea horse.jpg",
     "season": "Apr - Nov",
     "location": "Sea",
     "time": "All day ",
@@ -529,7 +529,7 @@
   },
   {
     "name": "Snapping turtle",
-    "image": "/fish/Snapping turtle.png",
+    "image": "/fish/jpg/Snapping turtle.jpg",
     "season": "Apr - Oct",
     "location": "River",
     "time": "Night ",
@@ -537,7 +537,7 @@
   },
   {
     "name": "Soft-shelled turtle",
-    "image": "/fish/Soft-shelled turtle.png",
+    "image": "/fish/jpg/Soft-shelled turtle.jpg",
     "season": "Aug - Sept",
     "location": "River",
     "time": "Morning, Evening, Night ",
@@ -545,7 +545,7 @@
   },
   {
     "name": "Squid",
-    "image": "/fish/Squid.png",
+    "image": "/fish/jpg/Squid.jpg",
     "season": "Dec - Aug",
     "location": "Sea",
     "time": "All day ",
@@ -553,7 +553,7 @@
   },
   {
     "name": "String fish",
-    "image": "/fish/String fish.png",
+    "image": "/fish/jpg/String fish.jpg",
     "season": "Dec - Mar",
     "location": "River (Clifftop)",
     "time": "4pm - 9am ",
@@ -561,7 +561,7 @@
   },
   {
     "name": "Sturgeon",
-    "image": "/fish/Sturgeon.png",
+    "image": "/fish/jpg/Sturgeon.jpg",
     "season": "Sept - Mar",
     "location": "River (Mouth)",
     "time": "All day ",
@@ -569,7 +569,7 @@
   },
   {
     "name": "Suckerfish",
-    "image": "/fish/Suckerfish.png",
+    "image": "/fish/jpg/Suckerfish.jpg",
     "season": "June - Sept",
     "location": "Sea",
     "time": "All day ",
@@ -577,7 +577,7 @@
   },
   {
     "name": "Surgeonfish",
-    "image": "/fish/Surgeonfish.png",
+    "image": "/fish/jpg/Surgeonfish.jpg",
     "season": "Apr - Sept",
     "location": "Sea",
     "time": "All day ",
@@ -585,7 +585,7 @@
   },
   {
     "name": "Sweetfsh",
-    "image": "/fish/Sweetfsh.png",
+    "image": "/fish/jpg/Sweetfsh.jpg",
     "season": "July - Sept",
     "location": "River",
     "time": "All day ",
@@ -593,7 +593,7 @@
   },
   {
     "name": "Tadpole",
-    "image": "/fish/Tadpole.png",
+    "image": "/fish/jpg/Tadpole.jpg",
     "season": "Mar - July",
     "location": "Pond",
     "time": "All day ",
@@ -601,7 +601,7 @@
   },
   {
     "name": "Tilapia",
-    "image": "/fish/Tilapia.png",
+    "image": "/fish/jpg/Tilapia.jpg",
     "season": "June - Oct",
     "location": "River",
     "time": "All day ",
@@ -609,7 +609,7 @@
   },
   {
     "name": "Tuna",
-    "image": "/fish/Tuna.png",
+    "image": "/fish/jpg/Tuna.jpg",
     "season": "Nov - Apr",
     "location": "Pier",
     "time": "All day ",
@@ -617,7 +617,7 @@
   },
   {
     "name": "Whale shark",
-    "image": "/fish/Whale shark.png",
+    "image": "/fish/jpg/Whale shark.jpg",
     "season": "June - Sept",
     "location": "Sea",
     "time": "All day ",
@@ -625,7 +625,7 @@
   },
   {
     "name": "Yellow perch",
-    "image": "/fish/Yellow perch.png",
+    "image": "/fish/jpg/Yellow perch.jpg",
     "season": "Oct - Mar",
     "location": "River",
     "time": "All day ",
@@ -633,7 +633,7 @@
   },
   {
     "name": "Zebra turkeyfish",
-    "image": "/fish/Zebra turkeyfish.png",
+    "image": "/fish/jpg/Zebra turkeyfish.jpg",
     "season": "Apr - Nov",
     "location": "Sea",
     "time": "All day ",
