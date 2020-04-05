@@ -3,7 +3,7 @@
     made by Nnay (@acnnay on instagram || Nnay#8093 on discord) - data used from gamewith.net
     <br />I am very lazy so please be patient or send me messages to encourage me to continue.
     <a
-      href="https://discord.gg/G8mqHk"
+      href="https://discord.gg/84EsCJz"
     >Join the Discord!</a>
   </div>
 </template>
