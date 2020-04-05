@@ -4,6 +4,7 @@
       <h3>Golden Axe</h3>
       <p v-if="counts.axeCount < 100">Break 100 axes of any kind to unlock. Track your status!</p>
       <p v-else>Congrats on breaking 100 axes and earning the golden axe!</p>
+      <ProgressBar :current="parseInt(counts.axeCount)" :max="100" />
       <div class="controls-container">
         <div class="reduce-btn btn" @click="decrement('axeCount')">-</div>
         <label for="broken-axe-count"></label>
@@ -24,6 +25,7 @@
         v-if="counts.shovelCount < 30"
       >Save Gulliver 30 times to receive the DIY recipe! Track your status!</p>
       <p v-else>Congrats on saving Gulliver 30 times and earning the golden shovel!</p>
+      <ProgressBar :current="parseInt(counts.shovelCount)" :max="30" />
       <div class="controls-container">
         <div class="reduce-btn btn" @click="decrement('shovelCount')">-</div>
         <label for="broken-shovel-count"></label>
@@ -43,6 +45,7 @@
       <h3>Golden Watering Can</h3>
       <p v-if="counts.wateringcanCount < 5">Reach a 5* Rating at Isabelle! Track your stars!</p>
       <p v-else>Congrats on reaching a 5* island rating and earning the golden watering can!</p>
+      <ProgressBar :current="parseInt(counts.wateringcanCount)" :max="5" />
       <div class="controls-container">
         <div class="reduce-btn btn" @click="decrement('wateringcanCount')">-</div>
         <label for="broken-shovel-count"></label>
@@ -64,6 +67,7 @@
         v-if="counts.balloonCount < 300"
       >Shoot down 300 Balloons ("It's raining treasure" achievement)! Track your status!</p>
       <p v-else>Congrats on shooting down 300 balloons and earning the golden slingshot!</p>
+      <ProgressBar :current="parseInt(counts.balloonCount)" :max="300" />
       <div class="controls-container">
         <div class="reduce-btn btn" @click="decrement('balloonCount')">-</div>
         <label for="balloon-count"></label>
@@ -83,12 +87,14 @@
       <h3>Golden Fishing Rod</h3>
       <p v-if="caught.fish.length < 80">Catch all Fish! Track your status!</p>
       <p v-else>Congrats on catching all the fish!</p>
+      <ProgressBar :current="caught.fish.length" :max="80" />
       <div class="controls-container">{{ caught.fish.length }} / 80</div>
     </div>
     <div class="golden-tool">
       <h3>Golden Bug Net</h3>
       <p v-if="caught.insects.length < 80">Catch all Bugs! Track your status!</p>
       <p v-else>Congrats on catching all bugs!</p>
+      <ProgressBar :current="caught.insects.length" :max="80" />
       <div class="controls-container">{{ caught.insects.length }} / 80</div>
     </div>
     <div v-if="finished" class="button-container">
@@ -98,6 +104,7 @@
 </template>
 <script>
 import { mapState } from "vuex";
+import ProgressBar from "./ProgressBar.vue";
 
 export default {
   data() {
@@ -109,6 +116,9 @@ export default {
         ["wateringcanCount"]: localStorage.getItem("wateringcanCount") || 0
       }
     };
+  },
+  components: {
+    ProgressBar
   },
   computed: {
     finished() {
