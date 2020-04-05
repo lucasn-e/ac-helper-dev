@@ -37,7 +37,6 @@ export default {
       default: "#a1de93"
     }
   },
-  methods: {},
   computed: {
     percentage() {
       return Math.floor((parseInt(this.current) / parseInt(this.max)) * 100);

@@ -6,7 +6,7 @@
         <div class="filter">
           <label for="search">Search:&nbsp;</label>
           <input name="search" id="search" type="text" class="filter-input" v-model="filterValue" />
-          <div class="result-count" v-if="filterValue.length > 0">{{ count }} Results</div>
+          <div class="result-count" v-if="filterValue.length > 0">{{ count.length }} Results</div>
         </div>
         <div class="sortby">
           Sort by:
