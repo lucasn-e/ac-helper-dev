@@ -3,8 +3,8 @@
     <div class="nook-phone-container">
       <div class="time-bar">{{ datenow }}</div>
       <div class="arrow-down" @click="scrollDown"></div>
-      <div class="control-bar" @click="toggleFeedback">
-        <div class="arrow-back" v-if="page === 2"></div>
+      <div class="control-bar">
+        <div class="arrow-back" @click="toggleFeedback" v-if="page === 2"></div>
         <h3 v-if="page === 1">{{ mobileChoice | capitalize }}</h3>
         <h3 v-if="page === 2">Feedback</h3>
       </div>
