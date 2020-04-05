@@ -30,6 +30,16 @@
             :class="activeMonth == index ? 'jumpto-link active' : 'jumpto-link'"
           >{{ month }}</div>
         </div>
+        <div class="hide-caught-uncaught-container">
+          <div class="custom-button large" @click="toggleHideCaught">
+            <div v-if="!hideCaught">Hide Caught</div>
+            <div v-else>Show Caught</div>
+          </div>
+          <div class="custom-button large" @click="toggleHideUncaught">
+            <div v-if="!hideUncaught">Hide Uncaught</div>
+            <div v-else>Show Uncaught</div>
+          </div>
+        </div>
       </template>
       <template v-else>
         <template v-if="!!finished">CONGRATULATIONS!</template>
@@ -91,9 +101,15 @@ export default {
         months: this.months
       };
     },
-    ...mapState(["sortType", "displayData"])
+    ...mapState(["sortType", "displayData", "hideCaught", "hideUncaught"])
   },
   methods: {
+    toggleHideCaught() {
+      store.commit("toggleHideCaught");
+    },
+    toggleHideUncaught() {
+      store.commit("toggleHideUncaught");
+    },
     handleFinished(value) {
       this.finished = value;
     },

@@ -7,12 +7,22 @@ const store = new Vuex.Store({
   state: {
     displayData: 'fish',
     sortType: 'name',
+    hideCaught: false,
+    hideUncaught: false,
     caught: {
       fish: [],
       insects: []
     }
   },
   mutations: {
+    toggleHideCaught(state) {
+      state.hideCaught = !state.hideCaught;
+      if (!!state.hideCaught) state.hideUncaught = false;
+    },
+    toggleHideUncaught(state) {
+      state.hideUncaught = !state.hideUncaught;
+      if (!!state.hideUncaught) state.hideCaught = false;
+    },
     assignDisplayData(state, data) {
       state.displayData = data;
     },

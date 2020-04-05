@@ -1,5 +1,5 @@
 <template>
-  <div class="listitem" :class="listItemClass" @click="setCaptured">
+  <div v-if="!shouldHide" class="listitem" :class="listItemClass" @click="setCaptured">
     <template v-if="!!header">
       <div class="column head">{{ item.captured }}</div>
     </template>
@@ -86,6 +86,21 @@ export default {
     }
   },
   computed: {
+    shouldHide() {
+      if (
+        !!this.hideCaught &&
+        this.caught[this.displayData].includes(this.item.name)
+      ) {
+        return true;
+      } else if (
+        !!this.hideUncaught &&
+        !this.caught[this.displayData].includes(this.item.name)
+      ) {
+        return true;
+      } else {
+        return false;
+      }
+    },
     listItemClass() {
       let className = "";
       if (this.sortType === "month" && this.header) {
@@ -98,7 +113,7 @@ export default {
     sortType() {
       return store.state.sortType;
     },
-    ...mapState(["displayData", "caught"])
+    ...mapState(["displayData", "caught", "hideCaught", "hideUncaught"])
   }
 };
 </script>

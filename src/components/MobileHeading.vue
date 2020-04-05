@@ -3,6 +3,11 @@
     <div class="nook-phone-container">
       <div class="time-bar">{{ datenow }}</div>
       <div class="arrow-down" @click="scrollDown"></div>
+      <div
+        class="error"
+        v-if="importError"
+      >Error: no import code entered! Please enter your import code in the text field before pressing "Import Data"!</div>
+      <div class="error" v-if="exportError">Error: you have no saved data to export!</div>
       <div class="control-bar">
         <div class="arrow-back" @click="toggleFeedback" v-if="page === 2"></div>
         <h3 v-if="page === 1">{{ mobileChoice | capitalize }}</h3>
@@ -59,11 +64,6 @@
             <img class="icon-image imexport-image" src="~@/assets/feedback_icon.png" />
           </div>
         </div>
-        <div
-          class="error"
-          v-if="importError"
-        >Error: no import code entered! Please enter your import code in the text field before pressing "Import Data"!</div>
-        <div class="error" v-if="exportError">Error: you have no saved data to export!</div>
       </div>
 
       <label
@@ -138,6 +138,11 @@ export default {
   watch: {
     choice(val) {
       this.mobileChoice = val;
+    },
+    importExport(val) {
+      if (val.length > 0) {
+        this.importExportData = val;
+      }
     }
   },
   methods: {

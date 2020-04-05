@@ -130,6 +130,14 @@ h3 {
   transition: 0.25s;
   position: relative;
   user-select: none;
+  &.large {
+    width: 115px;
+    height: 45px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   &.mini {
     padding: 10px 0;
     width: 25%;
@@ -270,6 +278,19 @@ button.custom-button.mini {
   background-color: #fff;
   border-radius: 22px;
   transition: .125s;
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    opacity: 1;
+    transform: translateX(-50%);
+    animation: fadeout .5s forwards;
+    animation-delay: 1.5s;
+  }
+}
+@keyframes fadeout {
+  from {opacity: 1}
+  to {opacity: 0}
 }
 .feedback {
   display: flex;
@@ -368,6 +389,11 @@ button.custom-button.mini {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+.hide-caught-uncaught-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 .table-container {
   min-width: 100%;

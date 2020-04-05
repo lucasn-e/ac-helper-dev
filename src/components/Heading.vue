@@ -61,15 +61,38 @@ export default {
   mounted() {
     this.isMobile = mobileCheck();
   },
+  watch: {
+    importError(val) {
+      if (!!val) {
+        setTimeout(() => {
+          this.importError = false;
+        }, 2000);
+      }
+    },
+    exportError(val) {
+      if (!!val) {
+        setTimeout(() => {
+          this.exportError = false;
+        }, 2000);
+      }
+    }
+  },
   methods: {
     choose(data) {
+      this.importError = false;
+      this.exportError = false;
+      this.importExportActive = false;
       store.commit("assignDisplayData", data);
       store.dispatch("storeSelection");
     },
     toggleFeedback() {
+      this.importError = false;
+      this.exportError = false;
       this.feedbackOpenClose = this.feedbackOpenClose.length > 0 ? "" : "open";
     },
     handleExport() {
+      this.importError = false;
+      this.exportError = false;
       this.importExportActive = true;
       const isOldData = localStorage.getItem("myfishies");
       const pattern = /([a-z])([A-Z])/g;
@@ -144,7 +167,10 @@ export default {
       this.importExport = exportString;
     },
     handleImport(data) {
-      if (this.isMobile && !this.importExportActive) {
+      this.importError = false;
+      this.exportError = false;
+      console.log(data.length);
+      if ((this.isMobile && !this.importExportActive) || data.length === 0) {
         this.importExportActive = true;
         return;
       }
