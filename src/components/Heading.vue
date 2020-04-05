@@ -191,10 +191,11 @@ export default {
         fish = importValue.replace(fishPattern, "$1").split(",");
       if (insectsPattern.test(importValue))
         insects = importValue.replace(insectsPattern, "$1").split(",");
-      const axeCount = axeCountPattern.exec(importValue) || 0;
-      const shovelCount = shovelCountPattern.exec(importValue) || 0;
-      const balloonCount = balloonCountPattern.exec(importValue) || 0;
-      const wateringcanCount = wateringcanCountPattern.exec(importValue) || 0;
+      const axeCount = axeCountPattern.exec(importValue)[1] || 0;
+      const shovelCount = shovelCountPattern.exec(importValue)[1] || 0;
+      const balloonCount = balloonCountPattern.exec(importValue)[1] || 0;
+      const wateringcanCount =
+        wateringcanCountPattern.exec(importValue)[1] || 0;
 
       const caught = {
         fish: queryByIndex(fish, Fish),
