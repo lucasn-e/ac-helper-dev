@@ -1,5 +1,6 @@
 import Vue from 'vue';
-import Vuex from 'vuex'
+import Vuex from 'vuex';
+import { mobileCheck } from '../utils/helper.js';
 
 Vue.use(Vuex);
 
@@ -59,6 +60,12 @@ const store = new Vuex.Store({
   actions: {
     // get all data from localstorage and save to store
     getData({ commit }) {
+      let isMobile = mobileCheck();
+      if (!localStorage.getItem('version') && isMobile) {
+        alert('New version found!');
+        localStorage.setItem('version', '1.4');
+        window.location.reload(true)
+      }
       // save existing data to temporary variable, save empty object if no data exists
       const caught = preserveLegacyData() || JSON.parse(localStorage.getItem('caught')) || {};
       // get selection data (fish/insects, month/name)
