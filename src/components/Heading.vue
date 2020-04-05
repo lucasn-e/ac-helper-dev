@@ -13,6 +13,7 @@
         :importExport="importExport"
         :exportError="exportError"
         :importError="importError"
+        :showSuccess="showSuccess"
         @choose="choose"
         @handleImport="handleImport"
         @handleExport="handleExport"
@@ -26,6 +27,7 @@
         :exportError="exportError"
         :importError="importError"
         :feedbackOpenClose="feedbackOpenClose"
+        :showSuccess="showSuccess"
         @choose="choose"
         @handleImport="handleImport"
         @handleExport="handleExport"
@@ -51,7 +53,8 @@ export default {
       importExport: "",
       feedbackOpenClose: "",
       isMobile: false,
-      importExportActive: false
+      importExportActive: false,
+      showSuccess: false
     };
   },
   components: {
@@ -150,8 +153,8 @@ export default {
         Insects
       ).toString();
       // only pass values if there are any fish or insects to begin with
-      exportFish = exportFish.length > 0 ? "f:" + exportFish : "";
-      exportInsects = exportInsects.length > 0 ? "|i:" + exportInsects : "";
+      exportFish = exportFish.length > 0 ? "f:" + exportFish + "|" : "";
+      exportInsects = exportInsects.length > 0 ? "i:" + exportInsects : "";
       let exportCounts =
         (counts.shovelCount == 0 ? "" : "|sc:" + counts.shovelCount) +
         (counts.axeCount == 0 ? "" : "|ac:" + counts.axeCount) +
@@ -181,9 +184,13 @@ export default {
       const shovelCountPattern = /sc:(\d)/;
       const balloonCountPattern = /bc:(\d)/;
       const wateringcanCountPattern = /wc:(\d)/;
+      let fish = [];
+      let insects = [];
 
-      let fish = importValue.replace(fishPattern, "$1").split(",");
-      let insects = importValue.replace(insectsPattern, "$1").split(",");
+      if (fishPattern.test(importValue))
+        fish = importValue.replace(fishPattern, "$1").split(",");
+      if (insectsPattern.test(importValue))
+        insects = importValue.replace(insectsPattern, "$1").split(",");
       const axeCount = axeCountPattern.exec(importValue) || 0;
       const shovelCount = shovelCountPattern.exec(importValue) || 0;
       const balloonCount = balloonCountPattern.exec(importValue) || 0;
@@ -201,6 +208,10 @@ export default {
       localStorage.setItem("wateringcanCount", wateringcanCount);
       store.dispatch("getData");
       this.importExportActive = false;
+      this.showSuccess = true;
+      setTimeout(() => {
+        this.showSuccess = false;
+      }, 1500);
     }
   },
   computed: {

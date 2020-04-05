@@ -70,10 +70,12 @@
         for="import-export"
         :class="importExportActive ? 'active' : 'inactive'"
         class="import-code"
+        v-show="showCode"
       >
         Code:
         <input type="text" id="import-export" name="import-export" v-model="importExportData" />
       </label>
+      <div v-if="showSuccess && !showCode" class="import-code">Successfully imported!</div>
 
       <div class="nook-phone-secondary" :class="page == 2 ? 'show' : 'hide'">
         <div class="feedback">
@@ -133,6 +135,9 @@ export default {
     },
     importError: {
       type: Boolean
+    },
+    showSuccess: {
+      type: Boolean
     }
   },
   watch: {
@@ -143,6 +148,15 @@ export default {
       if (val.length > 0) {
         this.importExportData = val;
       }
+    }
+  },
+  computed: {
+    showCode() {
+      return (
+        (this.mobileChoice == "import" && !this.showSuccess) ||
+        (this.mobileChoice != "export" && this.importExport.length != 0) ||
+        (this.mobileChoice == "export" && this.importExport.length > 0)
+      );
     }
   },
   methods: {
