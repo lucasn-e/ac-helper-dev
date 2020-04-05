@@ -37,7 +37,7 @@
         v-if="importError"
       >Error: no import code entered! Please enter your import code in the text field before pressing "Import Data"!</div>
       <div class="error" v-if="exportError">Error: you have no saved data to export!</div>
-      <label for="import-export" v-if="showCode">
+      <label for="import-export" v-if="showCode && importExportActive">
         Code:
         <input type="text" id="import-export" name="import-export" v-model="importExportData" />
       </label>
@@ -70,7 +70,8 @@
 export default {
   data() {
     return {
-      importExportData: ""
+      importExportData: "",
+      mobileChoice: ""
     };
   },
   props: {
@@ -124,9 +125,11 @@ export default {
       });
     },
     handleImport() {
+      this.mobileChoice = "import";
       this.$emit("handleImport", this.importExportData);
     },
     handleExport() {
+      this.mobileChoice = "export";
       this.$emit("handleExport");
     }
   },
