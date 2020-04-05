@@ -168,7 +168,7 @@ export default {
   },
   methods: {
     time() {
-      this.datenow = moment().format("HH:mm");
+      this.datenow = new Date().getHours() + ":" + new Date().getMinutes();
     },
     toggleFeedback() {
       if (this.page === 1) {
