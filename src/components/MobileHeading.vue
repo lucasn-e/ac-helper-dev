@@ -70,7 +70,7 @@
         for="import-export"
         :class="importExportActive ? 'active' : 'inactive'"
         class="import-code"
-        v-show="showCode"
+        v-show="showCode && page != 2"
       >
         Code:
         <input type="text" id="import-export" name="import-export" v-model="importExportData" />
@@ -109,7 +109,8 @@ export default {
       page: 1,
       importExportData: "",
       mobileChoice: this.choice || "Fish",
-      datenow: ""
+      datenow: "",
+      preventCode: false
     };
   },
   filters: {
@@ -142,6 +143,11 @@ export default {
   },
   watch: {
     choice(val) {
+      if (this.mobileChoice == "import" || this.mobileChoice == "export") {
+        if (val != "import" && val != "export") {
+          this.preventCode = true;
+        }
+      }
       this.mobileChoice = val;
     },
     importExport(val) {
@@ -153,6 +159,7 @@ export default {
   computed: {
     showCode() {
       return (
+        !this.preventCode ||
         (this.mobileChoice == "import" && !this.showSuccess) ||
         (this.mobileChoice != "export" && this.importExport.length != 0) ||
         (this.mobileChoice == "export" && this.importExport.length > 0)
@@ -164,10 +171,12 @@ export default {
       this.datenow = moment().format("HH:mm");
     },
     toggleFeedback() {
-      if (this.page === 1) this.page = 2;
-      else this.page = 1;
+      if (this.page === 1) {
+        this.page = 2;
+      } else this.page = 1;
     },
     choose(choice) {
+      this.mobileChoice = choice;
       this.$emit("choose", choice);
     },
     scrollDown() {
