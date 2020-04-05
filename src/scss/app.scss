@@ -56,6 +56,7 @@ body {
   flex-wrap: wrap;
   @media screen and (max-width: 767px) {
     margin-top: -40%;
+    overflow: hidden;
   }
 }
 .main-content {
@@ -64,7 +65,9 @@ body {
   border-radius: 22px;
   position: relative;
   @media screen and (max-width: 767px) {
-    min-height: 290px;
+    min-height: 330px;
+    min-width: 260px;
+    overflow: hidden;
     .arrow-down {
       position: absolute;
       height: 15px;
@@ -173,7 +176,28 @@ button.custom-button.mini {
   }
 }
 
-.select-container, div.import-export {
+.time-bar {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: .6;
+}
+
+.control-bar {
+  position: relative;
+  .arrow-back {
+    height: 10px;
+    width: 10px;
+    border-left: 5px solid #222;
+    border-bottom: 5px solid #222;
+    position: absolute;
+    transform: rotateZ(45deg);
+    border-radius: 5px;
+  }
+}
+
+.select-container, div.import-export, .nook-phone-main {
   display: flex;
   
   justify-content: center;
@@ -193,6 +217,8 @@ button.custom-button.mini {
       top: 50%;
       transform: translate(-50%,-50%);
       &.imexport-image {
+        height: 45px;
+        width: 45px;
         transform: translate(-52%,-50%);
       }
     }
@@ -203,6 +229,13 @@ button.custom-button.mini {
   transition: .25s;
   &.active {
     color: #222;
+  }
+  @media screen and (max-width:767px) {
+    color: #222;
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -284,6 +317,42 @@ button.custom-button.mini {
     }
   }
 }
+
+.nook-phone{
+  &-main {
+    transition: .5s;
+    position: absolute;
+    transform: translate(-50%);
+    &.hide {
+      left: -500px;
+    }
+    &.show {
+      left: 50%;
+    }
+  }
+  &-secondary {
+    .feedback {
+      .form {
+        transform: scaleY(1);
+        max-height: initial;
+        input, textarea {
+          border: none;
+        }
+      }
+    }
+    position: absolute;
+    transition: .5s;
+    transform: translate(-50%);
+    &.hide {
+      left: 500px;
+    }
+    &.show {
+      left: 50%;
+    }
+    
+  }
+}
+
 
 @media screen and (max-width: 767px) {
   .select-container {
@@ -566,42 +635,35 @@ tr {
   position: absolute;
   top: 0;
 }
-.tool-container.finished .golden-tool:nth-child(1) {
-  z-index: 5;
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  transform: rotateZ(0deg) translateX(-50%);
-  animation: leftthrow 0.5s forwards;
-  animation-delay: 0s;
+
+.tool-container {
+  &.finished {
+    .golden-tool {
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      transform: rotateZ(0deg) translateX(-50%);
+      animation: leftthrow 0.5s forwards;
+      &:nth-child(1) {
+        z-index: 5;
+        animation-delay: 0s;
+      }
+      &:nth-child(2) {
+        z-index: 4;
+        animation-delay: 1s;
+      }
+      &:nth-child(3) {
+        z-index: 3;
+        animation-delay: 2s;
+      }
+      &:nth-child(4) {
+        z-index: 2;
+        animation-delay: 3s;
+      }
+    }
+  }
 }
-.tool-container.finished .golden-tool:nth-child(2) {
-  z-index: 4;
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  transform: rotateZ(0deg) translateX(-50%);
-  animation: leftthrow 0.5s forwards;
-  animation-delay: 1s;
-}
-.tool-container.finished .golden-tool:nth-child(3) {
-  z-index: 3;
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  transform: rotateZ(0deg) translateX(-50%);
-  animation: leftthrow 0.5s forwards;
-  animation-delay: 2s;
-}
-.tool-container.finished .golden-tool:nth-child(4) {
-  z-index: 2;
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  transform: rotateZ(0deg) translateX(-50%);
-  animation: leftthrow 0.5s forwards;
-  animation-delay: 3s;
-}
+
 @keyframes leftthrow {
   0% {
     position: absolute;
