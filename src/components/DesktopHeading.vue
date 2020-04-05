@@ -37,10 +37,11 @@
         v-if="importError"
       >Error: no import code entered! Please enter your import code in the text field before pressing "Import Data"!</div>
       <div class="error" v-if="exportError">Error: you have no saved data to export!</div>
-      <label for="import-export">
+      <label for="import-export" v-if="showCode">
         Code:
         <input type="text" id="import-export" name="import-export" v-model="importExportData" />
       </label>
+      <div v-if="showSuccess && !showCode" class="import-code">Successfully imported!</div>
     </div>
     <div v-if="showFeedback" class="feedback" :class="feedbackOpenClose">
       <div class="fullwidth-container">
@@ -91,6 +92,9 @@ export default {
     },
     feedbackOpenClose: {
       type: String
+    },
+    showSuccess: {
+      type: Boolean
     }
   },
   watch: {
@@ -131,6 +135,13 @@ export default {
       return (
         window.location.href == "https://ac-helper.com/" ||
         window.location.href == "http://localhost:8080/"
+      );
+    },
+    showCode() {
+      return (
+        (this.mobileChoice == "import" && !this.showSuccess) ||
+        (this.mobileChoice != "export" && this.importExport.length != 0) ||
+        (this.mobileChoice == "export" && this.importExport.length > 0)
       );
     }
   }
