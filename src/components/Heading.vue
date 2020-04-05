@@ -169,7 +169,6 @@ export default {
     handleImport(data) {
       this.importError = false;
       this.exportError = false;
-      console.log(data.length);
       if ((this.isMobile && !this.importExportActive) || data.length === 0) {
         this.importExportActive = true;
         return;
