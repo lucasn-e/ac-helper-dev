@@ -81,15 +81,15 @@
             <input type="hidden" name="form-name" value="feedback" />
             <label for="name">
               Name:
-              <input type="text" name="name" id="name" />
+              <input type="text" name="name" />
             </label>
             <label for="email">
               Email:
-              <input type="email" name="email" id="email" />
+              <input type="email" name="email" />
             </label>
             <label for="message">
               Message:
-              <textarea name="message" id="message"></textarea>
+              <textarea name="message"></textarea>
             </label>
             <button type="submit" class="custom-button mini">Send</button>
           </form>
