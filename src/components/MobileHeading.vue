@@ -77,7 +77,8 @@
 
       <div class="nook-phone-secondary" :class="page == 2 ? 'show' : 'hide'">
         <div class="feedback">
-          <form class="form" data-netlify="true" method="POST" name="contact">
+          <form class="form" method="POST" name="feedback">
+            <input type="hidden" name="form-name" value="feedback" />
             <label for="name">
               Name:
               <input type="text" name="name" id="name" />

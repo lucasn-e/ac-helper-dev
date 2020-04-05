@@ -19,6 +19,21 @@
 </head>
 
 <body>
+  <form class="form" data-netlify="true" netlify-honeypot="bot-field" method="POST" name="feedback" hidden>
+    <label for="name">
+      Name:
+      <input type="text" name="name" id="name" />
+    </label>
+    <label for="email">
+      Email:
+      <input type="email" name="email" id="email" />
+    </label>
+    <label for="message">
+      Message:
+      <textarea name="message" id="message"></textarea>
+    </label>
+    <button type="submit" class="custom-button mini">Send</button>
+  </form>
   <noscript>
     <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
       Please enable it to continue.</strong>

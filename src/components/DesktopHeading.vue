@@ -46,7 +46,8 @@
       <div class="fullwidth-container">
         <div class="custom-button mini" @click="toggleFeedback">Feedback</div>
       </div>
-      <form class="form" data-netlify="true" method="POST" name="contact">
+      <form class="form" method="POST" name="feedback">
+        <input type="hidden" name="form-name" value="feedback" />
         <label for="name">
           Name:
           <input type="text" name="name" id="name" />
