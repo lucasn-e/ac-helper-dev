@@ -241,7 +241,6 @@ export default {
   },
   mounted() {
     this.interval = setInterval(this.time, 1000);
-    console.log(this.loc);
   },
   beforeDestroy() {
     clearInterval(this.interval);

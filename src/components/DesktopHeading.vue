@@ -127,12 +127,6 @@ export default {
     nhShText() {
       return this.loc == 'NH' ? 'Northern Hemisphere' : 'Southern Hemisphere'
     },
-    showFeedback() {
-      return (
-        window.location.href == "https://ac-helper.com/" ||
-        window.location.href == "http://localhost:8080/"
-      );
-    },
     showCode() {
       return (
         (this.mobileChoice == "import" && !this.showSuccess) ||
