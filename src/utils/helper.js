@@ -37,14 +37,47 @@ export const toggleHemisphere = arr => {
       num = parseInt(/\d+/.exec(compareElem)[0]);
       compareElem = compareElem.replace(/\d+/, '');
       let tempnum;
+      if (elem.name.includes('Squid'))
+            console.log(num, 'pre-if');
       if (num - 6 == -1) {
           tempnum = 11;
+          if (elem.name.includes('Squid'))
+            console.log(tempnum, 'if1');
       } else if (num - 6 < -1) {
-          tempnum = num-6+12;
+        if (elem.name.includes('Squid'))
+            console.log(num, 'if2');
+          tempnum = parseInt(num)-6+12;
+          if (elem.name.includes('Squid'))
+            console.log(tempnum);
       } else {
-          tempnum = num-6;
+        if (elem.name.includes('Squid'))
+            console.log(tempnum, 'if3');
+          tempnum = parseInt(num)-6;
+          if (elem.name.includes('Squid'))
+            console.log(tempnum);
       }
-      elem.season = elem.season.replace(num, tempnum);
+      tempnum = parseInt(tempnum);
+      if (elem.name.includes('Squid'))
+            console.log(tempnum, num);
+      
+      let patt;
+
+      switch(num) {
+        case(0):
+          patt = /(?<!\d)0/;
+          break;
+        case(1):
+          patt = /(?<!\d)1(?!\d)/;
+          break;
+        default:
+          break;
+      }
+
+      if (num == 0 || num == 1) {
+        elem.season = elem.season.replace(patt, tempnum);
+      } else {
+        elem.season = elem.season.replace(num, tempnum);
+      }
       if (!/\d/.test(compareElem)) {
         shouldLoop = false;
         break;
