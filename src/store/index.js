@@ -13,9 +13,21 @@ const store = new Vuex.Store({
     caught: {
       fish: [],
       insects: []
-    }
+    },
+    loc: 'NH',
+    overlayOpen: false
   },
   mutations: {
+    toggleOverlay(state) {
+      state.overlayOpen = !state.overlayOpen;
+    },
+    toggleLoc(state) {
+      state.loc = state.loc == 'NH' ? 'SH' : 'NH';
+      localStorage.setItem('loc', state.loc);
+    },
+    setLoc(state, data) {
+      state.loc = data;
+    },
     toggleHideCaught(state) {
       state.hideCaught = !state.hideCaught;
       if (!!state.hideCaught) state.hideUncaught = false;
@@ -74,6 +86,8 @@ const store = new Vuex.Store({
         commit('assignDisplayData', data.displayData);
         commit('assignSortType', data.sortType);
       }
+      if (localStorage.getItem('loc'))
+        commit('setLoc', localStorage.getItem('loc'));
       if (caught.fish)
         commit('storeFish', caught.fish);
       if (caught.insects)

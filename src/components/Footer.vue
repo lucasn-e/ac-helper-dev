@@ -5,5 +5,6 @@
     <a
       href="https://discord.gg/84EsCJz"
     >Join the Discord!</a>
+    Icons made by <a href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
   </div>
 </template>

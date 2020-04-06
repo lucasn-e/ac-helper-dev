@@ -19,7 +19,7 @@
   justify-content: center;
 }
 #app {
-  background-image: url(~@/assets/bg.jpg); 
+  background-image: url(~@/assets/bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top;
@@ -37,8 +37,27 @@
     background-size: cover;
   }
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0,0,0,.6);
+  transition: .125s;
+  opacity: 0;
+  z-index: 0;
+  &.display {
+    opacity: 1;
+    z-index: 1;
+  }
+  &.hide {
+    pointer-events: none;
+  }
+}
 body {
   margin: 0;
+  cursor: url(~@/assets/cursor.png) 8 8, auto;
 }
 /* Heading.vue */
 .stuff {
@@ -138,7 +157,7 @@ h1 {
   margin: 5px;
   background-color: #70A1D7;
   color: #fff;
-  cursor: pointer;
+  
   font-size: 1.5em;
   transition: 0.25s;
   position: relative;
@@ -197,6 +216,46 @@ button.custom-button.mini {
   }
 }
 
+.importexport {
+  position: absolute;
+  background-color: #70A1D7;
+  border-radius: 45px;
+  z-index: 0;
+  top: 20%;
+  left: -150px;
+  opacity: 0;
+  transition: .25s;
+}
+
+.overlay {
+  &.hide {
+    ~.nook-phone-apps {
+      &.one {
+        z-index: 0;
+      }
+      &.two {
+        z-index: 0;
+      }
+    }
+  }
+  &.display {
+    ~.nook-phone-apps {
+      .importexport {
+        opacity: 1;
+        z-index: 5;
+        &.one {
+          top: 50%;
+          left: 40%;
+        }
+        &.two {
+          top: 30%;
+          left: 25%;
+        }
+      }
+    }
+  }
+}
+
 .time-bar {
   position: absolute;
   top: 0;
@@ -228,15 +287,36 @@ button.custom-button.mini {
 
 .select-container, div.import-export, .nook-phone-main {
   display: flex;
-  
   justify-content: center;
   @media screen and (max-width: 767px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    left: 50%;
+    top: 0;
+    width: 80%;
+    padding: 0 50px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    .nook-phone-apps {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
     .icon-image-container {
       height: 75px;
       width: 75px;
       position: relative;
+      .icon-image.globe {
+        height: 64px;
+        width: 64px;
+        transition: .5s;
+        transform: translate(-50%, -50%) rotateZ(0deg);
+
+      }
+      &.sh {
+        .icon-image.globe {
+          transform: translate(-50%, -50%) rotateZ(180deg);
+        }
+      }
     }
     .icon-image {
       height: 75px;
@@ -453,7 +533,7 @@ button.custom-button.mini {
 }
 tr {
   height: 35px;
-  cursor: pointer;
+  
 }
 .header-row {
   background-color: rgba(247, 244, 139, 1);
@@ -480,7 +560,7 @@ tr {
 }
 .mini-button {
   padding: 0 15px;
-  cursor: pointer;
+  
   user-select: none;
 }
 .mini-button:hover {
@@ -516,7 +596,7 @@ tr {
   padding: 20px;
   margin: 0 5px;
   transition: 0.125s;
-  cursor: pointer;
+  
   user-select: none;
 }
 .jumpto-link.active {
@@ -528,7 +608,7 @@ tr {
   color: #fff;
 }
 .caught {
-  cursor: pointer;
+  
 }
 .x {
   transition: 0.25s;
@@ -564,7 +644,7 @@ tr {
   justify-content: space-around;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
-  cursor: pointer;
+  
 }
 .columntext {
   cursor: initial;
@@ -635,6 +715,10 @@ tr {
   transform: translate(-50%, -50%);
   font-size: 4em;
   user-select: none;
+  &.small {
+    font-size: 1.5em;
+    color: #fff;
+  }
 }
 @media screen and (max-width: 767px) {
   .data-image {
@@ -678,7 +762,7 @@ tr {
   background-color: #70A1D7;
   color: #F7F48B;
   font-weight: 800;
-  cursor: pointer;
+  
   user-select: none;
 }
 .count-input {

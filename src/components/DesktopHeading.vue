@@ -32,6 +32,12 @@
         <div>Export Data</div>
       </div>
       <div
+        class="custom-button mini"
+        @click="toggleLocation"
+      >
+        <div class="swap-nh-sh">{{ nhShText }}</div>
+      </div>
+      <div
         class="error"
         v-if="importError"
       >Error: no import code entered! Please enter your import code in the text field before pressing "Import Data"!</div>
@@ -42,30 +48,12 @@
       </label>
       <div v-if="showSuccess && !showCode" class="import-code">Successfully imported!</div>
     </div>
-    <!--<div v-if="showFeedback" class="feedback" :class="feedbackOpenClose">
-      <div class="fullwidth-container">
-        <div class="custom-button mini" @click="toggleFeedback">Feedback</div>
-      </div>
-      <form class="form" method="POST" name="feedback">
-        <input type="hidden" name="form-name" value="feedback" />
-        <label for="name">
-          Name:
-          <input type="text" name="name" />
-        </label>
-        <label for="email">
-          Email:
-          <input type="email" name="email" />
-        </label>
-        <label for="message">
-          Message:
-          <textarea name="message"></textarea>
-        </label>
-        <button type="submit" class="custom-button mini">Send</button>
-      </form>
-    </div>-->
   </div>
 </template>
 <script>
+import store from '../store/index.js';
+import {mapState} from 'vuex';
+
 export default {
   data() {
     return {
@@ -112,6 +100,9 @@ export default {
     }
   },
   methods: {
+    toggleLocation() {
+      store.commit('toggleLoc');
+    },
     toggleFeedback() {
       this.$emit("toggleFeedback");
     },
@@ -133,6 +124,9 @@ export default {
     }
   },
   computed: {
+    nhShText() {
+      return this.loc == 'NH' ? 'Northern Hemisphere' : 'Southern Hemisphere'
+    },
     showFeedback() {
       return (
         window.location.href == "https://ac-helper.com/" ||
@@ -145,7 +139,8 @@ export default {
         (this.mobileChoice != "export" && this.importExport.length != 0) ||
         (this.mobileChoice == "export" && this.importExport.length > 0)
       );
-    }
+    },
+    ...mapState(['loc'])
   }
 };
 </script>

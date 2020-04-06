@@ -24,6 +24,7 @@ import ListItem from "./ListItem.vue";
 import Fish from "../data/fish.json";
 import Insects from "../data/insects.json";
 import { mapState } from "vuex";
+import { toggleHemisphere } from '../utils/helper.js';
 
 export default {
   data() {
@@ -31,7 +32,8 @@ export default {
       fish: Fish,
       insects: Insects,
       sorted: "ascending",
-      sorting: "name"
+      sorting: "name",
+      current: 'NH'
     };
   },
   components: {
@@ -41,10 +43,6 @@ export default {
     payload: {
       type: Object
     }
-  },
-  mounted() {
-    window.fish = Fish;
-    window.insects = Insects;
   },
   methods: {
     sortByValue() {
@@ -60,6 +58,28 @@ export default {
       } else {
         this.sorting = "name";
       }
+    },
+    swapNhSh() {
+      let temp = this.fish;
+      let temp2 = this.insects;
+      temp = toggleHemisphere(temp);
+      temp2 = toggleHemisphere(temp2);
+      this.fish = temp;
+      this.insects = temp2;
+    }
+  },
+  mounted() {
+    if (this.loc != this.current) {
+      this.swapNhSh();
+      this.current = this.loc;
+    }
+  },
+  watch: {
+    loc() {
+      if (this.loc != this.current) {
+        this.swapNhSh();
+        this.current = this.loc;
+      }
     }
   },
   computed: {
@@ -73,10 +93,19 @@ export default {
         JSON.stringify(this.animalType).replace(/<p>|<\/p>/g, "")
       );
       clean = clean.map(elem => {
+        let seasons = elem.season;
+        // some() is a loop that breaks if return value === true
+        this.payload.months.some((month, index) => {
+          if (seasons.includes('All')) return true;
+          if (!/\d/.test(seasons)) return true;
+          seasons = seasons.replace(/10/, this.payload.months[10]);
+          seasons = seasons.replace(/11/, this.payload.months[11])
+          seasons = seasons.replace(index, month);
+        });
         return {
           name: elem.name,
           image: elem.image,
-          season: elem.season,
+          season: seasons,
           location: elem.location,
           time: elem.time,
           value: elem.value
@@ -96,7 +125,7 @@ export default {
       }
     },
     // return array consisting only of elements that match the "Search" <input>
-    filteredData() {
+    filteredData() { 
       return this.cleanedData.filter(elem =>
         elem.name.toUpperCase().includes(this.payload.filterValue.toUpperCase())
       );
@@ -136,6 +165,8 @@ export default {
                     return true;
                   }
                 });
+                let returnThis = elem.season.includes(this.payload.months[current]);
+                if (returnThis) return myData;
                 // in case of a month range spreading over the end of a year (Nov - Feb for example) and the selected month falls in between
                 if (from >= current && to >= current && to < from) {
                   return myData;
@@ -167,7 +198,7 @@ export default {
         return [];
       }
     },
-    ...mapState(["displayData", "sortType", "caught"])
+    ...mapState(["displayData", "sortType", "caught", "loc"])
   }
 };
 </script>

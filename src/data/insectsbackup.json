@@ -1,543 +1,543 @@
 [
   {
     "name": "Agrias butterfly",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_10_i.png",
+    "image": "/insects/jpg/Agrias butterfly.jpg",
     "season": "Apr - Sept",
     "location": "Flying",
-    "time": "8am  5pm ",
+    "time": "8am 5pm",
     "value": "3000"
   },
   {
     "name": "Ant",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_69_i.png",
+    "image": "/insects/jpg/Ant.jpg",
     "season": "All Year",
     "location": "Rotten Fruit",
-    "time": "All day ",
+    "time": "All day",
     "value": "80"
   },
   {
     "name": "Atlas moth",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_14_i.png",
+    "image": "/insects/jpg/Atlas moth.jpg",
     "season": "Apr - Sept",
     "location": "Tree",
-    "time": "7pm  4am ",
+    "time": "7pm 4am",
     "value": "3000"
   },
   {
     "name": "Bagworm",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_68_i.png",
+    "image": "/insects/jpg/Bagworm.jpg",
     "season": "All Year",
     "location": "Shake Tree",
-    "time": "All day ",
+    "time": "All day",
     "value": "600"
   },
   {
     "name": "Banded dragonfly",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_34_i.png",
+    "image": "/insects/jpg/Banded dragonfly.jpg",
     "season": "May - Oct",
     "location": "Flying",
-    "time": "8am  5pm ",
+    "time": "8am 5pm",
     "value": "4500"
   },
   {
     "name": "Bell cricket",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_21_i.png",
+    "image": "/insects/jpg/Bell cricket.jpg",
     "season": "Sept - Oct",
     "location": "Ground",
-    "time": "5pm  8am ",
+    "time": "5pm 8am",
     "value": "430"
   },
   {
     "name": "Blue weevil beetle",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_49_i.png",
+    "image": "/insects/jpg/Blue weevil beetle.jpg",
     "season": "July - Aug",
     "location": "Palm",
-    "time": "All day ",
+    "time": "All day",
     "value": "800"
   },
   {
     "name": "Brown cicada",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_26_i.png",
+    "image": "/insects/jpg/Brown cicada.jpg",
     "season": "July - Aug",
     "location": "Tree",
-    "time": "8am  5pm ",
+    "time": "8am 5pm",
     "value": "250"
   },
   {
     "name": "Centipede",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_77_i.png",
+    "image": "/insects/jpg/Centipede.jpg",
     "season": "Sept - June",
     "location": "Hit Stone",
-    "time": "4pm  11am ",
+    "time": "4pm 11am",
     "value": "300"
   },
   {
     "name": "Cicada shell",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_31_i.png",
+    "image": "/insects/jpg/Cicada shell.jpg",
     "season": "July - Aug",
     "location": "Tree",
-    "time": "All day ",
+    "time": "All day",
     "value": "10"
   },
   {
     "name": "Citrus long-horned beetle",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_47_i.png",
+    "image": "/insects/jpg/Citrus long-horned beetle.jpg",
     "season": "All Year",
     "location": "Stump",
-    "time": "All day ",
+    "time": "All day",
     "value": "350"
   },
   {
     "name": "Common bluebottle",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_5_i.png",
+    "image": "/insects/jpg/Common bluebottle.jpg",
     "season": "Apr - Aug",
     "location": "Flying",
-    "time": "4am  7pm ",
+    "time": "4am 7pm",
     "value": "300"
   },
   {
     "name": "Common butterfly",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_1_i.png",
+    "image": "/insects/jpg/Common butterfly.jpg",
     "season": "Sept - June",
     "location": "Flying",
-    "time": "4am  7pm ",
+    "time": "4am 7pm",
     "value": "160"
   },
   {
     "name": "Cricket",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_20_i.png",
+    "image": "/insects/jpg/Cricket.jpg",
     "season": "Sept - Nov",
     "location": "Ground",
-    "time": "5pm  8am ",
+    "time": "5pm 8am",
     "value": "130"
   },
   {
     "name": "Cyclommatus stag",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_59_i.png",
+    "image": "/insects/jpg/Cyclommatus stag.jpg",
     "season": "July - Aug",
     "location": "Palm",
-    "time": "5pm  8am ",
+    "time": "5pm 8am",
     "value": "8000"
   },
   {
     "name": "Damselfly",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_35_i.png",
+    "image": "/insects/jpg/Damselfly.jpg",
     "season": "Nov - Feb",
     "location": "Flying",
-    "time": "All day ",
+    "time": "All day",
     "value": "500"
   },
   {
     "name": "Darner dragonfly",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_33_i.png",
+    "image": "/insects/jpg/Darner dragonfly.jpg",
     "season": "Apr - Oct",
     "location": "Flying",
-    "time": "8am  5pm ",
+    "time": "8am 5pm",
     "value": "230"
   },
   {
     "name": "Diving beetle",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_39_i.png",
+    "image": "/insects/jpg/Diving beetle.jpg",
     "season": "May - Sept",
     "location": "Water's Surface",
-    "time": "8am  7pm ",
+    "time": "8am 7pm",
     "value": "800"
   },
   {
     "name": "Drone beetle",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_53_i.png",
+    "image": "/insects/jpg/Drone beetle.jpg",
     "season": "June - Aug",
     "location": "Tree",
-    "time": "All day ",
+    "time": "All day",
     "value": "200"
   },
   {
     "name": "Dung beetle",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_50_i.png",
+    "image": "/insects/jpg/Dung beetle.jpg",
     "season": "Rolling Snowball",
     "location": "Rolling a Snowball",
-    "time": "All day ",
+    "time": "All day",
     "value": "3000"
   },
   {
     "name": "Earth-boring dung beetle",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_51_i.png",
+    "image": "/insects/jpg/Earth-boring dung beetle.jpg",
     "season": "July - Sept",
     "location": "Ground",
-    "time": "All day ",
+    "time": "All day",
     "value": "300"
   },
   {
     "name": "Emperor butterfly",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_9_i.png",
+    "image": "/insects/jpg/Emperor butterfly.jpg",
     "season": "Dec - Mar, June ~ Sept",
     "location": "Flying",
-    "time": "7pm    8am ",
+    "time": "7pm   8am",
     "value": "4000"
   },
   {
     "name": "Evening cicada",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_30_i.png",
+    "image": "/insects/jpg/Evening cicada.jpg",
     "season": "July - Aug",
     "location": "Tree",
-    "time": "4am  8am, 4pm ~ 7pm ",
+    "time": "4am 8am, 4pm ~ 7pm",
     "value": "550"
   },
   {
     "name": "Firefly",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_36_i.png",
+    "image": "/insects/jpg/Firefly.jpg",
     "season": "June",
     "location": "Flying",
-    "time": "7pm  4am ",
+    "time": "7pm 4am",
     "value": "300"
   },
   {
     "name": "Flea",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_74_i.png",
+    "image": "/insects/jpg/Flea.jpg",
     "season": "Apr - nov",
     "location": "Villagers",
-    "time": "All day ",
+    "time": "All day",
     "value": "70"
   },
   {
     "name": "Fly",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_72_i.png",
+    "image": "/insects/jpg/Fly.jpg",
     "season": "All Year",
     "location": "Flying",
-    "time": "All day ",
+    "time": "All day",
     "value": "60"
   },
   {
     "name": "Giant cicada",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_28_i.png",
+    "image": "/insects/jpg/Giant cicada.jpg",
     "season": "July - Aug",
     "location": "Tree",
-    "time": "8am  5pm ",
+    "time": "8am 5pm",
     "value": "500"
   },
   {
     "name": "Giant stag",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_57_i.png",
+    "image": "/insects/jpg/Giant stag.jpg",
     "season": "July - Aug",
     "location": "Tree",
-    "time": "11pm  8am ",
+    "time": "11pm 8am",
     "value": "10000"
   },
   {
     "name": "Giant water bug",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_40_i.png",
+    "image": "/insects/jpg/Giant water bug.jpg",
     "season": "Apr - Sept",
     "location": "Water's Surface",
-    "time": "7pm  8am ",
+    "time": "7pm 8am",
     "value": "2000"
   },
   {
     "name": "Giraffe stag",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_61_i.png",
+    "image": "/insects/jpg/Giraffe stag.jpg",
     "season": "July - Aug",
     "location": "Palm",
-    "time": "5pm  8am ",
+    "time": "5pm 8am",
     "value": "12000"
   },
   {
     "name": "Golden stag",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_60_i.png",
+    "image": "/insects/jpg/Golden stag.jpg",
     "season": "July - Aug",
     "location": "Palm",
-    "time": "5pm  8am ",
+    "time": "5pm 8am",
     "value": "12000"
   },
   {
     "name": "Goliath beetle",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_54_i.png",
+    "image": "/insects/jpg/Goliath beetle.jpg",
     "season": "June - Sept",
     "location": "Palm",
-    "time": "5pm  8am ",
+    "time": "5pm 8am",
     "value": "8000"
   },
   {
     "name": "Grasshopper",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_19_i.png",
+    "image": "/insects/jpg/Grasshopper.jpg",
     "season": "July - Sept",
     "location": "Ground",
-    "time": "8am  5pm ",
+    "time": "8am 5pm",
     "value": "160"
   },
   {
     "name": "Great purple emperor",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_7_i.png",
+    "image": "/insects/jpg/Great purple emperor.jpg",
     "season": "May - Aug",
     "location": "Flying",
-    "time": "4am  7pm ",
+    "time": "4am 7pm",
     "value": "3000"
   },
   {
     "name": "Hermit crab",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_70_i.png",
+    "image": "/insects/jpg/Hermit crab.jpg",
     "season": "All Year",
     "location": "Beach",
-    "time": "7pm  8am ",
+    "time": "7pm 8am",
     "value": "1000"
   },
   {
     "name": "Honeybee",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_24_i.png",
+    "image": "/insects/jpg/Honeybee.jpg",
     "season": "Mar - July",
     "location": "Flower",
-    "time": "8am  5pm ",
+    "time": "8am 5pm",
     "value": "200"
   },
   {
     "name": "Horned atlas",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_63_i.png",
+    "image": "/insects/jpg/Horned atlas.jpg",
     "season": "July - Aug",
     "location": "Palm",
-    "time": "5pm  8am ",
+    "time": "5pm 8am",
     "value": "8000"
   },
   {
     "name": "Horned dynastid",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_62_i.png",
+    "image": "/insects/jpg/Horned dynastid.jpg",
     "season": "July - Aug",
     "location": "Trees",
-    "time": "5pm  8am ",
+    "time": "5pm 8am",
     "value": "1350"
   },
   {
     "name": "Horned elephant",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_64_i.png",
+    "image": "/insects/jpg/Horned elephant.jpg",
     "season": "July - Aug",
     "location": "Palm",
-    "time": "5pm  8am ",
+    "time": "5pm 8am",
     "value": "8000"
   },
   {
     "name": "Horned hercules",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_65_i.png",
+    "image": "/insects/jpg/Horned hercules.jpg",
     "season": "July - Aug",
     "location": "Palm",
-    "time": "5pm  8am ",
+    "time": "5pm 8am",
     "value": "12000"
   },
   {
     "name": "Jewel beetle",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_45_i.png",
+    "image": "/insects/jpg/Jewel beetle.jpg",
     "season": "Apr - Aug",
     "location": "Stump",
-    "time": "All day ",
+    "time": "All day",
     "value": "2400"
   },
   {
     "name": "Ladybug",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_43_i.png",
+    "image": "/insects/jpg/Ladybug.jpg",
     "season": "Mar - June, Oct",
     "location": "Flower",
-    "time": "8am  5pm ",
+    "time": "8am 5pm",
     "value": "200"
   },
   {
     "name": "Long locust",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_16_i.png",
+    "image": "/insects/jpg/Long locust.jpg",
     "season": "Apr - Nov",
     "location": "Ground",
-    "time": "8am  7pm ",
+    "time": "8am 7pm",
     "value": "200"
   },
   {
     "name": "Madagascan sunset moth",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_15_i.png",
+    "image": "/insects/jpg/Madagascan sunset moth.jpg",
     "season": "Apr - Sept",
     "location": "Flying",
-    "time": "8am  4pm ",
+    "time": "8am 4pm",
     "value": "500"
   },
   {
     "name": "Man-faced stink bug",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_42_i.png",
+    "image": "/insects/jpg/Man-faced stink bug.jpg",
     "season": "Mar - Oct",
     "location": "Flower",
-    "time": "7pm  8am ",
+    "time": "7pm 8am",
     "value": "1000"
   },
   {
     "name": "Mantis",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_22_i.png",
+    "image": "/insects/jpg/Mantis.jpg",
     "season": "Mar - Nov",
     "location": "Flower",
-    "time": "8am  5pm ",
+    "time": "8am 5pm",
     "value": "430"
   },
   {
     "name": "Migratory Locust",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_17_i.png",
+    "image": "/insects/jpg/Migratory Locust.jpg",
     "season": "Aug - Nov",
     "location": "Ground",
-    "time": "8am  7pm ",
+    "time": "8am 7pm",
     "value": "600"
   },
   {
     "name": "Miyama stag",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_56_i.png",
+    "image": "/insects/jpg/Miyama stag.jpg",
     "season": "July - Aug",
     "location": "Trees",
-    "time": "All day ",
+    "time": "All day",
     "value": "1000"
   },
   {
     "name": "Mole cricket",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_37_i.png",
+    "image": "/insects/jpg/Mole cricket.jpg",
     "season": "Nov - May",
     "location": "Dig at chirping",
-    "time": "All day ",
+    "time": "All day",
     "value": "500"
   },
   {
     "name": "Monarch butterfly",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_8_i.png",
+    "image": "/insects/jpg/Monarch butterfly.jpg",
     "season": "Sept - Nov",
     "location": "Flying",
-    "time": "4am - 5pm ",
+    "time": "4am - 5pm",
     "value": "140"
   },
   {
     "name": "Mosquito",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_73_i.png",
+    "image": "/insects/jpg/Mosquito.jpg",
     "season": "June - Sept",
     "location": "Flying",
-    "time": "5pm  4am ",
+    "time": "5pm 4am",
     "value": "130"
   },
   {
     "name": "Moth",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_13_i.png",
+    "image": "/insects/jpg/Moth.jpg",
     "season": "All Year",
     "location": "Near Lights",
-    "time": "7pm  4am ",
+    "time": "7pm 4am",
     "value": "130"
   },
   {
     "name": "Orchid mantis",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_23_i.png",
+    "image": "/insects/jpg/Orchid mantis.jpg",
     "season": "Mar - Nov",
     "location": "Flower",
-    "time": "8am  5pm ",
+    "time": "8am 5pm",
     "value": "2400"
   },
   {
     "name": "Paper kite butterfly",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_6_i.png",
+    "image": "/insects/jpg/Paper kite butterfly.jpg",
     "season": "All Year",
     "location": "Flying",
-    "time": "8am  7pm ",
+    "time": "8am 7pm",
     "value": "1000"
   },
   {
     "name": "Peacock butterfly",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_4_i.png",
+    "image": "/insects/jpg/Peacock butterfly.jpg",
     "season": "Mar - June",
     "location": "Flying",
-    "time": "4am  7pm ",
+    "time": "4am 7pm",
     "value": "2500"
   },
   {
     "name": "Pill bug",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_76_i.png",
+    "image": "/insects/jpg/Pill bug.jpg",
     "season": "Sept - June",
     "location": "Hit Stone",
-    "time": "11pm  4pm ",
+    "time": "11pm 4pm",
     "value": "250"
   },
   {
     "name": "Pondskater",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_38_i.png",
+    "image": "/insects/jpg/Pondskater.jpg",
     "season": "May - Sept",
     "location": "Water's Surface",
-    "time": "8am  7pm ",
+    "time": "8am 7pm",
     "value": "130"
   },
   {
     "name": "Queen Alexandra's birdwing",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_12_i.png",
+    "image": "/insects/jpg/Queen Alexandra's birdwing.jpg",
     "season": "May - Sept",
     "location": "Flying",
-    "time": "8am  4pm ",
+    "time": "8am 4pm",
     "value": "4000"
   },
   {
     "name": "Rainbow stag",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_58_i.png",
+    "image": "/insects/jpg/Rainbow stag.jpg",
     "season": "June - Sept",
     "location": "Trees",
-    "time": "7pm  8am ",
+    "time": "7pm 8am",
     "value": "6000"
   },
   {
     "name": "Rajah brooke's birdwing",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_11_i.png",
+    "image": "/insects/jpg/Rajah brooke's birdwing.jpg",
     "season": "Dec - Feb, Apr ~ Sept",
     "location": "Flying",
-    "time": "8am  5pm ",
+    "time": "8am 5pm",
     "value": "2500"
   },
   {
     "name": "Red dragonfly",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_32_i.png",
+    "image": "/insects/jpg/Red dragonfly.jpg",
     "season": "Sept - Oct",
     "location": "Flying",
-    "time": "8am  7pm ",
+    "time": "8am 7pm",
     "value": "180"
   },
   {
     "name": "Rice grasshopper",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_18_i.png",
+    "image": "/insects/jpg/Rice grasshopper.jpg",
     "season": "Apr - Nov",
     "location": "Ground",
-    "time": "8am  7pm ",
+    "time": "8am 7pm",
     "value": "400"
   },
   {
     "name": "Robust cicada",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_27_i.png",
+    "image": "/insects/jpg/Robust cicada.jpg",
     "season": "July - Aug",
     "location": "Tree",
-    "time": "8am  5pm ",
+    "time": "8am 5pm",
     "value": "300"
   },
   {
     "name": "Rosalia batesi beetle",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_48_i.png",
+    "image": "/insects/jpg/Rosalia batesi beetle.jpg",
     "season": "May - Sept",
     "location": "Stump",
-    "time": "All day ",
+    "time": "All day",
     "value": "3000"
   },
   {
     "name": "Saw stag",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_55_i.png",
+    "image": "/insects/jpg/Saw stag.jpg",
     "season": "July - Aug",
     "location": "Trees",
-    "time": "All day ",
+    "time": "All day",
     "value": "2000"
   },
   {
     "name": "Scarab beetle",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_52_i.png",
+    "image": "/insects/jpg/Scarab beetle.jpg",
     "season": "July - Aug",
     "location": "Tree",
-    "time": "11pm  8am ",
+    "time": "11pm 8am",
     "value": "10000"
   },
   {
     "name": "Scorpion",
-    "image": "https://gamewith-en.akamaized.net/img/c30dafd2080da93930e89326968932e3.jpg",
+    "image": "/insects/jpg/Scorpion.jpg",
     "season": "May - Oct",
     "location": "Roaming",
-    "time": "7pm  4am ",
+    "time": "7pm 4am",
     "value": "8000"
   },
   {
     "name": "Snail",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_75_i.png",
+    "image": "/insects/jpg/Snail.jpg",
     "season": "All Year",
     "location": "On Stone (rain)",
     "time": "All day Rainy day",
@@ -545,98 +545,98 @@
   },
   {
     "name": "Spider",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_78_i.png",
+    "image": "/insects/jpg/Spider.jpg",
     "season": "All Year",
     "location": "Chop tree",
-    "time": "7pm  8am ",
+    "time": "7pm 8am",
     "value": "600"
   },
   {
     "name": "Stinkbug",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_41_i.png",
+    "image": "/insects/jpg/Stinkbug.jpg",
     "season": "Mar - Oct",
     "location": "Flower",
-    "time": "All day ",
+    "time": "All day",
     "value": "120"
   },
   {
     "name": "Tarantula",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_79_i.png",
+    "image": "/insects/jpg/Tarantula.jpg",
     "season": "Nov - Apr",
     "location": "Roaming",
-    "time": "7pm  4am ",
+    "time": "7pm 4am",
     "value": "8000"
   },
   {
     "name": "Tiger beetle",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_44_i.png",
+    "image": "/insects/jpg/Tiger beetle.jpg",
     "season": "Feb - Oct",
     "location": "Ground",
-    "time": "All day ",
+    "time": "All day",
     "value": "1500"
   },
   {
     "name": "Tiger butterfly",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_3_i.png",
+    "image": "/insects/jpg/Tiger butterfly.jpg",
     "season": "Mar - Sept",
     "location": "Flying",
-    "time": "4am  7pm ",
+    "time": "4am 7pm",
     "value": "240"
   },
   {
     "name": "Violin beetle",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_46_i.png",
+    "image": "/insects/jpg/Violin beetle.jpg",
     "season": "May, June, Sept - Nov",
     "location": "Stump",
-    "time": "All day ",
+    "time": "All day",
     "value": "450"
   },
   {
     "name": "Walker cicada",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_29_i.png",
+    "image": "/insects/jpg/Walker cicada.jpg",
     "season": "Aug - Sept",
     "location": "Tree",
-    "time": "8am  5pm ",
+    "time": "8am 5pm",
     "value": "400"
   },
   {
     "name": "Walking leaf",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_67_i.png",
+    "image": "/insects/jpg/Walking leaf.jpg",
     "season": "July - Sept",
     "location": "Camouflaged among fallen leaves",
-    "time": "All day ",
+    "time": "All day",
     "value": "600"
   },
   {
     "name": "Walking stick",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_66_i.png",
+    "image": "/insects/jpg/Walking stick.jpg",
     "season": "July - Nov",
     "location": "Tree",
-    "time": "4am  8am, 5pm ~ 7pm ",
+    "time": "4am 8am, 5pm ~ 7pm",
     "value": "600"
   },
   {
     "name": "Wasp",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_25_i.png",
+    "image": "/insects/jpg/Wasp.jpg",
     "season": "All Year",
     "location": "Chop Tree",
-    "time": "All day ",
+    "time": "All day",
     "value": "2500"
   },
   {
     "name": "Wharf roach",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_71_i.png",
+    "image": "/insects/jpg/Wharf roach.jpg",
     "season": "All Year",
     "location": "Beach stones",
-    "time": "All day ",
+    "time": "All day",
     "value": "200"
   },
   {
     "name": "Yellow butterfly",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/musi_2_i.png",
+    "image": "/insects/jpg/Yellow butterfly.jpg",
     "season": "Mar - June, Sept, Oct",
     "location": "Flying",
-    "time": "4am  7pm ",
+    "time": "4am 7pm",
     "value": "160"
   }
 ]

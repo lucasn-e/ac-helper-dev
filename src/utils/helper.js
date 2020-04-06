@@ -24,6 +24,37 @@ export const queryByIndex = (arr1, arr2) => {
   });
 }
 
+export const toggleHemisphere = arr => {
+  return arr.map(elem => {
+    let shouldLoop = true;
+    let num;
+    let compareElem = elem.season;
+    while (shouldLoop) {
+      if (elem.season.includes('All')) {
+        shouldLoop = false;
+        break;
+      }
+      num = parseInt(/\d+/.exec(compareElem)[0]);
+      compareElem = compareElem.replace(/\d+/, '');
+      let tempnum;
+      if (num - 6 == -1) {
+          tempnum = 11;
+      } else if (num - 6 < -1) {
+          tempnum = num-6+12;
+      } else {
+          tempnum = num-6;
+      }
+      elem.season = elem.season.replace(num, tempnum);
+      if (!/\d/.test(compareElem)) {
+        shouldLoop = false;
+        break;
+      }
+    }
+    return elem;
+  });
+}
+
+
 export const mobileCheck = () => {
   var check = false;
   // eslint-disable-next-line
