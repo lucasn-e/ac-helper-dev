@@ -10,8 +10,8 @@
       <div class="error" v-if="exportError">Error: you have no saved data to export!</div>
       <div class="control-bar">
         <div class="arrow-back" @click="toggleFeedback" v-if="page === 2"></div>
-        <h3 v-if="page === 1">{{ mobileChoice | capitalize }}</h3>
-        <h3 v-if="page === 2">Feedback</h3>
+        <div class="phone-head" v-if="page === 1">{{ mobileChoice | capitalize }}</div>
+        <div class="phone-head" v-if="page === 2">Feedback</div>
       </div>
 
       <div class="nook-phone-main" :class="page == 1 ? 'show' : 'hide'">
@@ -101,8 +101,6 @@
   </div>
 </template>
 <script>
-import moment from "moment";
-
 export default {
   data() {
     return {
@@ -168,7 +166,15 @@ export default {
   },
   methods: {
     time() {
-      this.datenow = new Date().getHours() + ":" + new Date().getMinutes();
+      let hours = new Date().getHours().toString();
+      let minutes = new Date().getMinutes().toString();
+      if (hours.length === 1) {
+        hours = '0' + hours;
+      }
+      if (minutes.length === 1) {
+        minutes = '0' + minutes
+      }
+      this.datenow = hours + ":" + minutes;
     },
     toggleFeedback() {
       if (this.page === 1) {

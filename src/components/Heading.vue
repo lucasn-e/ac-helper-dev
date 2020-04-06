@@ -1,7 +1,7 @@
 <template>
   <div class="stuff">
     <div class="header">
-      <h1>Animal Crossing: New Horizon Helper</h1>
+      <h1>Animal Crossing:<br>New&nbsp;Horizon<br>Helper</h1>
     </div>
 
     <div class="main-content-wrapper">

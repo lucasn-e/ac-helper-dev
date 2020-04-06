@@ -5,8 +5,13 @@
 }
 @font-face {
   font-display: swap;
-  font-family: "Roboto";
-  src: url(~@/assets/fonts/Roboto-Regular.ttf);
+  font-family: "Humming";
+  src: url(~@/assets/fonts/Humming.otf);
+}
+@font-face {
+  font-display: swap;
+  font-family: "FinkHeavy";
+  src: url(~@/assets/fonts/FinkHeavy.ttf);
 }
 .fullwidth-container {
   width: 100%;
@@ -19,7 +24,7 @@
   background-attachment: fixed;
   background-position: top;
   background-size: cover;
-  font-family: "Gorditas", "Roboto", cursive, Helvetica, Arial, sans-serif;
+  font-family: "Humming", cursive, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -114,9 +119,17 @@ body {
 
 h1,
 h3 {
+  font-family: "FinkHeavy", "Gorditas", cursive;
   width: 100%;
+  font-weight: 400;
 }
 
+h1 {
+  font-size: 3em;
+  @media screen and (max-width: 767px) {
+    font-size: 2em;
+  }
+}
 
 .custom-button {
   border-radius: 22px;
@@ -133,7 +146,7 @@ h3 {
   &.large {
     width: 115px;
     height: 45px;
-    font-size: 1em;
+    font-size: .8em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,6 +211,9 @@ button.custom-button.mini {
 
 .control-bar {
   position: relative;
+  .phone-head {
+    margin: 1em 0;
+  }
   .arrow-back {
     height: 10px;
     width: 10px;
@@ -426,6 +442,9 @@ button.custom-button.mini {
   margin: 27px 0;
   border-radius: 22px;
   background-color: rgba(255, 255, 255, 0.7);
+  h3 {
+    font-size: 1.8em;
+  }
   @media screen and (max-width: 767px) {
     border: none;
     border-radius: 0;
@@ -637,6 +656,9 @@ tr {
   background-color: rgba(247, 244, 139,.85);
   border-radius: 22px;
   margin-bottom: 35px;
+  h3 {
+    font-size: 1.5em;
+  }
 }
 .tool-container {
   width: 100%;

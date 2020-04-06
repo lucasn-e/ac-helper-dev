@@ -1,6 +1,5 @@
 <template>
   <div class="main-content">
-    <h3>Choose your topic:</h3>
     <div class="select-container">
       <div
         class="custom-button"
