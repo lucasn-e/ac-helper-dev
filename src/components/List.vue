@@ -78,7 +78,7 @@ export default {
           image: elem.image,
           season: elem.season,
           location: elem.location,
-          time: elem.time.replace(/(\d\w\w) /, "$1 - "),
+          time: elem.time,
           value: elem.value
         };
       });
