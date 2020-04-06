@@ -50,10 +50,10 @@ export const toggleHemisphere = arr => {
 
       switch(num) {
         case(0):
-            elem.season = elem.season.replace('[-,]\s0(?!\d)', '- ' + tempnum);
+            elem.season = elem.season.replace('([-,])\s0(?!\d)', '$1 ' + tempnum);
           break;
         case(1):
-          elem.season = elem.season.replace('[-,]\s1(?!\d)', '- ' + tempnum)
+          elem.season = elem.season.replace('([-,])\s1(?!\d)', '$1 ' + tempnum)
           break;
         default:
           elem.season = elem.season.replace(num, tempnum);
