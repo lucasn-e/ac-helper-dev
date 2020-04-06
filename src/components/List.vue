@@ -99,14 +99,8 @@ export default {
           if (seasons.includes('All')) return true;
           if (!/\d/.test(seasons)) return true;
           seasons = seasons.replace(/10/, this.payload.months[10]);
-          if (elem.name.includes('Squid'))
-            console.log(seasons);
           seasons = seasons.replace(/11/, this.payload.months[11]);
-          if (elem.name.includes('Squid'))
-            console.log(seasons);
           seasons = seasons.replace(index, month);
-          if (elem.name.includes('Squid'))
-            console.log(seasons);
         });
         return {
           name: elem.name,

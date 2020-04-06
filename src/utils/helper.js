@@ -37,28 +37,14 @@ export const toggleHemisphere = arr => {
       num = parseInt(/\d+/.exec(compareElem)[0]);
       compareElem = compareElem.replace(/\d+/, '');
       let tempnum;
-      if (elem.name.includes('Squid'))
-            console.log(num, 'pre-if');
       if (num - 6 == -1) {
           tempnum = 11;
-          if (elem.name.includes('Squid'))
-            console.log(tempnum, 'if1');
       } else if (num - 6 < -1) {
-        if (elem.name.includes('Squid'))
-            console.log(num, 'if2');
           tempnum = parseInt(num)-6+12;
-          if (elem.name.includes('Squid'))
-            console.log(tempnum);
       } else {
-        if (elem.name.includes('Squid'))
-            console.log(tempnum, 'if3');
           tempnum = parseInt(num)-6;
-          if (elem.name.includes('Squid'))
-            console.log(tempnum);
       }
       tempnum = parseInt(tempnum);
-      if (elem.name.includes('Squid'))
-            console.log(tempnum, num);
       
       let patt;
 
