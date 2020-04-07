@@ -4,7 +4,7 @@
       <ListItem
         class="header-row"
         :header="true"
-        :item="{ captured: 'Captured', name: 'Name', season: 'Season', time: 'Time', location: 'Location', value: 'Value' }"
+        :item="{ captured: lang.listHeader.caught, name: lang.global.name, season: lang.listHeader.season, time: lang.listHeader.time, location: lang.listHeader.location, value: lang.listHeader.value }"
         @sortByValue="sortByValue"
         @sortByName="sortByName"
         :sorting="sorting"
@@ -21,19 +21,15 @@
 </template>
 <script>
 import ListItem from "./ListItem.vue";
-import Fish from "../data/fish.json";
-import Insects from "../data/insects.json";
 import { mapState } from "vuex";
-import { toggleHemisphere } from '../utils/helper.js';
+import { toggleHemisphere } from "../utils/helper.js";
 
 export default {
   data() {
     return {
-      fish: Fish,
-      insects: Insects,
       sorted: "ascending",
       sorting: "name",
-      current: 'NH'
+      current: "NH"
     };
   },
   components: {
@@ -96,7 +92,7 @@ export default {
         let seasons = elem.season;
         // some() is a loop that breaks if return value === true
         this.payload.months.some((month, index) => {
-          if (seasons.includes('All')) return true;
+          if (seasons.includes("All")) return true;
           if (!/\d/.test(seasons)) return true;
           seasons = seasons.replace(/10/, this.payload.months[10]);
           seasons = seasons.replace(/11/, this.payload.months[11]);
@@ -125,7 +121,7 @@ export default {
       }
     },
     // return array consisting only of elements that match the "Search" <input>
-    filteredData() { 
+    filteredData() {
       return this.cleanedData.filter(elem =>
         elem.name.toUpperCase().includes(this.payload.filterValue.toUpperCase())
       );
@@ -165,7 +161,9 @@ export default {
                     return true;
                   }
                 });
-                let returnThis = elem.season.includes(this.payload.months[current]);
+                let returnThis = elem.season.includes(
+                  this.payload.months[current]
+                );
                 if (returnThis) return myData;
                 // in case of a month range spreading over the end of a year (Nov - Feb for example) and the selected month falls in between
                 if (from >= current && to >= current && to < from) {
@@ -198,7 +196,15 @@ export default {
         return [];
       }
     },
-    ...mapState(["displayData", "sortType", "caught", "loc"])
+    ...mapState([
+      "displayData",
+      "sortType",
+      "caught",
+      "loc",
+      "lang",
+      "fish",
+      "insects"
+    ])
   }
 };
 </script>

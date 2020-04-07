@@ -93,6 +93,7 @@ body {
     min-width: 260px;
     overflow: hidden;
     .arrow-down {
+      z-index: 15;
       position: absolute;
       height: 15px;
       width: 15px;
@@ -169,6 +170,10 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 767px) {
+      height: auto;
+      min-height: 50px;
+    }
   }
   &.mini {
     padding: 10px 0;
@@ -257,7 +262,10 @@ button.custom-button.mini {
 }
 
 .time-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   position: absolute;
+  z-index: 50;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -266,6 +274,43 @@ button.custom-button.mini {
   height: 25px;
   line-height: 25px;
   background-color: rgba(255,255,255,.9);
+}
+
+.langSwitcher {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+  z-index: 2;
+  top: 25px;
+  transition: .25s;
+  transform: scaleY(0);
+  transform-origin: top;
+  &.open {
+    transform: scaleY(1);
+  }
+  .lang {
+    padding: 10px 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(22,22,22,.1);
+    }
+  }
+}
+.desktop-lang-switcher {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 50px;
+  cursor: url(~@/assets/cursor.png) 8 8, auto;
+  user-select: none;
+  .lang-switcher {
+    transition: .5s;
+    transform: scale(1);
+    transform-origin: top;
+    &.closed {
+      transform: scaleY(0);
+    }
+  }
 }
 
 .control-bar {
@@ -285,7 +330,7 @@ button.custom-button.mini {
   }
 }
 
-.select-container, div.import-export, .nook-phone-main {
+.select-container, div.settings, .nook-phone-main {
   display: flex;
   justify-content: center;
   @media screen and (max-width: 767px) {
@@ -337,13 +382,22 @@ button.custom-button.mini {
 .import-code {
   transition: .25s;
   width: 60%;
+  z-index: 0;
+  pointer-events: none;
+  #import-export {
+    background-color: #70A1D7;
+    color: #fff;
+    border: none;
+  }
   &.active {
     color: #222;
+    z-index: 3;
+    pointer-events: all;
   }
   @media screen and (max-width:767px) {
     color: #222;
     position: absolute;
-    bottom: 55px;
+    bottom: 45px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -360,7 +414,7 @@ button.custom-button.mini {
   transform: translate(-50%, -50%) rotateZ(-17deg);
   width: 200px;
 }
-.import-export {
+.settings {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -446,6 +500,7 @@ button.custom-button.mini {
   &-main {
     transition: .5s;
     position: absolute;
+    z-index: 1;
     transform: translate(-50%);
     &.hide {
       left: -500px;
@@ -649,6 +704,11 @@ tr {
 .columntext {
   cursor: initial;
   pointer-events: none;
+  &.value {
+    &::after {
+      content: "★"
+    }
+  }
 }
 .listitem.captured {
   background-color: #A1DE93;
@@ -693,7 +753,7 @@ tr {
   }
   @media screen and (max-width: 767px) {
     width: 75px;
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 }
 .listitem.header-row {

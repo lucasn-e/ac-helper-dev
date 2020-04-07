@@ -2,10 +2,22 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import { mobileCheck } from '../utils/helper.js';
 
+// languages
+import en from '../data/lang/en.json';
+import de from '../data/lang/de.json';
+
+import fish_en from '../data/fish_en.json';
+import fish_de from '../data/fish_de.json';
+
+import insects_en from '../data/insects_en.json';
+import insects_de from '../data/insects_de.json';
+
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
   state: {
+    fish: fish_en,
+    insects: insects_en,
     displayData: 'fish',
     sortType: 'name',
     hideCaught: false,
@@ -15,9 +27,33 @@ const store = new Vuex.Store({
       insects: []
     },
     loc: 'NH',
-    overlayOpen: false
+    overlayOpen: false,
+    currentLang: 'en',
+    lang: en,
+    languages: ['en', 'de']
   },
   mutations: {
+    loadLang(state, data) {
+      if (!data) return;
+      state.currentLang = data;
+      switch (data) {
+        case ('en'):
+          state.lang = en;
+          state.fish = fish_en;
+          state.insects = insects_en;
+          break;
+        case ('de'):
+          state.lang = de;
+          state.fish = fish_de;
+          state.insects = insects_de;
+          break;
+        default:
+          state.lang = en;
+          state.fish = fish_en;
+          state.insects = insects_en;
+          break;
+      }
+    },
     toggleOverlay(state) {
       state.overlayOpen = !state.overlayOpen;
     },
@@ -70,6 +106,10 @@ const store = new Vuex.Store({
     }
   },
   actions: {
+    switchLang({ commit }, data) {
+      commit('loadLang', data);
+      localStorage.setItem('lang', data);
+    },
     // get all data from localstorage and save to store
     getData({ commit }) {
       let isMobile = mobileCheck();
@@ -92,6 +132,8 @@ const store = new Vuex.Store({
         commit('storeFish', caught.fish);
       if (caught.insects)
         commit('storeInsect', caught.insects);
+      if (!!localStorage.getItem('lang'))
+        commit('loadLang', localStorage.getItem('lang'))
     },
     storeData({ state }) {
       localStorage.setItem('caught', JSON.stringify(state.caught));

@@ -1,0 +1,99 @@
+{
+  "languageName": "Deutsch",
+  "languageShort": "de",
+  "header": {
+    "topic": "Bereich auswählen:",
+    "goldenTools": "Goldene Werkzeuge",
+    "import": "Datenimport",
+    "export": "Datenexport"
+  },
+  "global": {
+    "import": "Import",
+    "export": "Export",
+    "guide": "Guide",
+    "name": "Name",
+    "fish": "Fische",
+    "insects": "Insekten",
+    "trackProgress": "! Fortschritt verfolgen!"
+  },
+  "importExport": {
+    "code": "Code",
+    "importError": "Error: no import code entered! Please enter your import code in the text field before pressing \"Import Data\"!",
+    "exportError": "Error: you have no saved data to export!",
+    "success": "Successfully imported!"
+  },
+  "sorting": {
+    "displayFor": "Daten anzeigen für:",
+    "search": "Suchen",
+    "sort": "Sortieren nach:",
+    "month": "Monat",
+    "results": "Ergebnisse",
+    "hide": {
+      "caught": "Gefangenen verstecken",
+      "uncaught": "Nicht Gefangenen verstecken"
+    },
+    "show": {
+      "caught": "Gefangenen anzeigen",
+      "uncaught": "Nicht Gefangenen anzeigen"
+    }
+  },
+  "listHeader": {
+    "caught": "Gefangen",
+    "season": "Saison",
+    "location": "Lebensraum",
+    "time": "aktive Zeit",
+    "value": "Preis"
+  },
+  "goldenTools": {
+    "axe": {
+      "name": "Gold-Axt",
+      "unfinished": "100 Äxte kaputt machen",
+      "finished": "Glückwünsch! Ihr habt 100 Äxte gebrochen die goldene Axe verdient!"
+    },
+    "shovel": {
+      "name": "Gold-Schaufel",
+      "unfinished": "30x Gulliver geholfen",
+      "finished": "Glückwünsch! Ihr habt Gulliver 30 mal gerettet und die goldene Schaufel verdient!"
+    },
+    "wateringCan": {
+      "name": "Gold-Gießkanne",
+      "unfinished": "15 Tage lang  eine 5-Sterne Bewertung halten",
+      "finished": "Glückwünsch! Ihr habt eine 5-Sterne Bewerbung für deine Insel über 15 Tage lang gehalten und die goldene Gießkanne verdient!"
+    },
+    "slingshot": {
+      "name": "Gold-Schleuder",
+      "unfinished": "300 Ballons abgeschossen (\"Ballonschütze\")",
+      "finished": "Glückwünsch! Ihr habt 300 Ballons abgeschlossen und die goldene Schleuder verdient!"
+    },
+    "fishingRod": {
+      "name": "Gold-Angel",
+      "unfinished": "Alle Fische geangelt",
+      "finished": "Glückwünsch! Ihr habt alle Fischer geangelt und die goldene Angel verdient!"
+    },
+    "bugNet": {
+      "name": "Gold-Kescher",
+      "unfinished": "Alle Insekten gefangen",
+      "finished": "Glückwünsch! Ihr habt alle Insekten gefangen und den goldenen Kescher gefangen!"
+    },
+    "reset": "Reset"
+  },
+  "feedback": {
+    "title": "Feedback",
+    "email": "Email",
+    "message": "Message",
+    "send": "Senden"
+  },
+  "hemispheres": {
+    "northern": "Nordhalbkugel",
+    "southern": "Südhalbkugel",
+    "abbreviation": {
+      "northern": "NH",
+      "southern": "SH"
+    }
+  },
+  "thousandSeperator": ".",
+  "congrats": "GLÜCKWÜNSCH!",
+  "translation": "Deutsche Übersetzung",
+  "transCredits": "Nymunariya",
+  "for_you_translators": "use the above key to credit yourself here, dear translator! thank you so much for your effort <3 I am already sorry because this file will increase in length at a later stage hehe"
+}

@@ -1,7 +1,22 @@
 <template>
   <div class="stuff">
+    <div class="desktop-lang-switcher">
+      <div class="desktop-lang-switch-button" @click="toggleLangSwitcher">{{ lang.languageShort }}</div>
+      <div class="lang-switcher" :class="langSwitcherOpen ? 'open' : 'closed'">
+        <div
+          class="lang"
+          v-for="language in languages"
+          :key="language"
+          @click="switchLang(language)"
+        >{{ language }}</div>
+      </div>
+    </div>
     <div class="header">
-      <h1>Animal Crossing:<br>New&nbsp;Horizon<br>Helper</h1>
+      <h1>
+        Animal Crossing:
+        <br />New&nbsp;Horizon
+        <br />Helper
+      </h1>
     </div>
 
     <div class="main-content-wrapper">
@@ -40,8 +55,6 @@
 import MobileHeading from "./MobileHeading.vue";
 import DesktopHeading from "./DesktopHeading.vue";
 import store from "../store/index.js";
-import Fish from "../data/fish.json";
-import Insects from "../data/insects.json";
 import { mapState } from "vuex";
 import { queryForIndexes, queryByIndex, mobileCheck } from "../utils/helper.js";
 
@@ -54,7 +67,8 @@ export default {
       feedbackOpenClose: "",
       isMobile: false,
       importExportActive: false,
-      showSuccess: false
+      showSuccess: false,
+      langSwitcherOpen: false
     };
   },
   components: {
@@ -81,6 +95,13 @@ export default {
     }
   },
   methods: {
+    switchLang(lang) {
+      store.dispatch("switchLang", lang);
+      this.toggleLangSwitcher();
+    },
+    toggleLangSwitcher() {
+      this.langSwitcherOpen = !this.langSwitcherOpen;
+    },
     choose(data) {
       this.importError = false;
       this.exportError = false;
@@ -147,10 +168,13 @@ export default {
         this.exportError = true;
         return;
       }
-      exportFish = queryForIndexes(newData[0].caught.fish, Fish).toString();
+      exportFish = queryForIndexes(
+        newData[0].caught.fish,
+        this.fish
+      ).toString();
       exportInsects = queryForIndexes(
         newData[0].caught.insects,
-        Insects
+        this.insects
       ).toString();
       // only pass values if there are any fish or insects to begin with
       exportFish = exportFish.length > 0 ? "f:" + exportFish + "|" : "";
@@ -202,8 +226,8 @@ export default {
       wateringcanCount = !!wateringcanCount ? wateringcanCount[1] : 0;
 
       const caught = {
-        fish: queryByIndex(fish, Fish),
-        insects: queryByIndex(insects, Insects)
+        fish: queryByIndex(fish, this.fish),
+        insects: queryByIndex(insects, this.insects)
       };
 
       localStorage.setItem("caught", JSON.stringify(caught));
@@ -220,7 +244,13 @@ export default {
     }
   },
   computed: {
-    ...mapState({ choice: "displayData" })
+    ...mapState({
+      choice: "displayData",
+      fish: "fish",
+      insects: "insects",
+      lang: "lang",
+      languages: "languages"
+    })
   }
 };
 </script>

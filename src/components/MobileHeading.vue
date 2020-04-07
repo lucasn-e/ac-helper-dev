@@ -1,20 +1,33 @@
 <template>
   <div class="main-content mobile">
     <div class="nook-phone-container">
-      <div class="time-bar">{{ datenow }}</div>
+      <div class="time-bar">
+        <div></div>
+        <div>{{ datenow }}</div>
+        <div @click="toggleLangSwitcher">{{ lang.languageShort }}</div>
+      </div>
+      <div class="langSwitcher" :class="langSwitcherOpen ? 'open' : 'closed'">
+        <div
+          class="lang"
+          v-for="language in languages"
+          :key="language"
+          @click="switchLang(language)"
+        >{{ language }}</div>
+      </div>
       <div class="arrow-down" @click="scrollDown"></div>
-      <div
-        class="error"
-        v-if="importError"
-      >Error: no import code entered! Please enter your import code in the text field before pressing "Import Data"!</div>
-      <div class="error" v-if="exportError">Error: you have no saved data to export!</div>
+      <div class="error" v-if="importError">{{ lang.importExport.importError }}</div>
+      <div class="error" v-if="exportError">{{ lang.importExport.exportError }}</div>
       <div class="control-bar">
         <div class="arrow-back" @click="toggleFeedback" v-if="page === 2"></div>
         <div class="phone-head" v-if="page === 1">{{ mobileChoice | capitalize }}</div>
-        <div class="phone-head" v-if="page === 2">Feedback</div>
+        <div class="phone-head" v-if="page === 2">{{ lang.feedback.title }}</div>
       </div>
       <div class="nook-phone-main" :class="page == 1 ? 'show' : 'hide'">
-        <div class="overlay" :class="overlayOpen ? 'display' : 'hide'" @click.prevent.stop="openCloseOverlay"></div>
+        <div
+          class="overlay"
+          :class="overlayOpen ? 'display' : 'hide'"
+          @click.prevent.stop="openCloseOverlay"
+        ></div>
         <div class="nook-phone-apps">
           <div
             class="custom-button"
@@ -46,18 +59,17 @@
           <div class="custom-button mini" @click.stop="openCloseImportExport">
             <div
               class="icon-image-container"
-              :class="(!!mobileChoice && mobileChoice == 'Import / Export')">
+              :class="(!!mobileChoice && mobileChoice == 'Import / Export')"
+            >
               <img class="icon-image imexport-image" src="~@/assets/import_export.png" />
             </div>
           </div>
           <div class="custom-button mini" @click="toggleNhSh">
             <div class="icon-image-container" :class="loc == 'NH' ? 'nh' : 'sh'">
-              
               <img class="icon-image globe" src="~@/assets/globe_icon.png" />
               <div class="x small">{{ loc }}</div>
             </div>
           </div>
-
 
           <div class="importexport one" @click="handleImport">
             <div
@@ -76,9 +88,6 @@
             </div>
           </div>
 
-
-
-
           <div class="custom-button mini" @click="toggleFeedback">
             <div class="icon-image-container">
               <img class="icon-image imexport-image" src="~@/assets/feedback_icon.png" />
@@ -87,33 +96,38 @@
         </div>
 
         <label
-          for="import-export"
+          for="settings"
           :class="importExportActive ? 'active' : 'inactive'"
           class="import-code"
           v-show="showCode && page != 2"
         >
-          Code:
-          <input type="text" id="import-export" name="import-export" v-model="importExportData" />
+          {{ lang.importExport.code }}
+          <input
+            type="text"
+            id="import-export"
+            name="import-export"
+            v-model="importExportData"
+          />
         </label>
-        <div v-if="showSuccess && !showCode" class="import-code">Successfully imported!</div>
+        <div v-if="showSuccess && !showCode" class="import-code">{{ lang.importExport.success }}</div>
       </div>
       <div class="nook-phone-secondary" :class="page == 2 ? 'show' : 'hide'">
         <div class="feedback">
           <form class="form" method="POST" name="feedback">
             <input type="hidden" name="form-name" value="feedback" />
             <label for="name">
-              Name:
+              {{ lang.global.name }}:
               <input type="text" name="name" />
             </label>
             <label for="email">
-              Email:
+              {{ lang.feedback.email }}:
               <input type="email" name="email" />
             </label>
             <label for="message">
-              Message:
+              {{ lang.feedback.message }}:
               <textarea name="message"></textarea>
             </label>
-            <button type="submit" class="custom-button mini">Send</button>
+            <button type="submit" class="custom-button mini">{{ lang.feedback.message }}</button>
           </form>
         </div>
       </div>
@@ -121,8 +135,8 @@
   </div>
 </template>
 <script>
-import store from '../store/index.js';
-import { mapState } from 'vuex';
+import store from "../store/index.js";
+import { mapState } from "vuex";
 
 export default {
   data() {
@@ -131,7 +145,8 @@ export default {
       importExportData: "",
       mobileChoice: this.choice || "Fish",
       datenow: "",
-      preventCode: false
+      preventCode: false,
+      langSwitcherOpen: false
     };
   },
   filters: {
@@ -186,31 +201,39 @@ export default {
         (this.mobileChoice == "export" && this.importExport.length > 0)
       );
     },
-    ...mapState(['loc', 'overlayOpen'])
+    ...mapState(["loc", "overlayOpen", "lang", "languages"])
   },
   methods: {
+    switchLang(lang) {
+      store.dispatch("switchLang", lang);
+      this.toggleLangSwitcher();
+    },
+    toggleLangSwitcher() {
+      this.langSwitcherOpen = !this.langSwitcherOpen;
+    },
     toggleNhSh() {
-      store.commit('toggleLoc');
-      this.mobileChoice = this.loc == 'NH' ? 'Northern Hemisphere' : 'Southern Hemisphere'
+      store.commit("toggleLoc");
+      this.mobileChoice =
+        this.loc == "NH" ? "Northern Hemisphere" : "Southern Hemisphere";
     },
     openCloseOverlay() {
-      store.commit('toggleOverlay');
+      store.commit("toggleOverlay");
     },
     openCloseImportExport() {
-      this.mobileChoice = 'Import / Export'
-      store.commit('toggleOverlay');
+      this.mobileChoice = "Import / Export";
+      store.commit("toggleOverlay");
     },
     toggleLocation() {
-      store.commit('toggleLoc');
+      store.commit("toggleLoc");
     },
     time() {
       let hours = new Date().getHours().toString();
       let minutes = new Date().getMinutes().toString();
       if (hours.length === 1) {
-        hours = '0' + hours;
+        hours = "0" + hours;
       }
       if (minutes.length === 1) {
-        minutes = '0' + minutes
+        minutes = "0" + minutes;
       }
       this.datenow = hours + ":" + minutes;
     },

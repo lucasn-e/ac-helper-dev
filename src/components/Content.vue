@@ -1,28 +1,31 @@
 <template>
   <div class="display-container">
     <div class="menu" id="waypoint1" v-if="!!displayData">
-      <h3 v-if="!finished">{{ displayData | capitalize }} Guide</h3>
+      <h3 v-if="!finished">{{ title }} {{ lang.global.guide }}</h3>
       <template v-if="displayData != 'golden-tools'">
         <div class="filter">
-          <label for="search">Search:&nbsp;</label>
+          <label for="search">{{ lang.sorting.search }}&nbsp;</label>
           <input name="search" id="search" type="text" class="filter-input" v-model="filterValue" />
-          <div class="result-count" v-if="filterValue.length > 0">{{ count.length }} Results</div>
+          <div
+            class="result-count"
+            v-if="filterValue.length > 0"
+          >{{ count.length }} {{ lang.sorting.results }}</div>
         </div>
         <div class="sortby">
-          Sort by:
+          {{ lang.sorting.sort }}
           <div
             class="mini-button"
             @click="sortby('month')"
             :class="sortType === 'month' ? 'active' : ''"
-          >Month</div>
+          >{{ lang.sorting.month }}</div>
           <div
             class="mini-button"
             @click="sortby('name')"
             :class="sortType !== 'month' ? 'active' : ''"
-          >Name</div>
+          >{{ lang.global.name }}</div>
         </div>
         <div v-if="sortType === 'month'" class="jumpto-bar">
-          Display data for:
+          {{ lang.sorting.displayFor }}
           <div
             v-for="(month, index) in months"
             :key="month"
@@ -32,17 +35,17 @@
         </div>
         <div class="hide-caught-uncaught-container">
           <div class="custom-button large" @click="toggleHideCaught">
-            <div v-if="!hideCaught">Hide Caught</div>
-            <div v-else>Show Caught</div>
+            <div v-if="!hideCaught">{{ lang.sorting.hide.caught }}</div>
+            <div v-else>{{ lang.sorting.show.caught }}</div>
           </div>
           <div class="custom-button large" @click="toggleHideUncaught">
-            <div v-if="!hideUncaught">Hide Uncaught</div>
-            <div v-else>Show Uncaught</div>
+            <div v-if="!hideUncaught">{{ lang.sorting.hide.uncaught }}</div>
+            <div v-else>{{ lang.sorting.show.uncaught }}</div>
           </div>
         </div>
       </template>
       <template v-else>
-        <template v-if="!!finished">CONGRATULATIONS!</template>
+        <template v-if="!!finished">{{ lang.congrats }}</template>
       </template>
     </div>
     <List
@@ -94,6 +97,16 @@ export default {
     }
   },
   computed: {
+    title() {
+      switch (this.displayData) {
+        case "fish":
+          return this.lang.global.fish;
+        case "insects":
+          return this.lang.global.insects;
+        default:
+          return this.lang.header.goldenTools;
+      }
+    },
     payload() {
       return {
         filterValue: this.filterValue,
@@ -101,7 +114,13 @@ export default {
         months: this.months
       };
     },
-    ...mapState(["sortType", "displayData", "hideCaught", "hideUncaught"])
+    ...mapState([
+      "sortType",
+      "displayData",
+      "hideCaught",
+      "hideUncaught",
+      "lang"
+    ])
   },
   methods: {
     toggleHideCaught() {

@@ -1,0 +1,99 @@
+{
+  "languageName": "English",
+  "languageShort": "en",
+  "header": {
+    "topic": "Choose your Topic:",
+    "goldenTools": "Golden Tools",
+    "import": "Import Data",
+    "export": "Export Data"
+  },
+  "global": {
+    "import": "Import",
+    "export": "Export",
+    "guide": "Guide",
+    "name": "Name",
+    "fish": "Fish",
+    "insects": "Insects",
+    "trackProgress": "Track your progress!"
+  },
+  "importExport": {
+    "code": "Code",
+    "importError": "Error: no import code entered! Please enter your import code in the text field before pressing \"Import Data\"!",
+    "exportError": "Error: you have no saved data to export!",
+    "success": "Successfully imported!"
+  },
+  "sorting": {
+    "displayFor": "Display data for:",
+    "search": "Search",
+    "sort": "Sort by:",
+    "month": "Month",
+    "results": "Results",
+    "hide": {
+      "caught": "Hide Caught",
+      "uncaught": "Hide Uncaught"
+    },
+    "show": {
+      "caught": "Show Caught",
+      "uncaught": "Show Uncaught"
+    }
+  },
+  "listHeader": {
+    "caught": "Caught",
+    "season": "Season",
+    "location": "Location",
+    "time": "Time",
+    "value": "Value"
+  },
+  "goldenTools": {
+    "axe": {
+      "name": "Golden Axe",
+      "unfinished": "Break 100 axes of any kind to unlock the golden axe.",
+      "finished": "Congratulations on breaking 100 axes and earning the golden axe!"
+    },
+    "shovel": {
+      "name": "Golden Shovel",
+      "unfinished": "Save Gulliver 30 times to unlock the golden shovel.",
+      "finished": "Congratulations on saving Gulliver 30 times and earning the golden shovel!"
+    },
+    "wateringCan": {
+      "name": "Golden Watering Can",
+      "unfinished": "Reach a 5-star Island rating at Isabelle!",
+      "finished": "Congratulations on reaching a 5-star Island rating and earning the golden watering can!"
+    },
+    "slingshot": {
+      "name": "Golden Slingshot",
+      "unfinished": "Shoot down 300 Balloons (\"It's raining treasure\" achievement)!",
+      "finished": "Congrats on shooting down 300 balloons and earning the golden slingshot!"
+    },
+    "fishingRod": {
+      "name": "Golden Fishing Rod",
+      "unfinished": "Catch all Fish!",
+      "finished": "Congratulations on catching every fish and earning the golden fishing rod!"
+    },
+    "bugNet": {
+      "name": "Golden Bug Net",
+      "unfinished": "Catch all Bugs!",
+      "finished": "Congratulations on catching every bug and earning the golden bug net!"
+    },
+    "reset": "Reset"
+  },
+  "feedback": {
+    "title": "Feedback",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send"
+  },
+  "hemispheres": {
+    "northern": "Northern Hemisphere",
+    "southern": "Southern Hemisphere",
+    "abbreviation": {
+      "northern": "NH",
+      "southern": "SH"
+    }
+  },
+  "thousandSeperator": ",",
+  "congrats": "CONGRATULATIONS!",
+  "translation": "English translation",
+  "transCredits": "Nnay :)",
+  "for_you_translators": "use the above key to credit yourself here, dear translator! thank you so much for your effort <3 I am already sorry because this file will increase in length at a later stage hehe"
+}

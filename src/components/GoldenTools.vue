@@ -1,9 +1,11 @@
 <template>
   <div class="tool-container" :class="finished">
     <div class="golden-tool">
-      <h3>Golden Axe</h3>
-      <p v-if="counts.axeCount < 100">Break 100 axes of any kind to unlock. Track your status!</p>
-      <p v-else>Congrats on breaking 100 axes and earning the golden axe!</p>
+      <h3>{{ lang.goldenTools.axe.name }}</h3>
+      <p
+        v-if="counts.axeCount < 100"
+      >{{ lang.goldenTools.axe.unfinished }} {{ lang.global.trackProgress }}</p>
+      <p v-else>{{ lang.goldenTools.axe.finished }}</p>
       <ProgressBar :current="parseInt(counts.axeCount)" :max="100" />
       <div class="controls-container">
         <div class="reduce-btn btn" @click="decrement('axeCount')">-</div>
@@ -20,11 +22,11 @@
       </div>
     </div>
     <div class="golden-tool">
-      <h3>Golden Shovel</h3>
+      <h3>{{ lang.goldenTools.shovel.name }}</h3>
       <p
         v-if="counts.shovelCount < 30"
-      >Save Gulliver 30 times to receive the DIY recipe! Track your status!</p>
-      <p v-else>Congrats on saving Gulliver 30 times and earning the golden shovel!</p>
+      >{{ lang.goldenTools.shovel.unfinished }} {{ lang.global.trackProgress }}</p>
+      <p v-else>{{ lang.goldenTools.shovel.finished }}</p>
       <ProgressBar :current="parseInt(counts.shovelCount)" :max="30" />
       <div class="controls-container">
         <div class="reduce-btn btn" @click="decrement('shovelCount')">-</div>
@@ -42,9 +44,11 @@
     </div>
 
     <div class="golden-tool">
-      <h3>Golden Watering Can</h3>
-      <p v-if="counts.wateringcanCount < 5">Reach a 5* Rating at Isabelle! Track your stars!</p>
-      <p v-else>Congrats on reaching a 5* island rating and earning the golden watering can!</p>
+      <h3>{{ lang.goldenTools.wateringCan.name }}</h3>
+      <p
+        v-if="counts.wateringcanCount < 5"
+      >{{ lang.goldenTools.wateringCan.unfinished }} {{ lang.global.trackProgress }}</p>
+      <p v-else>{{ lang.goldenTools.wateringCan.finished }}</p>
       <ProgressBar :current="parseInt(counts.wateringcanCount)" :max="5" />
       <div class="controls-container">
         <div class="reduce-btn btn" @click="decrement('wateringcanCount')">-</div>
@@ -62,11 +66,11 @@
     </div>
 
     <div class="golden-tool">
-      <h3>Golden Slingshot</h3>
+      <h3>{{ lang.goldenTools.slingshot.name }}</h3>
       <p
         v-if="counts.balloonCount < 300"
-      >Shoot down 300 Balloons ("It's raining treasure" achievement)! Track your status!</p>
-      <p v-else>Congrats on shooting down 300 balloons and earning the golden slingshot!</p>
+      >{{ lang.goldenTools.slingshot.unfinished }} {{ lang.global.trackProgress }}</p>
+      <p v-else>{{ lang.goldenTools.slingshot.finished }}</p>
       <ProgressBar :current="parseInt(counts.balloonCount)" :max="300" />
       <div class="controls-container">
         <div class="reduce-btn btn" @click="decrement('balloonCount')">-</div>
@@ -84,21 +88,25 @@
     </div>
 
     <div class="golden-tool">
-      <h3>Golden Fishing Rod</h3>
-      <p v-if="caught.fish.length < 80">Catch all Fish! Track your status!</p>
-      <p v-else>Congrats on catching all the fish!</p>
+      <h3>{{ lang.goldenTools.fishingRod.name }}</h3>
+      <p
+        v-if="caught.fish.length < 80"
+      >{{ lang.goldenTools.fishingRod.unfinished }} {{ lang.global.trackProgress }}</p>
+      <p v-else>{{ lang.goldenTools.fishingRod.finished }}</p>
       <ProgressBar :current="caught.fish.length" :max="80" />
       <div class="controls-container">{{ caught.fish.length }} / 80</div>
     </div>
     <div class="golden-tool">
-      <h3>Golden Bug Net</h3>
-      <p v-if="caught.insects.length < 80">Catch all Bugs! Track your status!</p>
-      <p v-else>Congrats on catching all bugs!</p>
+      <h3>{{ lang.goldenTools.bugNet.name }}</h3>
+      <p
+        v-if="caught.insects.length < 80"
+      >{{ lang.goldenTools.bugNet.unfinished }} {{ lang.global.trackProgress }}</p>
+      <p v-else>{{ lang.goldenTools.bugNet.finished }}</p>
       <ProgressBar :current="caught.insects.length" :max="80" />
       <div class="controls-container">{{ caught.insects.length }} / 80</div>
     </div>
     <div v-if="finished" class="button-container">
-      <div class="custom-button" @click="reset">Reset</div>
+      <div class="custom-button" @click="reset">{{ lang.goldenTools.reset }}</div>
     </div>
   </div>
 </template>
@@ -129,7 +137,7 @@ export default {
         ? "finished"
         : "";
     },
-    ...mapState(["caught"])
+    ...mapState(["caught", "lang"])
   },
   mounted() {
     if (

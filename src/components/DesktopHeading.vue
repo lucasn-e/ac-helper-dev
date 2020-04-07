@@ -6,53 +6,52 @@
         :class="(!!choice && choice === 'fish') ? 'active' : ''"
         @click="choose('fish')"
       >
-        <div>Fish</div>
+        <div>{{ lang.global.fish }}</div>
       </div>
       <div
         class="custom-button"
         :class="(!!choice && choice === 'insects') ? 'active' : ''"
         @click="choose('insects')"
       >
-        <div>Insects</div>
+        <div>{{ lang.global.insects }}</div>
       </div>
       <div
         class="custom-button"
         :class="(!!choice && choice === 'golden-tools') ? 'active' : ''"
         @click="choose('golden-tools')"
       >
-        <div>Golden Tools</div>
+        <div>{{ lang.header.goldenTools }}</div>
       </div>
     </div>
 
-    <div class="import-export">
+    <div class="settings">
       <div class="custom-button mini" @click="handleImport">
-        <div>Import Data</div>
+        <div>{{ lang.header.import }}</div>
       </div>
       <div class="custom-button mini" @click="handleExport">
-        <div>Export Data</div>
+        <div>{{ lang.header.export }}</div>
       </div>
-      <div
-        class="custom-button mini"
-        @click="toggleLocation"
-      >
+      <div class="custom-button mini" @click="toggleLocation">
         <div class="swap-nh-sh">{{ nhShText }}</div>
       </div>
-      <div
-        class="error"
-        v-if="importError"
-      >Error: no import code entered! Please enter your import code in the text field before pressing "Import Data"!</div>
-      <div class="error" v-if="exportError">Error: you have no saved data to export!</div>
+      <div class="error" v-if="importError">{{ lang.importExport.importError }}</div>
+      <div class="error" v-if="exportError">{{ lang.importExport.exportError }}</div>
       <label for="import-export" v-if="showCode && importExportActive">
-        Code:
-        <input type="text" id="import-export" name="import-export" v-model="importExportData" />
+        {{ lang.importExport.code }}
+        <input
+          type="text"
+          id="import-export"
+          name="import-export"
+          v-model="importExportData"
+        />
       </label>
-      <div v-if="showSuccess && !showCode" class="import-code">Successfully imported!</div>
+      <div v-if="showSuccess && !showCode" class="import-code">{{ lang.importExport.success }}</div>
     </div>
   </div>
 </template>
 <script>
-import store from '../store/index.js';
-import {mapState} from 'vuex';
+import store from "../store/index.js";
+import { mapState } from "vuex";
 
 export default {
   data() {
@@ -101,12 +100,18 @@ export default {
   },
   methods: {
     toggleLocation() {
-      store.commit('toggleLoc');
+      store.commit("toggleLoc");
     },
     toggleFeedback() {
       this.$emit("toggleFeedback");
     },
     choose(choice) {
+      this.mobileChoice =
+        choice == "fish"
+          ? this.lang.global.fish
+          : choice == "insects"
+          ? this.lang.global.insects
+          : this.lang.header.goldenTools;
       this.$emit("choose", choice);
     },
     scrollDown() {
@@ -115,17 +120,17 @@ export default {
       });
     },
     handleImport() {
-      this.mobileChoice = "import";
+      this.mobileChoice = this.lang.global.import;
       this.$emit("handleImport", this.importExportData);
     },
     handleExport() {
-      this.mobileChoice = "export";
+      this.mobileChoice = this.lang.global.export;
       this.$emit("handleExport");
     }
   },
   computed: {
     nhShText() {
-      return this.loc == 'NH' ? 'Northern Hemisphere' : 'Southern Hemisphere'
+      return this.loc == "NH" ? "Northern Hemisphere" : "Southern Hemisphere";
     },
     showCode() {
       return (
@@ -134,7 +139,7 @@ export default {
         (this.mobileChoice == "export" && this.importExport.length > 0)
       );
     },
-    ...mapState(['loc'])
+    ...mapState(["loc", "lang"])
   }
 };
 </script>

@@ -34,6 +34,7 @@ export default {
   },
   mounted() {
     store.dispatch("getData");
+    store.commit("loadLang");
   }
 };
 </script>

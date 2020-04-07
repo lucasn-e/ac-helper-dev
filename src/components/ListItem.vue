@@ -29,8 +29,8 @@
       <p class="columntext">{{ item.time }}</p>
     </div>
     <div class="column" :class="{'head': header}" @click="sortByValue">
-      <p class="columntext">
-        {{ item.value }}
+      <p class="columntext" :class="{'value': !header}">
+        {{ sepThousands(item.value) }}
         <span
           class="sortingArrow"
           :class="sorted === 'ascending' ? 'descending' : 'ascending'"
@@ -63,6 +63,19 @@ export default {
     }
   },
   methods: {
+    sepThousands(val) {
+      if (!val) return;
+      let value = val.toString();
+      // I'm lazy. sue me
+      switch (value.length) {
+        case 4:
+          return `${value[0]}${this.lang.thousandSeperator}${value[1]}${value[2]}${value[3]}`;
+        case 5:
+          return `${value[0]}${value[1]}${this.lang.thousandSeperator}${value[2]}${value[3]}${value[4]}`;
+        default:
+          return val;
+      }
+    },
     sortByName() {
       if (!this.header) return;
       this.$emit("sortByName");
@@ -113,7 +126,7 @@ export default {
     sortType() {
       return store.state.sortType;
     },
-    ...mapState(["displayData", "caught", "hideCaught", "hideUncaught"])
+    ...mapState(["displayData", "caught", "hideCaught", "hideUncaught", "lang"])
   }
 };
 </script>
