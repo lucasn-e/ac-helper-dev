@@ -303,6 +303,9 @@ button.custom-button.mini {
   width: 50px;
   cursor: url(~@/assets/cursor.png) 8 8, auto;
   user-select: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   .lang-switcher {
     transition: .5s;
     transform: scale(1);
