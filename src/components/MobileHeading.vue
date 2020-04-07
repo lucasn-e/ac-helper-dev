@@ -127,7 +127,7 @@
               {{ lang.feedback.message }}:
               <textarea name="message"></textarea>
             </label>
-            <button type="submit" class="custom-button mini">{{ lang.feedback.message }}</button>
+            <button type="submit" class="custom-button mini">{{ lang.feedback.send }}</button>
           </form>
         </div>
       </div>
