@@ -67,6 +67,8 @@ export default {
     }
   },
   mounted() {
+    this.newFish = this.fish;
+    this.newInsects = this.insects;
     if (this.loc != this.current) {
       this.swapNhSh();
       this.current = this.loc;
