@@ -30,7 +30,7 @@
     </div>
     <div class="column" :class="{'head': header}" @click="sortByValue">
       <p class="columntext" :class="{'value': !header}">
-        {{ sepThousands(item.value) }}
+        {{ !header ? sepThousands(item.value) : item.value }}
         <span
           class="sortingArrow"
           :class="sorted === 'ascending' ? 'descending' : 'ascending'"
