@@ -229,7 +229,6 @@ export default {
     switchLang(lang) {
       store.dispatch("switchLang", lang);
       this.toggleLangSwitcher();
-      console.log(this.displayData);
       this.evalMobileChoice();
     },
     toggleLangSwitcher() {
@@ -271,7 +270,6 @@ export default {
     },
     choose(choice) {
       this.evalMobileChoice(choice);
-      console.log(choice);
       this.$emit("choose", choice);
     },
     scrollDown() {
