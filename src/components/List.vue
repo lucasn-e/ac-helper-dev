@@ -67,14 +67,20 @@ export default {
     }
   },
   mounted() {
-    this.newFish = this.fish;
-    this.newInsects = this.insects;
     if (this.loc != this.current) {
       this.swapNhSh();
       this.current = this.loc;
     }
   },
   watch: {
+    fish() {
+      if (this.loc != this.current) {
+        this.swapNhSh();
+      } else {
+        this.newFish = this.fish;
+        this.newInsects = this.insects;
+      }
+    },
     loc() {
       if (this.loc != this.current) {
         this.swapNhSh();
