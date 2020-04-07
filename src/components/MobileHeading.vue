@@ -255,7 +255,7 @@ export default {
           break;
         default:
           this.mobileChoice = choice;
-          break;
+          break; //hi
       }
       this.$emit("choose", choice);
     },
