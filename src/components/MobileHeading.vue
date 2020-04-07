@@ -19,7 +19,7 @@
       <div class="error" v-if="exportError">{{ lang.importExport.exportError }}</div>
       <div class="control-bar">
         <div class="arrow-back" @click="toggleFeedback" v-if="page === 2"></div>
-        <div class="phone-head" v-if="page === 1">{{ mobileChoice | capitalize }}</div>
+        <div class="phone-head" v-if="page === 1">{{ mobileChoice }}</div>
         <div class="phone-head" v-if="page === 2">{{ lang.feedback.title }}</div>
       </div>
       <div class="nook-phone-main" :class="page == 1 ? 'show' : 'hide'">
@@ -179,12 +179,15 @@ export default {
   },
   watch: {
     choice(val) {
-      if (this.mobileChoice == "import" || this.mobileChoice == "export") {
+      if (
+        this.mobileChoice == this.lang.global.import ||
+        this.mobileChoice == this.lang.global.export
+      ) {
         if (val != "import" && val != "export") {
           this.preventCode = true;
         }
       }
-      this.mobileChoice = val;
+      this.evalMobileChoice(val);
     },
     importExport(val) {
       if (val.length > 0) {
@@ -196,17 +199,38 @@ export default {
     showCode() {
       return (
         !this.preventCode ||
-        (this.mobileChoice == "import" && !this.showSuccess) ||
-        (this.mobileChoice != "export" && this.importExport.length != 0) ||
-        (this.mobileChoice == "export" && this.importExport.length > 0)
+        (this.mobileChoice == this.lang.global.import && !this.showSuccess) ||
+        (this.mobileChoice != this.lang.global.export &&
+          this.importExport.length != 0) ||
+        (this.mobileChoice == this.lang.global.export &&
+          this.importExport.length > 0)
       );
     },
-    ...mapState(["loc", "overlayOpen", "lang", "languages"])
+    ...mapState(["loc", "overlayOpen", "lang", "languages", "displayData"])
   },
   methods: {
+    evalMobileChoice(choice) {
+      let myChoice = choice || this.displayData;
+      switch (myChoice) {
+        case "fish":
+          this.mobileChoice = this.lang.global.fish;
+          break;
+        case "insects":
+          this.mobileChoice = this.lang.global.insects;
+          break;
+        case "golden-tools":
+          this.mobileChoice = this.lang.header.goldenTools;
+          break;
+        default:
+          this.mobileChoice = choice || this.displayData;
+          break;
+      }
+    },
     switchLang(lang) {
       store.dispatch("switchLang", lang);
       this.toggleLangSwitcher();
+      console.log(this.displayData);
+      this.evalMobileChoice();
     },
     toggleLangSwitcher() {
       this.langSwitcherOpen = !this.langSwitcherOpen;
@@ -214,13 +238,16 @@ export default {
     toggleNhSh() {
       store.commit("toggleLoc");
       this.mobileChoice =
-        this.loc == "NH" ? "Northern Hemisphere" : "Southern Hemisphere";
+        this.loc == "NH"
+          ? this.lang.hemispheres.northern
+          : this.lang.hemispheres.southern;
     },
     openCloseOverlay() {
       store.commit("toggleOverlay");
     },
     openCloseImportExport() {
-      this.mobileChoice = "Import / Export";
+      this.mobileChoice =
+        this.lang.global.import + " / " + this.lang.global.export;
       store.commit("toggleOverlay");
     },
     toggleLocation() {
@@ -243,20 +270,8 @@ export default {
       } else this.page = 1;
     },
     choose(choice) {
-      switch (this.displayData) {
-        case "fish":
-          this.mobileChoice = this.lang.global.fish;
-          break;
-        case "insects":
-          this.mobileChoice = this.lang.global.insects;
-          break;
-        case "golden-tools":
-          this.mobileChoice = this.lang.header.goldenTools;
-          break;
-        default:
-          this.mobileChoice = choice;
-          break;
-      }
+      this.evalMobileChoice(choice);
+      console.log(choice);
       this.$emit("choose", choice);
     },
     scrollDown() {
@@ -277,6 +292,7 @@ export default {
   },
   mounted() {
     this.interval = setInterval(this.time, 1000);
+    this.evalMobileChoice(this.displayData);
   },
   beforeDestroy() {
     clearInterval(this.interval);
