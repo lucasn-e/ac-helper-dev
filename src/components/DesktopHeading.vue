@@ -57,7 +57,7 @@ export default {
   data() {
     return {
       importExportData: "",
-      mobileChoice: ""
+      desktopChoice: ""
     };
   },
   props: {
@@ -77,9 +77,6 @@ export default {
     importError: {
       type: Boolean
     },
-    feedbackOpenClose: {
-      type: String
-    },
     showSuccess: {
       type: Boolean
     }
@@ -91,13 +88,6 @@ export default {
       }
     }
   },
-  filters: {
-    capitalize: function(value) {
-      if (!value) return "";
-      value = value.toString();
-      return value.charAt(0).toUpperCase() + value.slice(1);
-    }
-  },
   methods: {
     toggleLocation() {
       store.commit("toggleLoc");
@@ -106,12 +96,17 @@ export default {
       this.$emit("toggleFeedback");
     },
     choose(choice) {
-      this.mobileChoice =
-        choice == "fish"
-          ? this.lang.global.fish
-          : choice == "insects"
-          ? this.lang.global.insects
-          : this.lang.header.goldenTools;
+      switch (choice) {
+        case "fish":
+          this.desktopChoice = this.lang.global.fish;
+          break;
+        case "insects":
+          this.desktopChoice = this.lang.global.fish;
+          break;
+        default:
+          this.desktopChoice = this.lang.header.goldenTools;
+          break;
+      }
       this.$emit("choose", choice);
     },
     scrollDown() {
@@ -120,23 +115,25 @@ export default {
       });
     },
     handleImport() {
-      this.mobileChoice = this.lang.global.import;
+      this.desktopChoice = this.lang.global.import;
       this.$emit("handleImport", this.importExportData);
     },
     handleExport() {
-      this.mobileChoice = this.lang.global.export;
+      this.desktopChoice = this.lang.global.export;
       this.$emit("handleExport");
     }
   },
   computed: {
     nhShText() {
-      return this.loc == "NH" ? "Northern Hemisphere" : "Southern Hemisphere";
+      return this.loc == "NH"
+        ? this.lang.hemispheres.northern
+        : this.lang.hemispheres.southern;
     },
     showCode() {
       return (
-        (this.mobileChoice == "import" && !this.showSuccess) ||
-        (this.mobileChoice != "export" && this.importExport.length != 0) ||
-        (this.mobileChoice == "export" && this.importExport.length > 0)
+        (this.desktopChoice == "import" && !this.showSuccess) ||
+        (this.desktopChoice != "export" && this.importExport.length != 0) ||
+        (this.desktopChoice == "export" && this.importExport.length > 0)
       );
     },
     ...mapState(["loc", "lang"])

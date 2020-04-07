@@ -41,7 +41,6 @@
         :importExport="importExport"
         :exportError="exportError"
         :importError="importError"
-        :feedbackOpenClose="feedbackOpenClose"
         :showSuccess="showSuccess"
         @choose="choose"
         @handleImport="handleImport"
