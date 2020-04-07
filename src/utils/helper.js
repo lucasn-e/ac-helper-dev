@@ -34,25 +34,29 @@ export const toggleHemisphere = arr => {
         shouldLoop = false;
         break;
       }
-      num = parseInt(/\d+/.exec(compareElem)[0]);
-      compareElem = compareElem.replace(/\d+/, '');
+      if (/\d+/.test(compareElem)) {
+        num = parseInt(/\d+/.exec(compareElem)[0]);
+        compareElem = compareElem.replace(/\d+/, '');
+      } else {
+        break;
+      }
       let tempnum;
       if (num - 6 == -1) {
-          tempnum = 11;
+        tempnum = 11;
       } else if (num - 6 < -1) {
-          tempnum = parseInt(num)-6+12;
+        tempnum = parseInt(num) - 6 + 12;
       } else {
-          tempnum = parseInt(num)-6;
+        tempnum = parseInt(num) - 6;
       }
       tempnum = parseInt(tempnum);
-      
+
       //let patt;
 
-      switch(num) {
-        case(0):
-            elem.season = elem.season.replace('([-,])\s0(?!\d)', '$1 ' + tempnum);
+      switch (num) {
+        case (0):
+          elem.season = elem.season.replace('([-,])\s0(?!\d)', '$1 ' + tempnum);
           break;
-        case(1):
+        case (1):
           elem.season = elem.season.replace('([-,])\s1(?!\d)', '$1 ' + tempnum)
           break;
         default:

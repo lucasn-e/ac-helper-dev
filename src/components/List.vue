@@ -29,7 +29,9 @@ export default {
     return {
       sorted: "ascending",
       sorting: "name",
-      current: "NH"
+      current: "NH",
+      newFish: [],
+      newInsects: []
     };
   },
   components: {
@@ -60,8 +62,8 @@ export default {
       let temp2 = this.insects;
       temp = toggleHemisphere(temp);
       temp2 = toggleHemisphere(temp2);
-      this.fish = temp;
-      this.insects = temp2;
+      this.newFish = temp;
+      this.newInsects = temp2;
     }
   },
   mounted() {
@@ -80,8 +82,8 @@ export default {
   },
   computed: {
     animalType() {
-      if (this.displayData === "fish") return this.fish;
-      else return this.insects;
+      if (this.displayData === "fish") return this.newFish;
+      else return this.newInsects;
     },
     // make sure the JSON doesn't have any html tags (only <p>)
     cleanedData() {
