@@ -93,14 +93,9 @@ export default {
       if (this.displayData === "fish") return this.newFish;
       else return this.newInsects;
     },
-    // make sure the JSON doesn't have any html tags (only <p>)
     cleanedData() {
-      let clean = JSON.parse(
-        JSON.stringify(this.animalType).replace(/<p>|<\/p>/g, "")
-      );
-      clean = clean.map(elem => {
+      let clean = this.animalType.map(elem => {
         let seasons = elem.season;
-        // some() is a loop that breaks if return value === true
         this.payload.months.some((month, index) => {
           if (seasons.includes("All")) return true;
           if (!/\d/.test(seasons)) return true;
@@ -108,14 +103,7 @@ export default {
           seasons = seasons.replace(/11/, this.payload.months[11]);
           seasons = seasons.replace(index, month);
         });
-        return {
-          name: elem.name,
-          image: elem.image,
-          season: seasons,
-          location: elem.location,
-          time: elem.time,
-          value: elem.value
-        };
+        return { ...elem, season: seasons };
       });
       let sorted = clean.sort((a, b) => {
         if (this.sorting === "name") {
