@@ -243,7 +243,20 @@ export default {
       } else this.page = 1;
     },
     choose(choice) {
-      this.mobileChoice = choice;
+      switch (this.displayData) {
+        case "fish":
+          this.mobileChoice = this.lang.global.fish;
+          break;
+        case "insects":
+          this.mobileChoice = this.lang.global.insects;
+          break;
+        case "golden-tools":
+          this.mobileChoice = this.lang.header.goldenTools;
+          break;
+        default:
+          this.mobileChoice = choice;
+          break;
+      }
       this.$emit("choose", choice);
     },
     scrollDown() {
@@ -253,12 +266,12 @@ export default {
     },
     handleImport() {
       this.openCloseOverlay();
-      this.mobileChoice = "import";
+      this.mobileChoice = this.lang.global.import;
       this.$emit("handleImport", this.importExportData);
     },
     handleExport() {
       this.openCloseOverlay();
-      this.mobileChoice = "export";
+      this.mobileChoice = this.lang.global.export;
       this.$emit("handleExport");
     }
   },
