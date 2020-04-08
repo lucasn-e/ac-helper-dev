@@ -84,11 +84,6 @@ export default {
       default: "ascending"
     }
   },
-  watch: {
-    sorting(val) {
-      console.log(val);
-    }
-  },
   mounted() {
     this.mobile = mobileCheck();
   },
