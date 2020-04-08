@@ -1,18 +1,22 @@
 <template>
   <div v-if="!shouldHide" class="listitem" :class="listItemClass" @click="setCaptured">
     <template v-if="!!header">
+      <div class="column head half" v-if="!mobile" @click="sortByID">
+        <p class="columntext">ID</p>
+      </div>
       <div class="column head">{{ item.captured }}</div>
     </template>
     <template v-else>
+      <div class="column half" v-if="!mobile">
+        <p class="columntext">{{ item.index }}</p>
+      </div>
       <div class="column">
         <img :src="getImgUrl(item.image)" class="data-image" :alt="`Image of ${item.name}`" />
         <div :class="caught[displayData].includes(item.name) ? 'x active' : 'x inactive'">X</div>
       </div>
     </template>
     <div class="column namecol" :class="{'head': header}" @click="sortByName">
-      <p class="columntext" v-html="item.name">
-        <span class="sortingArrow" :class="sorted" v-if="sorting === 'name' && !!header"></span>
-      </p>
+      <p class="columntext" v-html="item.name"></p>
     </div>
     <div class="column" :class="{'head': header}">
       <p class="columntext">{{ item.season }}</p>
@@ -24,22 +28,22 @@
       <p class="columntext">{{ item.time }}</p>
     </div>
     <div class="column" :class="{'head': header}" @click="sortByValue">
-      <p class="columntext" :class="{'value': !header}">
-        {{ !header ? sepThousands(item.value) : item.value }}
-        <span
-          class="sortingArrow"
-          :class="sorted === 'ascending' ? 'descending' : 'ascending'"
-          v-if="sorting === 'value' && !!header"
-        ></span>
-      </p>
+      <p class="columntext" v-if="header">{{ item.value }}</p>
+      <p v-else class="columntext value">{{ sepThousands(item.value) }}</p>
     </div>
   </div>
 </template>
 <script>
 import store from "../store/index.js";
 import { mapState } from "vuex";
+import { mobileCheck } from "../utils/helper.js";
 
 export default {
+  data() {
+    return {
+      mobile: false
+    };
+  },
   props: {
     item: {
       type: Object
@@ -57,6 +61,14 @@ export default {
       default: "ascending"
     }
   },
+  watch: {
+    sorting(val) {
+      console.log(val);
+    }
+  },
+  mounted() {
+    this.mobile = mobileCheck();
+  },
   methods: {
     sepThousands(val) {
       if (!val) return;
@@ -70,6 +82,10 @@ export default {
         default:
           return val;
       }
+    },
+    sortByID() {
+      if (!this.header) return;
+      this.$emit("sortyByID");
     },
     sortByName() {
       if (!this.header) return;

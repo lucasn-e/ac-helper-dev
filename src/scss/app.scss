@@ -671,12 +671,6 @@ tr {
   background-color: #70A1D7;
   color: #fff;
 }
-.caught {
-  
-}
-.x {
-  transition: 0.25s;
-}
 .active {
   opacity: 1;
 }
@@ -731,33 +725,16 @@ tr {
   justify-content: center;
   align-items: center;
   width: 100px;
+  height: 100%;
+  &.half {
+    user-select: none;
+    width: 85px;
+    margin: 0 -60px 0 -30px;
+  }
   &.head {
     .columntext {
       user-select: none;
       position: relative;
-      .sortingArrow {
-        position: absolute;
-        width: 8px;
-        height: 8px;
-        border-bottom: 1px solid #222;
-        border-right: 1px solid #222;
-        right: -15px;
-        top: 18%;
-        transition: .125s;
-        @media screen and (max-width: 767px) {
-          width: 4px;
-          height: 4px;
-          right: -9px;
-          top: 30%;
-        }
-        &.ascending {
-          transform: rotateZ(45deg);
-        }
-        &.descending {
-          transform: rotateZ(-135deg);
-          top: 38%;
-        }
-      }
     }
   }
   @media screen and (max-width: 767px) {
@@ -778,6 +755,9 @@ tr {
   position: relative;
 }
 .x {
+  color: #ff4d4d;
+  font-family: "Gorditas";
+  transition: 0.25s;
   position: absolute;
   top: 50%;
   left: 50%;

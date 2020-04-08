@@ -7,6 +7,7 @@
         :item="{ captured: lang.listHeader.caught, name: lang.global.name, season: lang.listHeader.season, time: lang.listHeader.time, location: lang.listHeader.location, value: lang.listHeader.value }"
         @sortByValue="sortByValue"
         @sortByName="sortByName"
+        @sortyByID="sortyByID"
         :sorting="sorting"
         :sorted="sorted"
       />
@@ -43,6 +44,13 @@ export default {
     }
   },
   methods: {
+    sortyByID() {
+      if (this.sorting === "ID") {
+        this.sorted = this.sorted === "ascending" ? "descending" : "ascending";
+      } else {
+        this.sorting = "ID";
+      }
+    },
     sortByValue() {
       if (this.sorting === "value") {
         this.sorted = this.sorted === "ascending" ? "descending" : "ascending";
@@ -108,10 +116,15 @@ export default {
         return { ...elem, season: seasons };
       });
       let sorted = clean.sort((a, b) => {
-        if (this.sorting === "name") {
-          return a.name[0] - b.name[0];
-        } else if (this.sorting === "value") {
-          return a.value - b.value;
+        switch (this.sorting) {
+          case "name":
+            if (a.name < b.name) return -1;
+            if (a.name > b.name) return 1;
+            return 0;
+          case "value":
+            return a.value - b.value;
+          case "ID":
+            return a.index - b.index;
         }
       });
       if (this.sorted === "ascending") {
