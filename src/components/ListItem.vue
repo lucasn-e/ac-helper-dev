@@ -42,7 +42,7 @@
         </template>
         <template v-else>
           <div class="column songscol">
-            <img :src="item.image" class="data-image" :alt="`Image of ${item.name}`" />
+            <img :src="item.image" class="data-image song-image" :alt="`Image of ${item.name}`" />
             <div :class="caught[displayData].includes(item.name) ? 'x active' : 'x inactive'">X</div>
           </div>
         </template>

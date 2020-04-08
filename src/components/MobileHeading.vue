@@ -49,6 +49,15 @@
           </div>
           <div
             class="custom-button"
+            :class="(!!mobileChoice && mobileChoice === 'songs') ? 'active' : ''"
+            @click="choose('songs')"
+          >
+            <div class="icon-image-container">
+              <img class="icon-image songs" src="~@/assets/songs_icon.png" />
+            </div>
+          </div>
+          <div
+            class="custom-button"
             :class="(!!mobileChoice && mobileChoice === 'golden-tools') ? 'active' : ''"
             @click="choose('golden-tools')"
           >
@@ -220,6 +229,9 @@ export default {
           break;
         case "golden-tools":
           this.mobileChoice = this.lang.header.goldenTools;
+          break;
+        case "songs":
+          this.mobileChoice = this.lang.global.songs;
           break;
         default:
           this.mobileChoice = choice || this.displayData;

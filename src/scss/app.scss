@@ -85,7 +85,7 @@ body {
   width: 100%;
   flex-wrap: wrap;
   @media screen and (max-width: 767px) {
-    margin-top: -40%;
+    margin-top: -20%;
     overflow: hidden;
   }
 }
@@ -95,8 +95,9 @@ body {
   border-radius: 22px;
   position: relative;
   @media screen and (max-width: 767px) {
-    min-height: 330px;
+    min-height: 360px;
     min-width: 260px;
+    width: 95%;
     overflow: hidden;
     .arrow-down {
       z-index: 15;
@@ -212,6 +213,7 @@ h1 {
       background-color: #A1DE93;
       .icon-image {
         animation: iconHover 2.5s infinite;
+        filter: hue-rotate(-50deg);
       }
     }
     &:hover {
@@ -255,12 +257,12 @@ button.custom-button.mini {
         opacity: 1;
         z-index: 5;
         &.one {
-          top: 50%;
-          left: 40%;
+          top: 45%;
+          left: 30%;
         }
         &.two {
-          top: 30%;
-          left: 25%;
+          top: 25%;
+          left: 15%;
         }
       }
     }
@@ -352,8 +354,9 @@ button.custom-button.mini {
     align-items: center;
     justify-content: center;
     .nook-phone-apps {
+      margin-bottom: 40px;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .icon-image-container {
       height: 75px;
@@ -379,6 +382,11 @@ button.custom-button.mini {
       left: 50%;
       top: 50%;
       transform: translate(-50%,-50%);
+      &.songs {
+        height: 54px;
+        width: 54px;
+        transition: .25s;
+      }
       &.imexport-image {
         height: 45px;
         width: 45px;
@@ -394,8 +402,7 @@ button.custom-button.mini {
   z-index: 0;
   pointer-events: none;
   #import-export {
-    background-color: #70A1D7;
-    color: #fff;
+    color: #222;
     border: none;
   }
   &.active {
@@ -767,6 +774,9 @@ tr {
   transform: translate(-50%, -50%);
   font-size: 4em;
   user-select: none;
+  @media screen and (max-width: 767px) {
+    font-size: 6em;
+  }
   &.small {
     font-size: 1.5em;
     color: #fff;
@@ -775,6 +785,9 @@ tr {
 @media screen and (max-width: 767px) {
   .data-image {
     height: 50px;
+    &.song-image {
+      height: 100px;
+    }
   }
 }
 @media screen and (min-width: 768px) {
