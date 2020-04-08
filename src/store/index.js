@@ -6,16 +6,22 @@ import { mobileCheck } from '../utils/helper.js';
 import en from '../data/lang/en.json';
 import de from '../data/lang/de.json';
 
-import fish_en from '../data/fish_en.json';
-import fish_de from '../data/fish_de.json';
+// fish
+import fish_en from '../data/fish/fish_en.json';
+import fish_de from '../data/fish/fish_de.json';
 
-import insects_en from '../data/insects_en.json';
-import insects_de from '../data/insects_de.json';
+// insects
+import insects_en from '../data/insects/insects_en.json';
+import insects_de from '../data/insects/insects_de.json';
+
+// songs
+import songs_en from '../data/songs/songs_en.json';
 
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
   state: {
+    songs: songs_en,
     fish: fish_en,
     insects: insects_en,
     displayData: 'fish',
@@ -41,6 +47,7 @@ const store = new Vuex.Store({
           state.lang = en;
           state.fish = fish_en;
           state.insects = insects_en;
+          state.songs = songs_en;
           break;
         case ('de'):
           state.lang = de;
@@ -51,6 +58,7 @@ const store = new Vuex.Store({
           state.lang = en;
           state.fish = fish_en;
           state.insects = insects_en;
+          state.songs = songs_en;
           break;
       }
     },
