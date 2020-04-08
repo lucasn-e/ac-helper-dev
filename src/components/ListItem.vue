@@ -10,20 +10,15 @@
       </div>
     </template>
     <div class="column namecol" :class="{'head': header}" @click="sortByName">
-      <p class="columntext">
-        {{ item.name }}
-        <span
-          class="sortingArrow"
-          :class="sorted"
-          v-if="sorting === 'name' && !!header"
-        ></span>
+      <p class="columntext" v-html="item.name">
+        <span class="sortingArrow" :class="sorted" v-if="sorting === 'name' && !!header"></span>
       </p>
     </div>
     <div class="column" :class="{'head': header}">
       <p class="columntext">{{ item.season }}</p>
     </div>
     <div class="column" :class="{'head': header}">
-      <p class="columntext">{{ item.location }}</p>
+      <p class="columntext" v-html="item.location"></p>
     </div>
     <div class="column" :class="{'head': header}">
       <p class="columntext">{{ item.time }}</p>
