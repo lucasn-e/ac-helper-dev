@@ -1,36 +1,59 @@
 <template>
-  <div v-if="!shouldHide" class="listitem" :class="listItemClass" @click="setCaptured">
-    <template v-if="!!header">
-      <div class="column head half" v-if="!mobile" @click="sortByID">
-        <p class="columntext">ID</p>
+  <div>
+    <template v-if="displayData != 'songs'">
+      <div v-if="!shouldHide" class="listitem" :class="listItemClass" @click="setCaptured">
+        <template v-if="!!header">
+          <div class="column head half" v-if="!mobile" @click="sortByID">
+            <p class="columntext">ID</p>
+          </div>
+          <div class="column head">{{ item.captured }}</div>
+        </template>
+        <template v-else>
+          <div class="column half" v-if="!mobile">
+            <p class="columntext">{{ item.index }}</p>
+          </div>
+          <div class="column">
+            <img :src="getImgUrl(item.image)" class="data-image" :alt="`Image of ${item.name}`" />
+            <div :class="caught[displayData].includes(item.name) ? 'x active' : 'x inactive'">X</div>
+          </div>
+        </template>
+        <div class="column namecol" :class="{'head': header}" @click="sortByName">
+          <p class="columntext" v-html="item.name"></p>
+        </div>
+        <div class="column" :class="{'head': header}">
+          <p class="columntext">{{ item.season }}</p>
+        </div>
+        <div class="column" :class="{'head': header}">
+          <p class="columntext" v-html="item.location"></p>
+        </div>
+        <div class="column" :class="{'head': header}">
+          <p class="columntext">{{ item.time }}</p>
+        </div>
+        <div class="column" :class="{'head': header}" @click="sortByValue">
+          <p class="columntext" v-if="header">{{ item.value }}</p>
+          <p v-else class="columntext value">{{ sepThousands(item.value) }}</p>
+        </div>
       </div>
-      <div class="column head">{{ item.captured }}</div>
     </template>
     <template v-else>
-      <div class="column half" v-if="!mobile">
-        <p class="columntext">{{ item.index }}</p>
-      </div>
-      <div class="column">
-        <img :src="getImgUrl(item.image)" class="data-image" :alt="`Image of ${item.name}`" />
-        <div :class="caught[displayData].includes(item.name) ? 'x active' : 'x inactive'">X</div>
+      <div v-if="!shouldHide" class="listitem" :class="listItemClass" @click="setCaptured">
+        <template v-if="!!header">
+          <div class="column head songscol">{{ lang.listHeader.bought }}</div>
+        </template>
+        <template v-else>
+          <div class="column songscol">
+            <img :src="item.image" class="data-image" :alt="`Image of ${item.name}`" />
+            <div :class="caught[displayData].includes(item.name) ? 'x active' : 'x inactive'">X</div>
+          </div>
+        </template>
+        <div class="column namecol songscol" :class="{'head': header}" @click="sortByName">
+          <p class="columntext" v-html="item.name"></p>
+        </div>
+        <div class="column songscol" :class="{'head': header}" @click="sortByName">
+          <p class="columntext" v-html="item.location"></p>
+        </div>
       </div>
     </template>
-    <div class="column namecol" :class="{'head': header}" @click="sortByName">
-      <p class="columntext" v-html="item.name"></p>
-    </div>
-    <div class="column" :class="{'head': header}">
-      <p class="columntext">{{ item.season }}</p>
-    </div>
-    <div class="column" :class="{'head': header}">
-      <p class="columntext" v-html="item.location"></p>
-    </div>
-    <div class="column" :class="{'head': header}">
-      <p class="columntext">{{ item.time }}</p>
-    </div>
-    <div class="column" :class="{'head': header}" @click="sortByValue">
-      <p class="columntext" v-if="header">{{ item.value }}</p>
-      <p v-else class="columntext value">{{ sepThousands(item.value) }}</p>
-    </div>
   </div>
 </template>
 <script>
@@ -98,10 +121,19 @@ export default {
     // commit the selected fish or insect to the store and dispatch the action which saves our data to localStorage
     setCaptured() {
       if (!!this.header) return;
-      if (this.displayData === "fish") {
-        store.commit("storeFish", this.item.name);
-      } else {
-        store.commit("storeInsect", this.item.name);
+
+      switch (this.displayData) {
+        case "fish":
+          store.commit("storeFish", this.item.name);
+          break;
+        case "insects":
+          store.commit("storeInsects", this.item.name);
+          break;
+        case "songs":
+          store.commit("storeSongs", this.item.name);
+          break;
+        default:
+          return;
       }
       store.dispatch("storeData");
     },

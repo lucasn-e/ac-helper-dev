@@ -11,7 +11,7 @@
             v-if="filterValue.length > 0"
           >{{ count.length }} {{ lang.sorting.results }}</div>
         </div>
-        <div class="sortby">
+        <div class="sortby" v-if="displayData != 'songs'">
           {{ lang.sorting.sort }}
           <div
             class="mini-button"
@@ -103,6 +103,8 @@ export default {
           return this.lang.global.fish;
         case "insects":
           return this.lang.global.insects;
+        case "songs":
+          return this.lang.global.songs;
         default:
           return this.lang.header.goldenTools;
       }

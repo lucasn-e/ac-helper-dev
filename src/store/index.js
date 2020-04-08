@@ -16,6 +16,7 @@ import insects_de from '../data/insects/insects_de.json';
 
 // songs
 import songs_en from '../data/songs/songs_en.json';
+import songs_de from '../data/songs/songs_de.json';
 
 Vue.use(Vuex);
 
@@ -30,7 +31,8 @@ const store = new Vuex.Store({
     hideUncaught: false,
     caught: {
       fish: [],
-      insects: []
+      insects: [],
+      songs: []
     },
     loc: 'NH',
     overlayOpen: false,
@@ -53,6 +55,7 @@ const store = new Vuex.Store({
           state.lang = de;
           state.fish = fish_de;
           state.insects = insects_de;
+          state.songs = songs_de;
           break;
         default:
           state.lang = en;
@@ -106,6 +109,13 @@ const store = new Vuex.Store({
         state.caught.insects = typeof data === 'string' ? [data, ...state.caught.insects] : [...data, ...state.caught.insects];
       }
     },
+    storeSongs(state, data) {
+      if (state.caught.songs.includes(data)) {
+        state.caught.songs = state.caught.songs.filter(elem => elem != data);
+      } else {
+        state.caught.songs = typeof data === 'string' ? [data, ...state.caught.songs] : [...data, ...state.caught.songs];
+      }
+    },
     storeFishRaw(state, data) {
       state.caught.fish = data;
     },
@@ -140,6 +150,8 @@ const store = new Vuex.Store({
         commit('storeFish', caught.fish);
       if (caught.insects)
         commit('storeInsect', caught.insects);
+      if (caught.songs)
+        commit('storeSongs', caught.songs);
       if (!!localStorage.getItem('lang'))
         commit('loadLang', localStorage.getItem('lang'))
     },

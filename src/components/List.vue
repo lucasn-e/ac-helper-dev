@@ -2,6 +2,7 @@
   <div class="table-container">
     <div class="data-table">
       <ListItem
+        v-if="displayData != 'songs'"
         class="header-row"
         :header="true"
         :item="{ captured: lang.listHeader.caught, name: lang.global.name, season: lang.listHeader.season, time: lang.listHeader.time, location: lang.listHeader.location, value: lang.listHeader.value }"
@@ -10,6 +11,12 @@
         @sortyByID="sortyByID"
         :sorting="sorting"
         :sorted="sorted"
+      />
+      <ListItem
+        v-else
+        class="header-row"
+        :header="true"
+        :item="{ captured: lang.listHeader.bought, name: lang.global.name, location: lang.listHeader.how_to }"
       />
       <ListItem
         class="content-row"
@@ -22,6 +29,7 @@
 </template>
 <script>
 import ListItem from "./ListItem.vue";
+import store from "../store/index.js";
 import { mapState } from "vuex";
 import { toggleHemisphere } from "../utils/helper.js";
 
@@ -100,11 +108,21 @@ export default {
   },
   computed: {
     animalType() {
-      if (this.displayData === "fish") return this.newFish;
-      else return this.newInsects;
+      switch (this.displayData) {
+        case "fish":
+          return this.newFish;
+        case "insects":
+          return this.newInsects;
+        case "songs":
+          store.commit("assignSortType", "name");
+          return this.songs;
+        default:
+          return this.newFish;
+      }
     },
     cleanedData() {
       let clean = this.animalType.map(elem => {
+        if (this.displayData === "songs") return elem;
         let seasons = elem.season;
         this.payload.months.some((month, index) => {
           if (seasons.includes("All")) return true;
@@ -141,6 +159,7 @@ export default {
     },
     // sort data by month or do nothing
     sortedData() {
+      if (this.displayData === "songs") return this.filteredData;
       if (this.sortType === "month") {
         // create new array [{ month: STRING, data: ARRAY }] each object represents a month and the corresponding elements
         const filtered = this.payload.months.map((element, i) => {
@@ -216,7 +235,8 @@ export default {
       "loc",
       "lang",
       "fish",
-      "insects"
+      "insects",
+      "songs"
     ])
   }
 };

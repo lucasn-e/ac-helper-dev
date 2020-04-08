@@ -726,6 +726,9 @@ tr {
   align-items: center;
   width: 100px;
   height: 100%;
+  &.songscol {
+    width: 33%;
+  }
   &.half {
     user-select: none;
     width: 85px;

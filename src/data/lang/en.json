@@ -8,6 +8,7 @@
     "export": "Export Data"
   },
   "global": {
+    "songs": "KK Songs",
     "import": "Import",
     "export": "Export",
     "guide": "Guide",
@@ -38,6 +39,8 @@
     }
   },
   "listHeader": {
+    "bought": "Bought",
+    "how_to": "How to get",
     "caught": "Caught",
     "season": "Season",
     "location": "Location",

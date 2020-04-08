@@ -17,6 +17,13 @@
       </div>
       <div
         class="custom-button"
+        :class="(!!choice && choice === 'songs') ? 'active' : ''"
+        @click="choose('songs')"
+      >
+        <div>{{ lang.global.songs }}</div>
+      </div>
+      <div
+        class="custom-button"
         :class="(!!choice && choice === 'golden-tools') ? 'active' : ''"
         @click="choose('golden-tools')"
       >
@@ -102,6 +109,9 @@ export default {
           break;
         case "insects":
           this.desktopChoice = this.lang.global.fish;
+          break;
+        case "songs":
+          this.desktopChoice = this.lang.global.songs;
           break;
         default:
           this.desktopChoice = this.lang.header.goldenTools;

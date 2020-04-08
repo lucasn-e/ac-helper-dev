@@ -133,6 +133,10 @@ export default {
               insects: localStorage
                 .getItem("myinsecties")
                 .replace(pattern, "$1,$2")
+                .split(","),
+              songs: localStorage
+                .getItem("songs")
+                .replace(pattern, "$1,$2")
                 .split(",")
             }
           }
@@ -146,6 +150,9 @@ export default {
                 : [],
               insects: JSON.parse(localStorage.getItem("caught"))
                 ? JSON.parse(localStorage.getItem("caught")).insects
+                : [],
+              songs: JSON.parse(localStorage.getItem("caught"))
+                ? JSON.parse(localStorage.getItem("caught")).songs
                 : []
             }
           }
@@ -160,8 +167,7 @@ export default {
       };
       // save all to newData
       newData = [...newData, counts];
-      let exportFish;
-      let exportInsects;
+      let exportFish, exportInsects, exportSongs;
       // create the export string for fish and insects
       if (!newData[0].caught) {
         this.exportError = true;
@@ -175,15 +181,24 @@ export default {
         newData[0].caught.insects,
         this.insects
       ).toString();
+      exportSongs = queryForIndexes(
+        newData[0].caught.songs,
+        this.songs
+      ).toString();
       // only pass values if there are any fish or insects to begin with
       exportFish = exportFish.length > 0 ? "f:" + exportFish + "|" : "";
-      exportInsects = exportInsects.length > 0 ? "i:" + exportInsects : "";
+      exportInsects =
+        exportInsects.length > 0 ? "i:" + exportInsects + "|" : "";
+      exportSongs = exportSongs.length > 0 ? "s:" + exportSongs + "|" : "";
       let exportCounts =
-        (counts.shovelCount == 0 ? "" : "|sc:" + counts.shovelCount) +
-        (counts.axeCount == 0 ? "" : "|ac:" + counts.axeCount) +
-        (counts.balloonCount == 0 ? "" : "|bc:" + counts.balloonCount) +
-        (counts.wateringcanCount == 0 ? "" : "|wc:" + counts.wateringcanCount);
-      const exportString = exportFish + exportInsects + exportCounts;
+        (counts.shovelCount == 0 ? "" : "sc:" + counts.shovelCount + "|") +
+        (counts.axeCount == 0 ? "" : "ac:" + counts.axeCount + "|") +
+        (counts.balloonCount == 0 ? "" : "bc:" + counts.balloonCount + "|") +
+        (counts.wateringcanCount == 0
+          ? ""
+          : "wc:" + counts.wateringcanCount + "|");
+      const exportString =
+        exportFish + exportInsects + exportSongs + exportCounts;
       if (exportString == "|" || exportString == "") {
         this.exportError = true;
         return;
@@ -203,17 +218,21 @@ export default {
       this.importExport = "";
       const fishPattern = /f:([\d,]*)\|?.*/;
       const insectsPattern = /.*i:([\d,]*)\|?.*/;
+      const songsPattern = /.*s:([\d]*)\|?.*/;
       const axeCountPattern = /ac:(\d)/;
       const shovelCountPattern = /sc:(\d)/;
       const balloonCountPattern = /bc:(\d)/;
       const wateringcanCountPattern = /wc:(\d)/;
       let fish = [];
       let insects = [];
+      let songs = [];
 
       if (fishPattern.test(importValue))
         fish = importValue.replace(fishPattern, "$1").split(",");
       if (insectsPattern.test(importValue))
         insects = importValue.replace(insectsPattern, "$1").split(",");
+      if (songsPattern.test(importValue))
+        songs = importValue.replace(songsPattern, "$1").split(",");
 
       let axeCount = axeCountPattern.exec(importValue) || 0;
       axeCount = !!axeCount ? axeCount[1] : 0;
@@ -226,7 +245,8 @@ export default {
 
       const caught = {
         fish: queryByIndex(fish, this.fish),
-        insects: queryByIndex(insects, this.insects)
+        insects: queryByIndex(insects, this.insects),
+        songs: queryByIndex(songs, this.songs)
       };
 
       localStorage.setItem("caught", JSON.stringify(caught));
@@ -247,6 +267,7 @@ export default {
       choice: "displayData",
       fish: "fish",
       insects: "insects",
+      songs: "songs",
       lang: "lang",
       languages: "languages"
     })

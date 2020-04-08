@@ -8,6 +8,7 @@
     "export": "Datenexport"
   },
   "global": {
+    "songs": "KK Lieder",
     "import": "Import",
     "export": "Export",
     "guide": "Guide",
