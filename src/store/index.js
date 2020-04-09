@@ -130,6 +130,7 @@ const store = new Vuex.Store({
     },
     // get all data from localstorage and save to store
     getData({ commit }) {
+      console.log(songs_en);
       let isMobile = mobileCheck();
       if (!localStorage.getItem('version') && isMobile) {
         alert('New version found!');
