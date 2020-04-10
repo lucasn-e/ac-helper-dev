@@ -120,13 +120,12 @@ export default {
     // commit the selected fish or insect to the store and dispatch the action which saves our data to localStorage
     setCaptured() {
       if (!!this.header) return;
-
       switch (this.displayData) {
         case "fish":
           store.commit("storeFish", this.item.name);
           break;
         case "insects":
-          store.commit("storeInsects", this.item.name);
+          store.commit("storeInsect", this.item.name);
           break;
         case "songs":
           store.commit("storeSongs", this.item.name);
