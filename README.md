@@ -1,5 +1,7 @@
 # ac-helper-dev
-a tiny, lazy helper for animal crossing new horizons. ugly code included
+a tiny, lazy helper for animal crossing new horizons. ugly code included.
+
+currently hosted on https://ac-helper.com/
 
 there is bound to be messy code since this project started absurdly small and grew way out of proportion after I gained overwhelming responses. the css is horrid since it started out within each component and was later moved as I added the scss loader.
 
