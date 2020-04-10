@@ -85,6 +85,7 @@ body {
   width: 100%;
   flex-wrap: wrap;
   @media screen and (max-width: 767px) {
+    padding: 15px;
     margin-top: -20%;
     overflow: hidden;
   }
@@ -539,7 +540,7 @@ button.custom-button.mini {
     transition: .5s;
     transform: translate(-50%);
     &.hide {
-      left: 500px;
+      left: 1000px;
     }
     &.show {
       left: 50%;
