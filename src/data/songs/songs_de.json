@@ -1,477 +1,482 @@
 [
   {
+    "name": "Abschied",
+    "location": "Songwünsch bei K.K.",
+    "image": "/songs/Farewell.jpg"
+  },
+  {
     "name": "Agent K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s58.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Agent K.K..jpg"
   },
   {
-    "name": "Aloha K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s61.png"
+    "name": "Alter Kuchen",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Stale Cupcakes.jpg"
   },
   {
-    "name": "Bubblegum K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s57.png"
+    "name": "Am Rande",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/To The Edge.jpg"
   },
   {
-    "name": "Cafe K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s45.png"
+    "name": "Berglied",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Mountain Song.jpg"
   },
   {
-    "name": "Comrade K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s1.png"
+    "name": "Bergsteigung",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Steep Hill.jpg"
+  },
+  {
+    "name": "Die Insel der Tiere",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Island.jpg"
+  },
+  {
+    "name": "Die Stadt der Tiere",
+    "location": "Songwünsch bei K.K.",
+    "image": "/songs/Animal City.jpg"
   },
   {
     "name": "DJ K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s39.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/DJ K.K..jpg"
   },
   {
-    "name": "Forest Life",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s65.png"
+    "name": "Frühlingsblüten",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Spring Blossoms.jpg"
+  },
+  {
+    "name": "Ganz allein",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Only Me.jpg"
+  },
+  {
+    "name": "Geburtstagslied",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Birthday.jpg"
+  },
+  {
+    "name": "Herr K.K.",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Mr. K.K..jpg"
   },
   {
     "name": "Go K.K. Rider",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s69.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Go K.K. Rider.jpg"
   },
   {
-    "name": "Hypno K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s67.png"
+    "name": "Ich liebe dich",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/I Love You.jpg"
   },
   {
-    "name": "I Love You",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s53.png"
+    "name": "Ich wandere",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Wandering.jpg"
   },
   {
-    "name": "Imperial K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s2.png"
-  },
-  {
-    "name": "K.K. Adventure",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s82.png"
+    "name": "K. Funk",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/The K. Funk.jpg"
   },
   {
     "name": "K.K. Aria",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s3.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Aria.jpg"
   },
   {
-    "name": "K.K. Ballad",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s81.png"
+    "name": "K.K. Ballade",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Ballad.jpg"
   },
   {
     "name": "K.K. Bazaar",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s62.png"
-  },
-  {
-    "name": "K.K. Birthday",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s54.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Bazaar.jpg"
   },
   {
     "name": "K.K. Blues",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s4.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Blues.jpg"
   },
   {
     "name": "K.K. Bossa",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s5.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Bossa.jpg"
   },
   {
     "name": "K.K. Calypso",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s70.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Calypso.jpg"
   },
   {
-    "name": "K.K. Casbah",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s46.png"
+    "name": "K.K. Choral",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Chorale.jpg"
   },
   {
-    "name": "K.K. Chorale",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s47.png"
-  },
-  {
-    "name": "K.K. Condor",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s6.png"
+    "name": "K.K. Combo",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Mariachi.jpg"
   },
   {
     "name": "K.K. Country",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s41.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Country.jpg"
   },
   {
     "name": "K.K. Cruisin'",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s7.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Cruisin'.jpg"
   },
   {
     "name": "K.K. D&B",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s90.png"
-  },
-  {
-    "name": "K.K. Dirge",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s89.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. D&B.jpg"
   },
   {
     "name": "K.K. Disco",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s8.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Disco.jpg"
   },
   {
     "name": "K.K. Dixie",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s79.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Dixie.jpg"
   },
   {
-    "name": "K.K. Etude",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s9.png"
+    "name": "K.K. Etüde",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Etude.jpg"
   },
   {
-    "name": "K.K. Faire",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s42.png"
+    "name": "K.K. Filmmusik",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Adventure.jpg"
   },
   {
     "name": "K.K. Flamenco",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s10.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Flamenco.jpg"
   },
   {
     "name": "K.K. Folk",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s55.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Folk.jpg"
+  },
+  {
+    "name": "K.K. Freundelied",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Comrade K.K..jpg"
   },
   {
     "name": "K.K. Fusion",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s11.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Fusion.jpg"
+  },
+  {
+    "name": "K.K.Glückspilz ",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Lucky K.K..jpg"
   },
   {
     "name": "K.K. Groove",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s71.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Groove.jpg"
   },
   {
     "name": "K.K. Gumbo",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s48.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Gumbo.jpg"
   },
   {
     "name": "K.K. House",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s12.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. House.jpg"
   },
   {
-    "name": "K.K. Island",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s13.png"
+    "name": "K.K. Jahrmarkt",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Faire.jpg"
   },
   {
-    "name": "K.K. Jongara",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s76.png"
+    "name": "K.K. Kaffeeblues",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Cafe K.K..jpg"
   },
   {
-    "name": "K.K. Lament",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s14.png"
+    "name": "K.K. Jazz",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Jazz.jpg"
   },
   {
-    "name": "K.K. Love Song",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s64.png"
+    "name": "K.K. Klagelied",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Lament.jpg"
   },
   {
-    "name": "K.K. Lullaby",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s15.png"
+    "name": "K.K. Kondor",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Condor.jpg"
+  },
+  {
+    "name": "K.K. Liebeslied",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Love Song.jpg"
+  },
+  {
+    "name": "K.K. Maharadscha",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Oasis.jpg"
   },
   {
     "name": "K.K. Mambo",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s16.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Mambo.jpg"
   },
   {
     "name": "K.K. Marathon",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s17.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Marathon.jpg"
   },
   {
-    "name": "K.K. March",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s18.png"
+    "name": "K.K. Marsch",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. March.jpg"
   },
   {
-    "name": "K.K. Mariachi",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s19.png"
+    "name": "K.K. Melodie",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Jongara.jpg"
   },
   {
     "name": "K.K. Metal",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s85.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Metal.jpg"
   },
   {
     "name": "K.K. Milonga",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s80.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Milonga.jpg"
   },
   {
-    "name": "K.K. Moody",
-    "location": "Purchase from Nook PC",
-    "image": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/2a/AMF-AlbumArt-K.K._Moody.png"
+    "name": "K.K. mit Gefühl",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Soulful K.K..jpg"
   },
   {
-    "name": "K.K. Oasis",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s20.png"
+    "name": "K.K. Orientsong",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Casbah.jpg"
   },
   {
     "name": "K.K. Parade",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s56.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Parade.jpg"
+  },
+  {
+    "name": "K.K. Parade 2",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Rally.jpg"
+  },
+  {
+    "name": "K.K. Pop",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Bubblegum K.K..jpg"
   },
   {
     "name": "K.K. Ragtime",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s21.png"
-  },
-  {
-    "name": "K.K. Rally",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s87.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Ragtime.jpg"
   },
   {
     "name": "K.K. Reggae",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s49.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Reggae.jpg"
   },
   {
     "name": "K.K. Rock",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s22.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Rock.jpg"
   },
   {
     "name": "K.K. Rockabilly",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s83.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Rockabilly.jpg"
+  },
+  {
+    "name": "K.K. Rocksong",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Rockin' K.K..jpg"
+  },
+  {
+    "name": "K.K. Safari",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Safari.jpg"
   },
   {
     "name": "K.K. Salsa",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s23.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Salsa.jpg"
   },
   {
     "name": "K.K. Samba",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s24.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Samba.jpg"
+  },
+  {
+    "name": "K.K. Schlaflied",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Lullaby.jpg"
   },
   {
     "name": "K.K. Ska",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s25.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Ska.jpg"
   },
   {
     "name": "K.K. Sonata",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s43.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Sonata.jpg"
   },
   {
     "name": "K.K. Song",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s26.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Song.jpg"
+  },
+  {
+    "name": "K.K. Sonnenuntergang",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Moody.jpg"
   },
   {
     "name": "K.K. Soul",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s27.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Soul.jpg"
   },
   {
-    "name": "K.K. Steppe",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s88.png"
+    "name": "K.K. Steppensong",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Steppe.jpg"
   },
   {
-    "name": "K.K. Stroll",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s68.png"
+    "name": "K.K. Südseetraum",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Aloha K.K..jpg"
   },
   {
     "name": "K.K. Swing",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s75.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Swing.jpg"
   },
   {
-    "name": "K.K. Synth",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s50.png"
+    "name": "K.K. Synthiepop",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Synth.jpg"
   },
   {
     "name": "K.K. Tango",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s78.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Tango.jpg"
   },
   {
     "name": "K.K. Technopop",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s28.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Technopop.jpg"
   },
   {
-    "name": "K.K. Waltz",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s86.png"
+    "name": "K.K. Trauerlied",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Dirge.jpg"
+  },
+  {
+    "name": "K.K. Waltzer",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Waltz.jpg"
   },
   {
     "name": "K.K. Western",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s51.png"
-  },
-  {
-    "name": "K.K.Safari",
-    "location": "Purchase from Nook PC",
-    "image": "https://vignette.wikia.nocookie.net/animalcrossing/images/e/e8/AMF-AlbumArt-K.K._Safari.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Western.jpg"
   },
   {
     "name": "King K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s77.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/King K.K..jpg"
   },
   {
-    "name": "Lucky K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s29.png"
+    "name": "Mein Zuhause",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/My Place.jpg"
   },
   {
-    "name": "Marine Song 2001",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s84.png"
+    "name": "Minimal Music",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Space K.K..jpg"
   },
   {
-    "name": "Mountain Song",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s30.png"
+    "name": "Nachdenklich",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Pondering.jpg"
   },
   {
-    "name": "Mr. K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s72.png"
+    "name": "Neapolitaner",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Neapolitan.jpg"
   },
   {
-    "name": "My Place",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s31.png"
+    "name": "Schlummerlied",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Hypno K.K..jpg"
   },
   {
-    "name": "Neapolitan",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s44.png"
+    "name": "Seefahrerlied 2001",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Marine Song 2001.jpg"
   },
   {
-    "name": "Only Me",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s32.png"
+    "name": "Spaziergang",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Stroll.jpg"
   },
   {
-    "name": "Pondering",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s73.png"
-  },
-  {
-    "name": "Rockin' K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s33.png"
-  },
-  {
-    "name": "Soulful K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s34.png"
-  },
-  {
-    "name": "Space K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s66.png"
-  },
-  {
-    "name": "Spring Blossoms",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s59.png"
-  },
-  {
-    "name": "Stale Cupcakes",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s52.png"
-  },
-  {
-    "name": "Steep Hill",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s91.png"
+    "name": "Super-K.K.",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Imperial K.K..jpg"
   },
   {
     "name": "Surfin' K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s40.png"
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Surfin' K.K..jpg"
   },
   {
-    "name": "The K. Funk",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s37.png"
+    "name": "Vorgestern",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Two Days Ago.jpg"
   },
   {
-    "name": "To The Edge",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s38.png"
+    "name": "Waldlichtung",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Forest Life.jpg"
   },
   {
-    "name": "Two Days Ago",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s63.png"
+    "name": "Neue Horizonte",
+    "location": "Tom Nook nach K.K. Sliders erstem Auftritt",
+    "image": "/songs/Welcome Horizons.jpg"
   },
   {
-    "name": "Wandering",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s92.png"
+    "name": "? (Wild World)",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Wild World.jpg"
   },
   {
-    "name": "Welcome Horizons",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s36.png"
-  },
-  {
-    "name": "Wild World",
-    "location": "Purchase from Nook PC",
-    "image": "https://gamewith-en.akamaized.net/article_tools/animal-crossing-new-horizons/gacha/s96.png"
-  },
-  {
-    "name": "Farewell",
-    "location": "Request from KK",
-    "image": "https://gamewith-en.akamaized.net/img/ba5e49e2f845a2506914f3cadb61f88a.jpg"
-  },
-  {
-    "name": "Animal City",
-    "location": "Request from KK",
-    "image": "https://gamewith-en.akamaized.net/img/eb1e74adc4c3dae835fe43e4e552c7d4.jpg"
-  },
-  {
-    "name": "Drivin'",
-    "location": "Request from KK",
-    "image": "https://gamewith-en.akamaized.net/img/fa5d498256044f46bbd179562e53959d.jpg"
+    "name": "? (Drivin')",
+    "location": "Songwünsch bei K.K.",
+    "image": "/songs/Drivin'.jpg"
   }
 ]

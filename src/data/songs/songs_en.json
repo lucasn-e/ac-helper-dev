@@ -10,6 +10,11 @@
     "image": "/songs/Aloha K.K..jpg"
   },
   {
+    "name": "K.K. Jazz",
+    "location": "Purchase from Nook PC",
+    "image": "/songs/K.K. Jazz.jpg"
+  }
+  {
     "name": "Bubblegum K.K.",
     "location": "Purchase from Nook PC",
     "image": "/songs/Bubblegum K.K..jpg"
@@ -347,7 +352,7 @@
   {
     "name": "K.K.Safari",
     "location": "Purchase from Nook PC",
-    "image": "/songs/K.K.Safari.jpg"
+    "image": "/songs/K.K. Safari.jpg"
   },
   {
     "name": "King K.K.",
