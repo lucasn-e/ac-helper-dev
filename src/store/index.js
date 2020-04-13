@@ -22,8 +22,10 @@ Vue.use(Vuex);
 
 const store = new Vuex.Store({
   state: {
+    mobile: false,
     songs: songs_en,
     fish: fish_en,
+    sortID: false,
     insects: insects_en,
     displayData: 'fish',
     sortType: 'name',
@@ -64,6 +66,9 @@ const store = new Vuex.Store({
           state.songs = songs_en;
           break;
       }
+    },
+    sortID(state, data) {
+      state.sortID = data;
     },
     toggleOverlay(state) {
       state.overlayOpen = !state.overlayOpen;
@@ -121,6 +126,9 @@ const store = new Vuex.Store({
     },
     storeInsectsRaw(state, data) {
       state.caught.insects = data;
+    },
+    setMobile(state, data) {
+      state.mobile = data;
     }
   },
   actions: {
@@ -131,6 +139,7 @@ const store = new Vuex.Store({
     // get all data from localstorage and save to store
     getData({ commit }) {
       let isMobile = mobileCheck();
+      commit("setMobile", isMobile);
       if (!localStorage.getItem('version') && isMobile) {
         alert('New version found!');
         localStorage.setItem('version', '1.4');

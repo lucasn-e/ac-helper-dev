@@ -134,6 +134,9 @@ export default {
         return { ...elem, season: seasons };
       });
       let sorted = clean.sort((a, b) => {
+        if (!!this.sortID && !!this.mobile) {
+          return a.index - b.index;
+        }
         switch (this.sorting) {
           case "name":
             if (a.name < b.name) return -1;
@@ -205,7 +208,11 @@ export default {
                   return myData;
                 }
                 // if the element can be found in either the selected month or all year round
-              } else if (filterValue === "All Year" || filterValue == element) {
+              } else if (
+                filterValue === "All Year" ||
+                filterValue === "Ganzjährig" ||
+                filterValue == element
+              ) {
                 return myData;
               }
             })
@@ -236,7 +243,9 @@ export default {
       "lang",
       "fish",
       "insects",
-      "songs"
+      "songs",
+      "sortID",
+      "mobile"
     ])
   }
 };

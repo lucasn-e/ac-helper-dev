@@ -23,6 +23,12 @@
             @click="sortby('name')"
             :class="sortType !== 'month' ? 'active' : ''"
           >{{ lang.global.name }}</div>
+          <div
+            v-if="isMobile"
+            class="mini-button"
+            @click="sortby('id')"
+            :class="sortID ? 'active' : ''"
+          >ID</div>
         </div>
         <div v-if="sortType === 'month'" class="jumpto-bar">
           {{ lang.sorting.displayFor }}
@@ -61,10 +67,12 @@ import List from "./List.vue";
 import GoldenTools from "./GoldenTools.vue";
 import store from "../store/index.js";
 import { mapState } from "vuex";
+import { mobileCheck } from "../utils/helper.js";
 
 export default {
   data() {
     return {
+      isMobile: false,
       filterValue: "",
       months: [
         "Jan",
@@ -88,6 +96,9 @@ export default {
   components: {
     List,
     GoldenTools
+  },
+  mounted() {
+    this.isMobile = mobileCheck();
   },
   filters: {
     capitalize: function(value) {
@@ -121,7 +132,8 @@ export default {
       "displayData",
       "hideCaught",
       "hideUncaught",
-      "lang"
+      "lang",
+      "sortID"
     ])
   },
   methods: {
@@ -138,8 +150,17 @@ export default {
       this.count = value;
     },
     sortby(value) {
+      if (value === "id") {
+        this.sortByID();
+        return;
+      } else {
+        store.commit("sortID", false);
+      }
       store.commit("assignSortType", value);
       store.dispatch("storeSelection");
+    },
+    sortByID() {
+      store.commit("sortID", !this.sortID);
     },
     setActiveMonth(month) {
       this.activeMonth = month;
