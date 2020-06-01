@@ -4,7 +4,7 @@
     "name": "Bitterling",
     "image": "/fish/jpg/Bitterling.jpg",
     "season": "10 - 2",
-    "location": "Fluss (1)",
+    "location": "Fluss (1/XS)",
     "time": "Ganztägig",
     "value": "900"
   },
@@ -13,7 +13,7 @@
     "name": "Döbel",
     "image": "/fish/jpg/Pale chub.jpg",
     "season": "Ganzjährig",
-    "location": "Fluss (1)",
+    "location": "Fluss (1/XS)",
     "time": "9 - 16 Uhr",
     "value": "200"
   },
@@ -22,7 +22,7 @@
     "name": "Karausche",
     "image": "/fish/jpg/Crucian carp.jpg",
     "season": "Ganzjährig",
-    "location": "Fluss (2)",
+    "location": "Fluss (2/S)",
     "time": "Ganztägig",
     "value": "160"
   },
@@ -31,7 +31,7 @@
     "name": "Hasel",
     "image": "/fish/jpg/Dace.jpg",
     "season": "Ganzjährig",
-    "location": "Fluss (3)",
+    "location": "Fluss (3/M)",
     "time": "16 - 9 Uhr",
     "value": "240"
   },
@@ -40,7 +40,7 @@
     "name": "Karpfen",
     "image": "/fish/jpg/Carp.jpg",
     "season": "Ganzjährig",
-    "location": "Teich (4)",
+    "location": "Teich (4/L)",
     "time": "Ganztägig",
     "value": "300"
   },
@@ -49,7 +49,7 @@
     "name": "Koi-Karpfen",
     "image": "/fish/jpg/Koi.jpg",
     "season": "Ganzjährig",
-    "location": "Teich (4)",
+    "location": "Teich (4/L)",
     "time": "16 - 9 Uhr",
     "value": "4000"
   },
@@ -58,7 +58,7 @@
     "name": "Goldfisch",
     "image": "/fish/jpg/Goldfish.jpg",
     "season": "Ganzjährig",
-    "location": "Teich (1)",
+    "location": "Teich (1/XS)",
     "time": "Ganztägig",
     "value": "1300"
   },
@@ -67,7 +67,7 @@
     "name": "Teleskop&shy;auge",
     "image": "/fish/jpg/Pop-eyed goldfish.jpg",
     "season": "Ganzjährig",
-    "location": "Teich (1)",
+    "location": "Teich (1/XS)",
     "time": "9 - 16 Uhr",
     "value": "1300"
   },
@@ -76,7 +76,7 @@
     "name": "Ranchu",
     "image": "/fish/jpg/Ranchu goldfish.jpg",
     "season": "Ganzjährig",
-    "location": "Teich (2)",
+    "location": "Teich (2/S)",
     "time": "9 - 16 Uhr",
     "value": "4500"
   },
@@ -85,7 +85,7 @@
     "name": "Killifish",
     "image": "/fish/jpg/Killifish.jpg",
     "season": "3 - 7",
-    "location": "Teich (1)",
+    "location": "Teich (1/XS)",
     "time": "Ganztägig",
     "value": "300"
   },
@@ -94,7 +94,7 @@
     "name": "Flusskrebs",
     "image": "/fish/jpg/Crawfish.jpg",
     "season": "3 - 8",
-    "location": "Teich (3)",
+    "location": "Teich (2/S)",
     "time": "Ganztägig",
     "value": "200"
   },
@@ -103,7 +103,7 @@
     "name": "Weich&shy;schildkröte",
     "image": "/fish/jpg/Soft-shelled turtle.jpg",
     "season": "7 - 8",
-    "location": "Fluss",
+    "location": "Fluss (4/L)",
     "time": "16 - 9 Uhr",
     "value": "7350"
   },
@@ -112,7 +112,7 @@
     "name": "Schnapp&shy;schild&shy;kröte",
     "image": "/fish/jpg/Snapping turtle.jpg",
     "season": "3 - 9",
-    "location": "Fluss (5)",
+    "location": "Fluss (4/L)",
     "time": "21 - 4 Uhr",
     "value": "5000"
   },
@@ -121,7 +121,7 @@
     "name": "Kaul&shy;quappe",
     "image": "/fish/jpg/Tadpole.jpg",
     "season": "2 - 6",
-    "location": "Teich (1)",
+    "location": "Teich (1/XS)",
     "time": "Ganztägig",
     "value": "100"
   },
@@ -130,7 +130,7 @@
     "name": "Frosch",
     "image": "/fish/jpg/Frog.jpg",
     "season": "4 - 7",
-    "location": "Teich",
+    "location": "Teich (2/S)",
     "time": "Ganztägig",
     "value": "120"
   },
@@ -139,7 +139,7 @@
     "name": "Fluss&shy;grundel",
     "image": "/fish/jpg/Freshwater goby.jpg",
     "season": "Ganzjährig",
-    "location": "Fluss (2)",
+    "location": "Fluss (2/S)",
     "time": "16 - 9 Uhr",
     "value": "400"
   },
@@ -148,7 +148,7 @@
     "name": "Bach&shy;schmerle",
     "image": "/fish/jpg/Loach.jpg",
     "season": "2 - 4",
-    "location": "Fluss (2)",
+    "location": "Fluss (2/S)",
     "time": "Ganztägig",
     "value": "400"
   },
@@ -157,7 +157,7 @@
     "name": "Katzen&shy;wels",
     "image": "/fish/jpg/Catfish.jpg",
     "season": "4 - 9",
-    "location": "Teich (?)",
+    "location": "Teich (4/L)",
     "time": "16 - 9 Uhr",
     "value": "800"
   },
@@ -166,7 +166,7 @@
     "name": "Schlangen&shy;kopf",
     "image": "/fish/jpg/Giant snakehead.jpg",
     "season": "5 - 7",
-    "location": "Teich",
+    "location": "Teich (4/L)",
     "time": "9 - 16 Uhr",
     "value": "5500"
   },
@@ -175,7 +175,7 @@
     "name": "Sonnen&shy;barsch",
     "image": "/fish/jpg/Bluegill.jpg",
     "season": "Ganzjährig",
-    "location": "Fluss (2)",
+    "location": "Fluss (2/S)",
     "time": "9 - 16 Uhr",
     "value": "180"
   },
@@ -184,7 +184,7 @@
     "name": "Fluss&shy;barsch",
     "image": "/fish/jpg/Yellow perch.jpg",
     "season": "9 - 2",
-    "location": "Fluss (4)",
+    "location": "Fluss (3/M)",
     "time": "Ganztägig",
     "value": "300"
   },
@@ -193,7 +193,7 @@
     "name": "Barsch",
     "image": "/fish/jpg/Black bass.jpg",
     "season": "Ganzjährig",
-    "location": "Fluss (4)",
+    "location": "Fluss (4/L)",
     "time": "Ganztägig",
     "value": "400"
   },
@@ -202,7 +202,7 @@
     "name": "Tilapia",
     "image": "/fish/jpg/Tilapia.jpg",
     "season": "5 - 9",
-    "location": "Fluss (?)",
+    "location": "Fluss (3/M)",
     "time": "Ganztägig",
     "value": "800"
   },
@@ -211,7 +211,7 @@
     "name": "Hecht",
     "image": "/fish/jpg/Pike.jpg",
     "season": "8 - 11",
-    "location": "Fluss (5)",
+    "location": "Fluss (5/XL)",
     "time": "Ganztägig",
     "value": "1800"
   },
@@ -220,7 +220,7 @@
     "name": "Stint",
     "image": "/fish/jpg/Pond smelt.jpg",
     "season": "11 - 1",
-    "location": "Fluss",
+    "location": "Fluss (2/S)",
     "time": "Ganztägig",
     "value": "400"
   },
@@ -229,7 +229,7 @@
     "name": "Ayu",
     "image": "/fish/jpg/Sweetfsh.jpg",
     "season": "6 - 8",
-    "location": "Fluss",
+    "location": "Fluss (2/M)",
     "time": "Ganztägig",
     "value": "900"
   },
@@ -238,7 +238,7 @@
     "name": "Masu&shy;lachs",
     "image": "/fish/jpg/Cherry salmon.jpg",
     "season": "2 - 5, 8 - 10",
-    "location": "Wasserfall (3)",
+    "location": "Wasserfall (3/M)",
     "time": "16 - 9 Uhr",
     "value": "1000"
   },
@@ -247,7 +247,7 @@
     "name": "Saibling",
     "image": "/fish/jpg/Char.jpg",
     "season": "2 - 5, 8 - 10",
-    "location": "Wasserfall (3)",
+    "location": "Wasserfall (3/M)",
     "time": "16 - 9 Uhr",
     "value": "3800"
   },
@@ -256,7 +256,7 @@
     "name": "Gold&shy;forelle",
     "image": "/fish/jpg/Golden trout.jpg",
     "season": "2 - 4, 8 - 10",
-    "location": "Wasserfall (3)",
+    "location": "Wasserfall (3/M)",
     "time": "16 - 9 Uhr",
     "value": "15000"
   },
@@ -265,7 +265,7 @@
     "name": "Huchen",
     "image": "/fish/jpg/String fish.jpg",
     "season": "11 - 2",
-    "location": "Wasserfall (5)",
+    "location": "Wasserfall (5/XL)",
     "time": "16 - 9 Uhr",
     "value": "15000"
   },
@@ -274,7 +274,7 @@
     "name": "Lachs",
     "image": "/fish/jpg/Salmon.jpg",
     "season": "8",
-    "location": "Fluss&shy;mündung",
+    "location": "Fluss&shy;mündung (4/L)",
     "time": "Ganztägig",
     "value": "700"
   },
@@ -283,7 +283,7 @@
     "name": "König&shy;lachs",
     "image": "/fish/jpg/King salmon.jpg",
     "season": "8",
-    "location": "Fluss&shy;mündung",
+    "location": "Fluss&shy;mündung (5/XL)",
     "time": "Ganztägig",
     "value": "1800"
   },
@@ -292,7 +292,7 @@
     "name": "Wohl&shy;hand&shy;krabbe",
     "image": "/fish/jpg/Mitten crab.jpg",
     "season": "8 - 9",
-    "location": "Fluss (2)",
+    "location": "Fluss (2/S)",
     "time": "16 - 9 Uhr",
     "value": "2000"
   },
@@ -301,7 +301,7 @@
     "name": "Guppy",
     "image": "/fish/jpg/Guppy.jpg",
     "season": "3 - 10",
-    "location": "Fluss (1)",
+    "location": "Fluss (1/XS)",
     "time": "9 - 16 Uhr",
     "value": "1300"
   },
@@ -310,7 +310,7 @@
     "name": "Saugbarbe",
     "image": "/fish/jpg/Nibble fish.jpg",
     "season": "4 - 8",
-    "location": "Fluss",
+    "location": "Fluss (1/XS)",
     "time": "9 - 16 Uhr",
     "value": "1500"
   },
@@ -319,7 +319,7 @@
     "name": "Skalar",
     "image": "/fish/jpg/Angelfish.jpg",
     "season": "4 - 9",
-    "location": "Fluss (2)",
+    "location": "Fluss (2/S)",
     "time": "16 - 9 Uhr",
     "value": "3000"
   },
@@ -328,7 +328,7 @@
     "name": "Kampf&shy;fisch",
     "image": "/fish/jpg/Betta.jpg",
     "season": "4 - 9",
-    "location": "Fluss (2)",
+    "location": "Fluss (2/S)",
     "time": "9 - 16 Uhr",
     "value": "2500"
   },
@@ -337,7 +337,7 @@
     "name": "Neon&shy;sammler",
     "image": "/fish/jpg/Neon tetra.jpg",
     "season": "3 - 10",
-    "location": "Fluss (1)",
+    "location": "Fluss (1/XS)",
     "time": "9 - 16 Uhr",
     "value": "500"
   },
@@ -346,7 +346,7 @@
     "name": "Regen&shy;bogen&shy;fisch",
     "image": "/fish/jpg/Rainbowfish.jpg",
     "season": "4 - 9",
-    "location": "Fluss (2)",
+    "location": "Fluss (1/XS)",
     "time": "9 - 16 Uhr",
     "value": "800"
   },
@@ -355,7 +355,7 @@
     "name": "Piranha",
     "image": "/fish/jpg/Piranha.jpg",
     "season": "5 - 8",
-    "location": "Fluss",
+    "location": "Fluss (2/S)",
     "time": "9-16 Uhr, 20 - 4 Uhr",
     "value": "2500"
   },
@@ -364,7 +364,7 @@
     "name": "Arowana",
     "image": "/fish/jpg/Arowana.jpg",
     "season": "5 - 8",
-    "location": "Fluss",
+    "location": "Fluss (4/L)",
     "time": "16 - 9 Uhr",
     "value": "10000"
   },
@@ -373,7 +373,7 @@
     "name": "Lachs&shy;salmler",
     "image": "/fish/jpg/Dorado.jpg",
     "season": "5 - 8",
-    "location": "Fluss",
+    "location": "Fluss (5/XL)",
     "time": "4 - 21 Uhr",
     "value": "15000"
   },
@@ -382,7 +382,7 @@
     "name": "Knochen&shy;hecht",
     "image": "/fish/jpg/Gar.jpg",
     "season": "5 - 8",
-    "location": "Teich (6)",
+    "location": "Teich (5/XL)",
     "time": "16 - 9 Uhr",
     "value": "6000"
   },
@@ -391,7 +391,7 @@
     "name": "Arapaima",
     "image": "/fish/jpg/Arapaima.jpg",
     "season": "5 - 8",
-    "location": "Fluss",
+    "location": "Fluss (6/XXL)",
     "time": "16 - 9 Uhr",
     "value": "10000"
   },
@@ -400,7 +400,7 @@
     "name": "Fösselhecht",
     "image": "/fish/jpg/Saddled bichir.jpg",
     "season": "5 - 8",
-    "location": "Fluss",
+    "location": "Fluss (4/L)",
     "time": "21 - 4 Uhr",
     "value": "4000"
   },
@@ -409,7 +409,7 @@
     "name": "Stör",
     "image": "/fish/jpg/Sturgeon.jpg",
     "season": "8 - 2",
-    "location": "Fluss&shy;mündung (6)",
+    "location": "Fluss&shy;mündung (6/XXL)",
     "time": "Ganztägig",
     "value": "10000"
   },
@@ -418,7 +418,7 @@
     "name": "See-Engel",
     "image": "/fish/jpg/Sea butterfly.jpg",
     "season": "11 - 2",
-    "location": "Meer (1)",
+    "location": "Meer (1/XS)",
     "time": "Ganztägig",
     "value": "1000"
   },
@@ -427,7 +427,7 @@
     "name": "See&shy;pferdchen",
     "image": "/fish/jpg/Sea horse.jpg",
     "season": "3 - 10",
-    "location": "Meer (1)",
+    "location": "Meer (1/XL)",
     "time": "Ganztägig",
     "value": "1100"
   },
@@ -436,7 +436,7 @@
     "name": "Anemonen&shy;fisch",
     "image": "/fish/jpg/Clown fish.jpg",
     "season": "3 - 8",
-    "location": "Meer (1)",
+    "location": "Meer (1/XS)",
     "time": "Ganztägig",
     "value": "650"
   },
@@ -445,7 +445,7 @@
     "name": "Paletten&shy;doktor&shy;fisch",
     "image": "/fish/jpg/Surgeonfish.jpg",
     "season": "3 - 8",
-    "location": "Meer (2)",
+    "location": "Meer (2/S)",
     "time": "Ganztägig",
     "value": "1000"
   },
@@ -454,7 +454,7 @@
     "name": "Falter&shy;fisch",
     "image": "/fish/jpg/Butterfly Fish.jpg",
     "season": "3 - 8",
-    "location": "Meer (2)",
+    "location": "Meer (2/S)",
     "time": "Ganztägig",
     "value": "1000"
   },
@@ -463,7 +463,7 @@
     "name": "Napoleon&shy;fish",
     "image": "/fish/jpg/Napoleonfish.jpg",
     "season": "6 - 7",
-    "location": "Meer",
+    "location": "Meer (6/XXL)",
     "time": "4 - 21 Uhr",
     "value": "10000"
   },
@@ -472,7 +472,7 @@
     "name": "Rotfeuer&shy;fisch",
     "image": "/fish/jpg/Zebra turkeyfish.jpg",
     "season": "3 - 10",
-    "location": "Meer (3)",
+    "location": "Meer (3/M)",
     "time": "Ganztägig",
     "value": "500"
   },
@@ -481,7 +481,7 @@
     "name": "Kugelfisch",
     "image": "/fish/jpg/Blowfish.jpg",
     "season": "10 - 1",
-    "location": "Meer",
+    "location": "Meer (3/M)",
     "time": "21 - 4 Uhr",
     "value": "5000"
   },
@@ -490,7 +490,7 @@
     "name": "Igelfisch",
     "image": "/fish/jpg/Puffer fish.jpg",
     "season": "6 - 8",
-    "location": "Meer",
+    "location": "Meer (3/M)",
     "time": "Ganztägig",
     "value": "250"
   },
@@ -499,7 +499,7 @@
     "name": "Sardelle",
     "image": "/fish/jpg/Anchovy.jpg",
     "season": "Ganzjährig",
-    "location": "Meer (2)",
+    "location": "Meer (2/S)",
     "time": "4 - 21 Uhr",
     "value": "200"
   },
@@ -508,7 +508,7 @@
     "name": "Makrele",
     "image": "/fish/jpg/Horse mackerel.jpg",
     "season": "Ganzjährig",
-    "location": "Meer (2)",
+    "location": "Meer (2/S)",
     "time": "Ganztägig",
     "value": "150"
   },
@@ -517,7 +517,7 @@
     "name": "Schnabel&shy;barsch",
     "image": "/fish/jpg/Barred knifejaw.jpg",
     "season": "2 - 10",
-    "location": "Meer (3)",
+    "location": "Meer (3/M)",
     "time": "Ganztägig",
     "value": "5000"
   },
@@ -526,7 +526,7 @@
     "name": "Seebarsch",
     "image": "/fish/jpg/Sea bass.jpg",
     "season": "Ganzjährig",
-    "location": "Meer (5)",
+    "location": "Meer (5/XL)",
     "time": "Ganztägig",
     "value": "400"
   },
@@ -535,7 +535,7 @@
     "name": "Kaiser&shy;schnapper",
     "image": "/fish/jpg/Red Snapper.jpg",
     "season": "Ganzjährig",
-    "location": "Meer (4)",
+    "location": "Meer (4/L)",
     "time": "Ganztägig",
     "value": "3000"
   },
@@ -544,7 +544,7 @@
     "name": "Kleische",
     "image": "/fish/jpg/Dab.jpg",
     "season": "9 - 3",
-    "location": "Meer (3)",
+    "location": "Meer (3/M)",
     "time": "Ganztägig",
     "value": "300"
   },
@@ -553,7 +553,7 @@
     "name": "Flunder",
     "image": "/fish/jpg/Olive flounder.jpg",
     "season": "Ganzjährig",
-    "location": "Meer (5)",
+    "location": "Meer (5/XL)",
     "time": "Ganztägig",
     "value": "800"
   },
@@ -562,7 +562,7 @@
     "name": "Kalmar",
     "image": "/fish/jpg/Squid.jpg",
     "season": "11 - 7",
-    "location": "Meer (3)",
+    "location": "Meer (3/M)",
     "time": "Ganztägig",
     "value": "500"
   },
@@ -571,7 +571,7 @@
     "name": "Muräne",
     "image": "/fish/jpg/Moray eel.jpg",
     "season": "7 - 9",
-    "location": "Meer (5)",
+    "location": "Meer (dünn)",
     "time": "Ganztägig",
     "value": "2000"
   },
@@ -589,7 +589,7 @@
     "name": "Thunfisch",
     "image": "/fish/jpg/Tuna.jpg",
     "season": "10 - 3",
-    "location": "Steg (6)",
+    "location": "Steg (6/XXL)",
     "time": "Ganztägig",
     "value": "7000"
   },
@@ -598,7 +598,7 @@
     "name": "Marlin",
     "image": "/fish/jpg/Blue marlin.jpg",
     "season": "10 - 3, 6 - 8",
-    "location": "Steg (6)",
+    "location": "Steg (6/XXL)",
     "time": "Ganztägig",
     "value": "10000"
   },
@@ -607,7 +607,7 @@
     "name": "Stachel&shy;makrele",
     "image": "/fish/jpg/Giant trevally.jpg",
     "season": "4 - 9",
-    "location": "Steg (5)",
+    "location": "Steg (5/XL)",
     "time": "Ganztägig",
     "value": "4500"
   },
@@ -616,7 +616,7 @@
     "name": "Gold&shy;makrele",
     "image": "/fish/jpg/Mahi-mahi.jpg",
     "season": "4 - 9",
-    "location": "Steg (5)",
+    "location": "Steg (5/XL)",
     "time": "Ganztägig",
     "value": "12000"
   },
@@ -625,7 +625,7 @@
     "name": "Mondfisch",
     "image": "/fish/jpg/Ocean sunfish.jpg",
     "season": "6 - 8",
-    "location": "Meer",
+    "location": "Meer (6/HA)",
     "time": "4 - 21 Uhr",
     "value": "4000"
   },
@@ -634,7 +634,7 @@
     "name": "Rochen",
     "image": "/fish/jpg/Ray.jpg",
     "season": "7 - 10",
-    "location": "Meer (5)",
+    "location": "Meer (5/XL)",
     "time": "4 - 21 Uhr",
     "value": "3000"
   },
@@ -643,7 +643,7 @@
     "name": "Sägehai",
     "image": "/fish/jpg/Saw Shark.jpg",
     "season": "5 - 8",
-    "location": "Meer",
+    "location": "Meer (6/HA)",
     "time": "16 - 9 Uhr",
     "value": "12000"
   },
@@ -652,7 +652,7 @@
     "name": "Hammerhai",
     "image": "/fish/jpg/Hammerhead shark.jpg",
     "season": "5 - 8",
-    "location": "Meer",
+    "location": "Meer (6/HA)",
     "time": "16 - 9 Uhr",
     "value": "8000"
   },
@@ -661,7 +661,7 @@
     "name": "Hai",
     "image": "/fish/jpg/Great white shark.jpg",
     "season": "5 - 8",
-    "location": "Meer",
+    "location": "Meer (6/HA)",
     "time": "9 - 16 Uhr",
     "value": "15000"
   },
@@ -670,7 +670,7 @@
     "name": "Wahlhai",
     "image": "/fish/jpg/Whale shark.jpg",
     "season": "5 - 8",
-    "location": "Meer",
+    "location": "Meer (6/HA)",
     "time": "Ganztägig",
     "value": "13000"
   },
@@ -679,7 +679,7 @@
     "name": "Schiffs&shy;halter",
     "image": "/fish/jpg/Suckerfish.jpg",
     "season": "5 - 8",
-    "location": "Meer",
+    "location": "Meer (6/HA)",
     "time": "Ganztägig",
     "value": "1500"
   },
@@ -688,7 +688,7 @@
     "name": "Angler&shy;fisch",
     "image": "/fish/jpg/Football fish.jpg",
     "season": "10 - 2",
-    "location": "Meer (4)",
+    "location": "Meer (4/L)",
     "time": "16 - 21 Uhr",
     "value": "2500"
   },
@@ -697,7 +697,7 @@
     "name": "Riemen&shy;fisch",
     "image": "/fish/jpg/Oarfish.jpg",
     "season": "11 - 4",
-    "location": "Meer (6)",
+    "location": "Meer (6/XXL)",
     "time": "Ganztägig",
     "value": "9000"
   },
@@ -706,7 +706,7 @@
     "name": "Glas&shy;kopf&shy;fisch",
     "image": "/fish/jpg/Barreleye.jpg",
     "season": "Ganzjährig",
-    "location": "Meer (2)",
+    "location": "Meer (2/S)",
     "time": "21 - 4 Uhr",
     "value": "15000"
   },
@@ -715,7 +715,7 @@
     "name": "Quasten&shy;flosser",
     "image": "/fish/jpg/Coelacanth.jpg",
     "season": "Ganzjährig",
-    "location": "Meer (6)",
+    "location": "Meer (6/XXL)",
     "time": "Ganztägig (bei Regen)",
     "value": "15000"
   }
