@@ -2,481 +2,571 @@
   {
     "name": "Abschied",
     "location": "Songwünsch bei K.K.",
-    "image": "/songs/Farewell.jpg"
+    "image": "/songs/Farewell.jpg",
+    "mood": "Keine, versteckt"
   },
   {
     "name": "Agent K.K.",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Agent K.K..jpg"
+    "image": "/songs/Agent K.K..jpg",
+    "mood": "Schwer zu sagen"
   },
   {
     "name": "Alter Kuchen",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Stale Cupcakes.jpg"
+    "image": "/songs/Stale Cupcakes.jpg",
+    "mood": "Wehmütig"
   },
   {
     "name": "Am Rande",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/To The Edge.jpg"
+    "image": "/songs/To The Edge.jpg",
+    "mood": "Schwer zu sagen"
+  },
+  {
+    "name": "Am Steuer",
+    "location": "Songwünsch bei K.K.",
+    "image": "/songs/Drivin'.jpg",
+    "mood": "Keine, versteckt"
   },
   {
     "name": "Berglied",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Mountain Song.jpg"
+    "image": "/songs/Mountain Song.jpg",
+    "mood": "Richtig gut!"
   },
   {
     "name": "Bergsteigung",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Steep Hill.jpg"
+    "image": "/songs/Steep Hill.jpg",
+    "mood": "Wehmütig"
   },
   {
     "name": "Die Insel der Tiere",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Island.jpg"
+    "image": "/songs/K.K. Island.jpg",
+    "mood": "Keine, versteckt"
   },
   {
     "name": "Die Stadt der Tiere",
     "location": "Songwünsch bei K.K.",
-    "image": "/songs/Animal City.jpg"
+    "image": "/songs/Animal City.jpg",
+    "mood": "Entspannt"
   },
   {
     "name": "DJ K.K.",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/DJ K.K..jpg"
+    "image": "/songs/DJ K.K..jpg",
+    "mood": "Grummelig"
   },
   {
     "name": "Frühlingsblüten",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Spring Blossoms.jpg"
+    "image": "/songs/Spring Blossoms.jpg",
+    "mood": "Richtig gut!"
   },
   {
     "name": "Ganz allein",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Only Me.jpg"
+    "image": "/songs/Only Me.jpg",
+    "mood": "Wehmütig"
   },
   {
     "name": "Geburtstagslied",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Birthday.jpg"
+    "image": "/songs/K.K. Birthday.jpg",
+    "mood": "Keine, besonders"
   },
   {
     "name": "Herr K.K.",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Mr. K.K..jpg"
+    "image": "/songs/Mr. K.K..jpg",
+    "mood": "Entspannt"
   },
   {
     "name": "Go K.K. Rider",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Go K.K. Rider.jpg"
+    "image": "/songs/Go K.K. Rider.jpg",
+    "mood": "Grummelig"
   },
   {
     "name": "Ich liebe dich",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/I Love You.jpg"
+    "image": "/songs/I Love You.jpg",
+    "mood": "Entspannt"
   },
   {
     "name": "Ich wandere",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Wandering.jpg"
+    "image": "/songs/Wandering.jpg",
+    "mood": "Entspannt"
   },
   {
     "name": "K. Funk",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/The K. Funk.jpg"
+    "image": "/songs/The K. Funk.jpg",
+    "mood": "Schwer zu sagen"
   },
   {
     "name": "K.K. Aria",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Aria.jpg"
+    "image": "/songs/K.K. Aria.jpg",
+    "mood": "Entspannt"
   },
   {
     "name": "K.K. Ballade",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Ballad.jpg"
+    "image": "/songs/K.K. Ballad.jpg",
+    "mood": "Wehmütig"
   },
   {
     "name": "K.K. Bazaar",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Bazaar.jpg"
+    "image": "/songs/K.K. Bazaar.jpg",
+    "mood": "Grummelig"
   },
   {
     "name": "K.K. Blues",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Blues.jpg"
+    "image": "/songs/K.K. Blues.jpg",
+    "mood": "Schwer zu sagen"
   },
   {
     "name": "K.K. Bossa",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Bossa.jpg"
+    "image": "/songs/K.K. Bossa.jpg",
+    "mood": "Entspannt"
   },
   {
     "name": "K.K. Calypso",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Calypso.jpg"
+    "image": "/songs/K.K. Calypso.jpg",
+    "mood": "Richtig gut!"
   },
   {
     "name": "K.K. Choral",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Chorale.jpg"
+    "image": "/songs/K.K. Chorale.jpg",
+    "mood": "Wehmütig"
   },
   {
     "name": "K.K. Combo",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Mariachi.jpg"
+    "image": "/songs/K.K. Mariachi.jpg",
+    "mood": "Richtig gut!"
   },
   {
     "name": "K.K. Country",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Country.jpg"
+    "image": "/songs/K.K. Country.jpg",
+    "mood": "Richtig gut!"
   },
   {
     "name": "K.K. Cruisin'",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Cruisin'.jpg"
+    "image": "/songs/K.K. Cruisin'.jpg",
+    "mood": "Grummelig"
   },
   {
-    "name": "K.K. D&B",
+    "name": "K.K. D & B",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. D&B.jpg"
+    "image": "/songs/K.K. D&B.jpg",
+    "mood": "Schwer zu sagen"
   },
   {
     "name": "K.K. Disco",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Disco.jpg"
+    "image": "/songs/K.K. Disco.jpg",
+    "mood": "Richtig gut!"
   },
   {
     "name": "K.K. Dixie",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Dixie.jpg"
+    "image": "/songs/K.K. Dixie.jpg",
+    "mood": "Richtig gut!"
   },
   {
     "name": "K.K. Etüde",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Etude.jpg"
+    "image": "/songs/K.K. Etude.jpg",
+    "mood": "Wehmütig"
   },
   {
     "name": "K.K. Filmmusik",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Adventure.jpg"
+    "image": "/songs/K.K. Adventure.jpg",
+    "mood": "Grummelig"
   },
   {
     "name": "K.K. Flamenco",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Flamenco.jpg"
+    "image": "/songs/K.K. Flamenco.jpg",
+    "mood": "Grummelig"
   },
   {
     "name": "K.K. Folk",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Folk.jpg"
+    "image": "/songs/K.K. Folk.jpg",
+    "mood": "Schwer zu sagen"
   },
   {
     "name": "K.K. Freundelied",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Comrade K.K..jpg"
+    "image": "/songs/Comrade K.K..jpg",
+    "mood": "Wehmütig"
   },
   {
     "name": "K.K. Fusion",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Fusion.jpg"
+    "image": "/songs/K.K. Fusion.jpg",
+    "mood": "Entspannt"
   },
   {
     "name": "K.K.Glückspilz ",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Lucky K.K..jpg"
+    "image": "/songs/Lucky K.K..jpg",
+    "mood": "Grummelig"
   },
   {
     "name": "K.K. Groove",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Groove.jpg"
+    "image": "/songs/K.K. Groove.jpg",
+    "mood": "Richtig gut!"
   },
   {
     "name": "K.K. Gumbo",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Gumbo.jpg"
+    "image": "/songs/K.K. Gumbo.jpg",
+    "mood": "Schwer zu sagen"
   },
   {
     "name": "K.K. House",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. House.jpg"
+    "image": "/songs/K.K. House.jpg",
+    "mood": "Grummelig"
   },
   {
     "name": "K.K. Jahrmarkt",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Faire.jpg"
+    "image": "/songs/K.K. Faire.jpg",
+    "mood": "Entspannt"
   },
   {
     "name": "K.K. Kaffeeblues",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Cafe K.K..jpg"
+    "image": "/songs/Cafe K.K..jpg",
+    "mood": "Richtig gut!"
   },
   {
     "name": "K.K. Jazz",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Jazz.jpg"
+    "image": "/songs/K.K. Jazz.jpg",
+    "mood": "Entspannt"
   },
   {
     "name": "K.K. Klagelied",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Lament.jpg"
+    "image": "/songs/K.K. Lament.jpg",
+    "mood": "Wehmütig"
   },
   {
     "name": "K.K. Kondor",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Condor.jpg"
+    "image": "/songs/K.K. Condor.jpg",
+    "mood": "Wehmütig"
   },
   {
     "name": "K.K. Liebeslied",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Love Song.jpg"
+    "image": "/songs/K.K. Love Song.jpg",
+    "mood": "Entspannt"
   },
   {
     "name": "K.K. Maharadscha",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Oasis.jpg"
+    "image": "/songs/K.K. Oasis.jpg",
+    "mood": "Schwer zu sagen"
   },
   {
     "name": "K.K. Mambo",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Mambo.jpg"
+    "image": "/songs/K.K. Mambo.jpg",
+    "mood": "Richtig gut!"
   },
   {
     "name": "K.K. Marathon",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Marathon.jpg"
+    "image": "/songs/K.K. Marathon.jpg",
+    "mood": "Schwer zu sagen"
   },
   {
     "name": "K.K. Marsch",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. March.jpg"
+    "image": "/songs/K.K. March.jpg",
+    "mood": "Richtig gut!"
   },
   {
     "name": "K.K. Melodie",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Jongara.jpg"
+    "image": "/songs/K.K. Jongara.jpg",
+    "mood": "Grummelig"
   },
   {
     "name": "K.K. Metal",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Metal.jpg"
+    "image": "/songs/K.K. Metal.jpg",
+    "mood": "Grummelig"
   },
   {
     "name": "K.K. Milonga",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Milonga.jpg"
+    "image": "/songs/K.K. Milonga.jpg",
+    "mood": "Wehmütig"
   },
   {
     "name": "K.K. mit Gefühl",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Soulful K.K..jpg"
+    "image": "/songs/Soulful K.K..jpg",
+    "mood": "Entspannt"
   },
   {
     "name": "K.K. Orientsong",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Casbah.jpg"
+    "image": "/songs/K.K. Casbah.jpg",
+    "mood": "Grummelig"
   },
   {
     "name": "K.K. Parade",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Parade.jpg"
+    "image": "/songs/K.K. Parade.jpg",
+    "mood": "Richtig gut!"
   },
   {
     "name": "K.K. Parade 2",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Rally.jpg"
+    "image": "/songs/K.K. Rally.jpg",
+    "mood": "Schwer zu sagen"
   },
   {
     "name": "K.K. Pop",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Bubblegum K.K..jpg"
+    "image": "/songs/Bubblegum K.K..jpg",
+    "mood": "Richtig gut!"
   },
   {
     "name": "K.K. Ragtime",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Ragtime.jpg"
+    "image": "/songs/K.K. Ragtime.jpg",
+    "mood": "Richtig gut!"
   },
   {
     "name": "K.K. Reggae",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Reggae.jpg"
+    "image": "/songs/K.K. Reggae.jpg",
+    "mood": "Entspannt"
   },
   {
     "name": "K.K. Rock",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Rock.jpg"
+    "image": "/songs/K.K. Rock.jpg",
+    "mood": "Grummelig"
   },
   {
     "name": "K.K. Rockabilly",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Rockabilly.jpg"
+    "image": "/songs/K.K. Rockabilly.jpg",
+    "mood": "Richtig gut!"
   },
   {
     "name": "K.K. Rocksong",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Rockin' K.K..jpg"
+    "image": "/songs/Rockin' K.K..jpg",
+    "mood": "Grummelig"
   },
   {
     "name": "K.K. Safari",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Safari.jpg"
+    "image": "/songs/K.K. Safari.jpg",
+    "mood": "Grummelig"
   },
   {
     "name": "K.K. Salsa",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Salsa.jpg"
+    "image": "/songs/K.K. Salsa.jpg",
+    "mood": "Richtig gut!"
   },
   {
     "name": "K.K. Samba",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Samba.jpg"
+    "image": "/songs/K.K. Samba.jpg",
+    "mood": "Richtig gut!"
   },
   {
     "name": "K.K. Schlaflied",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Lullaby.jpg"
+    "image": "/songs/K.K. Lullaby.jpg",
+    "mood": "Wehmütig"
   },
   {
     "name": "K.K. Ska",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Ska.jpg"
+    "image": "/songs/K.K. Ska.jpg",
+    "mood": "Richtig gut!"
   },
   {
     "name": "K.K. Sonata",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Sonata.jpg"
+    "image": "/songs/K.K. Sonata.jpg",
+    "mood": "Wehmütig"
   },
   {
     "name": "K.K. Song",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Song.jpg"
+    "image": "/songs/K.K. Song.jpg",
+    "mood": "Schwer zu sagen"
   },
   {
     "name": "K.K. Sonnenuntergang",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Moody.jpg"
+    "image": "/songs/K.K. Moody.jpg",
+    "mood": "Entspannt"
   },
   {
     "name": "K.K. Soul",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Soul.jpg"
+    "image": "/songs/K.K. Soul.jpg",
+    "mood": "Schwer zu sagen"
   },
   {
     "name": "K.K. Steppensong",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Steppe.jpg"
+    "image": "/songs/K.K. Steppe.jpg",
+    "mood": "Grummelig"
   },
   {
     "name": "K.K. Südseetraum",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Aloha K.K..jpg"
+    "image": "/songs/Aloha K.K..jpg",
+    "mood": "Entspannt"
   },
   {
     "name": "K.K. Swing",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Swing.jpg"
+    "image": "/songs/K.K. Swing.jpg",
+    "mood": "Entspannt"
   },
   {
     "name": "K.K. Synthiepop",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Synth.jpg"
+    "image": "/songs/K.K. Synth.jpg",
+    "mood": "Entspannt"
   },
   {
     "name": "K.K. Tango",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Tango.jpg"
+    "image": "/songs/K.K. Tango.jpg",
+    "mood": "Grummelig"
   },
   {
     "name": "K.K. Technopop",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Technopop.jpg"
+    "image": "/songs/K.K. Technopop.jpg",
+    "mood": "Schwer zu sagen"
   },
   {
     "name": "K.K. Trauerlied",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Dirge.jpg"
+    "image": "/songs/K.K. Dirge.jpg",
+    "mood": "Wehmütig"
   },
   {
     "name": "K.K. Waltzer",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Waltz.jpg"
+    "image": "/songs/K.K. Waltz.jpg",
+    "mood": "Wehmütig"
   },
   {
     "name": "K.K. Western",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Western.jpg"
+    "image": "/songs/K.K. Western.jpg",
+    "mood": "Wehmütig"
   },
   {
     "name": "King K.K.",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/King K.K..jpg"
+    "image": "/songs/King K.K..jpg",
+    "mood": "Wehmütig"
   },
   {
     "name": "Mein Zuhause",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/My Place.jpg"
+    "image": "/songs/My Place.jpg",
+    "mood": "Entspannt"
   },
   {
     "name": "Minimal Music",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Space K.K..jpg"
+    "image": "/songs/Space K.K..jpg",
+    "mood": "Schwer zu sagen"
   },
   {
     "name": "Nachdenklich",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Pondering.jpg"
+    "image": "/songs/Pondering.jpg",
+    "mood": "Entspannt"
   },
   {
     "name": "Neapolitaner",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Neapolitan.jpg"
-  },
-  {
-    "name": "Schlummerlied",
-    "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Hypno K.K..jpg"
-  },
-  {
-    "name": "Seefahrerlied 2001",
-    "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Marine Song 2001.jpg"
-  },
-  {
-    "name": "Spaziergang",
-    "location": "K.K. & Nook-Shopping",
-    "image": "/songs/K.K. Stroll.jpg"
-  },
-  {
-    "name": "Super-K.K.",
-    "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Imperial K.K..jpg"
-  },
-  {
-    "name": "Surfin' K.K.",
-    "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Surfin' K.K..jpg"
-  },
-  {
-    "name": "Vorgestern",
-    "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Two Days Ago.jpg"
-  },
-  {
-    "name": "Waldlichtung",
-    "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Forest Life.jpg"
+    "image": "/songs/Neapolitan.jpg",
+    "mood": "Richtig gut!"
   },
   {
     "name": "Neue Horizonte",
     "location": "Tom Nook nach K.K. Sliders erstem Auftritt",
-    "image": "/songs/Welcome Horizons.jpg"
+    "image": "/songs/Welcome Horizons.jpg",
+    "mood": "Keine, besonders"
   },
   {
-    "name": "? (Wild World)",
+    "name": "Schlummerlied",
     "location": "K.K. & Nook-Shopping",
-    "image": "/songs/Wild World.jpg"
+    "image": "/songs/Hypno K.K..jpg",
+    "mood": "Schwer zu sagen"
   },
   {
-    "name": "? (Drivin')",
-    "location": "Songwünsch bei K.K.",
-    "image": "/songs/Drivin'.jpg"
+    "name": "Seefahrerlied 2001",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Marine Song 2001.jpg",
+    "mood": "Entspannt"
+  },
+  {
+    "name": "Spaziergang",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/K.K. Stroll.jpg",
+    "mood": "Entspannt"
+  },
+  {
+    "name": "Super-K.K.",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Imperial K.K..jpg",
+    "mood": "Grummelig"
+  },
+  {
+    "name": "Surfin' K.K.",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Surfin' K.K..jpg",
+    "mood": "Grummelig"
+  },
+  {
+    "name": "Vorgestern",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Two Days Ago.jpg",
+    "mood": "Wehmütig"
+  },
+  {
+    "name": "Waldlichtung",
+    "location": "K.K. & Nook-Shopping",
+    "image": "/songs/Forest Life.jpg",
+    "mood": "Entspannt"
   }
 ]
