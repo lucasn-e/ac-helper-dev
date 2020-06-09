@@ -1,482 +1,572 @@
 [
   {
     "name": "Agent K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Agent K.K..jpg"
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Agent K.K..jpg",
+    "mood": "It's hard to say"
   },
   {
     "name": "Aloha K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Aloha K.K..jpg"
-  },
-  {
-    "name": "K.K. Jazz",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Jazz.jpg"
-  },
-  {
-    "name": "Bubblegum K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Bubblegum K.K..jpg"
-  },
-  {
-    "name": "Cafe K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Cafe K.K..jpg"
-  },
-  {
-    "name": "Comrade K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Comrade K.K..jpg"
-  },
-  {
-    "name": "DJ K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/DJ K.K..jpg"
-  },
-  {
-    "name": "Forest Life",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Forest Life.jpg"
-  },
-  {
-    "name": "Go K.K. Rider",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Go K.K. Rider.jpg"
-  },
-  {
-    "name": "Hypno K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Hypno K.K..jpg"
-  },
-  {
-    "name": "I Love You",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/I Love You.jpg"
-  },
-  {
-    "name": "Imperial K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Imperial K.K..jpg"
-  },
-  {
-    "name": "K.K. Adventure",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Adventure.jpg"
-  },
-  {
-    "name": "K.K. Aria",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Aria.jpg"
-  },
-  {
-    "name": "K.K. Ballad",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Ballad.jpg"
-  },
-  {
-    "name": "K.K. Bazaar",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Bazaar.jpg"
-  },
-  {
-    "name": "K.K. Birthday",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Birthday.jpg"
-  },
-  {
-    "name": "K.K. Blues",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Blues.jpg"
-  },
-  {
-    "name": "K.K. Bossa",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Bossa.jpg"
-  },
-  {
-    "name": "K.K. Calypso",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Calypso.jpg"
-  },
-  {
-    "name": "K.K. Casbah",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Casbah.jpg"
-  },
-  {
-    "name": "K.K. Chorale",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Chorale.jpg"
-  },
-  {
-    "name": "K.K. Condor",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Condor.jpg"
-  },
-  {
-    "name": "K.K. Country",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Country.jpg"
-  },
-  {
-    "name": "K.K. Cruisin'",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Cruisin'.jpg"
-  },
-  {
-    "name": "K.K. D&B",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. D&B.jpg"
-  },
-  {
-    "name": "K.K. Dirge",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Dirge.jpg"
-  },
-  {
-    "name": "K.K. Disco",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Disco.jpg"
-  },
-  {
-    "name": "K.K. Dixie",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Dixie.jpg"
-  },
-  {
-    "name": "K.K. Etude",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Etude.jpg"
-  },
-  {
-    "name": "K.K. Faire",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Faire.jpg"
-  },
-  {
-    "name": "K.K. Flamenco",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Flamenco.jpg"
-  },
-  {
-    "name": "K.K. Folk",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Folk.jpg"
-  },
-  {
-    "name": "K.K. Fusion",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Fusion.jpg"
-  },
-  {
-    "name": "K.K. Groove",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Groove.jpg"
-  },
-  {
-    "name": "K.K. Gumbo",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Gumbo.jpg"
-  },
-  {
-    "name": "K.K. House",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. House.jpg"
-  },
-  {
-    "name": "K.K. Island",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Island.jpg"
-  },
-  {
-    "name": "K.K. Jongara",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Jongara.jpg"
-  },
-  {
-    "name": "K.K. Lament",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Lament.jpg"
-  },
-  {
-    "name": "K.K. Love Song",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Love Song.jpg"
-  },
-  {
-    "name": "K.K. Lullaby",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Lullaby.jpg"
-  },
-  {
-    "name": "K.K. Mambo",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Mambo.jpg"
-  },
-  {
-    "name": "K.K. Marathon",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Marathon.jpg"
-  },
-  {
-    "name": "K.K. March",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. March.jpg"
-  },
-  {
-    "name": "K.K. Mariachi",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Mariachi.jpg"
-  },
-  {
-    "name": "K.K. Metal",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Metal.jpg"
-  },
-  {
-    "name": "K.K. Milonga",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Milonga.jpg"
-  },
-  {
-    "name": "K.K. Moody",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Moody.jpg"
-  },
-  {
-    "name": "K.K. Oasis",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Oasis.jpg"
-  },
-  {
-    "name": "K.K. Parade",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Parade.jpg"
-  },
-  {
-    "name": "K.K. Ragtime",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Ragtime.jpg"
-  },
-  {
-    "name": "K.K. Rally",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Rally.jpg"
-  },
-  {
-    "name": "K.K. Reggae",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Reggae.jpg"
-  },
-  {
-    "name": "K.K. Rock",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Rock.jpg"
-  },
-  {
-    "name": "K.K. Rockabilly",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Rockabilly.jpg"
-  },
-  {
-    "name": "K.K. Salsa",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Salsa.jpg"
-  },
-  {
-    "name": "K.K. Samba",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Samba.jpg"
-  },
-  {
-    "name": "K.K. Ska",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Ska.jpg"
-  },
-  {
-    "name": "K.K. Sonata",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Sonata.jpg"
-  },
-  {
-    "name": "K.K. Song",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Song.jpg"
-  },
-  {
-    "name": "K.K. Soul",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Soul.jpg"
-  },
-  {
-    "name": "K.K. Steppe",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Steppe.jpg"
-  },
-  {
-    "name": "K.K. Stroll",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Stroll.jpg"
-  },
-  {
-    "name": "K.K. Swing",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Swing.jpg"
-  },
-  {
-    "name": "K.K. Synth",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Synth.jpg"
-  },
-  {
-    "name": "K.K. Tango",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Tango.jpg"
-  },
-  {
-    "name": "K.K. Technopop",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Technopop.jpg"
-  },
-  {
-    "name": "K.K. Waltz",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Waltz.jpg"
-  },
-  {
-    "name": "K.K. Western",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Western.jpg"
-  },
-  {
-    "name": "K.K.Safari",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/K.K. Safari.jpg"
-  },
-  {
-    "name": "King K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/King K.K..jpg"
-  },
-  {
-    "name": "Lucky K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Lucky K.K..jpg"
-  },
-  {
-    "name": "Marine Song 2001",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Marine Song 2001.jpg"
-  },
-  {
-    "name": "Mountain Song",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Mountain Song.jpg"
-  },
-  {
-    "name": "Mr. K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Mr. K.K..jpg"
-  },
-  {
-    "name": "My Place",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/My Place.jpg"
-  },
-  {
-    "name": "Neapolitan",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Neapolitan.jpg"
-  },
-  {
-    "name": "Only Me",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Only Me.jpg"
-  },
-  {
-    "name": "Pondering",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Pondering.jpg"
-  },
-  {
-    "name": "Rockin' K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Rockin' K.K..jpg"
-  },
-  {
-    "name": "Soulful K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Soulful K.K..jpg"
-  },
-  {
-    "name": "Space K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Space K.K..jpg"
-  },
-  {
-    "name": "Spring Blossoms",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Spring Blossoms.jpg"
-  },
-  {
-    "name": "Stale Cupcakes",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Stale Cupcakes.jpg"
-  },
-  {
-    "name": "Steep Hill",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Steep Hill.jpg"
-  },
-  {
-    "name": "Surfin' K.K.",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Surfin' K.K..jpg"
-  },
-  {
-    "name": "The K. Funk",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/The K. Funk.jpg"
-  },
-  {
-    "name": "To The Edge",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/To The Edge.jpg"
-  },
-  {
-    "name": "Two Days Ago",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Two Days Ago.jpg"
-  },
-  {
-    "name": "Wandering",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Wandering.jpg"
-  },
-  {
-    "name": "Welcome Horizons",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Welcome Horizons.jpg"
-  },
-  {
-    "name": "Wild World",
-    "location": "Purchase from Nook PC",
-    "image": "/songs/Wild World.jpg"
-  },
-  {
-    "name": "Farewell",
-    "location": "Request from KK",
-    "image": "/songs/Farewell.jpg"
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Aloha K.K..jpg",
+    "mood": "Laid-back"
   },
   {
     "name": "Animal City",
-    "location": "Request from KK",
-    "image": "/songs/Animal City.jpg"
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Animal City.jpg",
+    "mood": "Laid-back"
+  },
+  {
+    "name": "Bubblegum K.K.",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Bubblegum K.K..jpg",
+    "mood": "Good!"
+  },
+  {
+    "name": "Cafe K.K.",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Cafe K.K..jpg",
+    "mood": "Good!"
+  },
+  {
+    "name": "Comrade K.K.",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Comrade K.K..jpg",
+    "mood": "A little sad"
+  },
+  {
+    "name": "DJ K.K.",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/DJ K.K..jpg",
+    "mood": "Grumpy"
+  },
+  {
+    "name": "Forest Life",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Forest Life.jpg",
+    "mood": "Laid-back"
+  },
+  {
+    "name": "Go K.K. Rider",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Go K.K. Rider.jpg",
+    "mood": "Grumpy"
+  },
+  {
+    "name": "Hypno K.K.",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Hypno K.K..jpg",
+    "mood": "It's hard to say"
+  },
+  {
+    "name": "I Love You",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/I Love You.jpg",
+    "mood": "Laid-back"
+  },
+  {
+    "name": "Imperial K.K.",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Imperial K.K..jpg",
+    "mood": "Grumpy"
+  },
+  {
+    "name": "K.K. Adventure",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Adventure.jpg",
+    "mood": "Grumpy"
+  },
+  {
+    "name": "K.K. Aria",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Aria.jpg",
+    "mood": "Laid-back"
+  },
+  {
+    "name": "K.K. Ballad",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Ballad.jpg",
+    "mood": "A little sad"
+  },
+  {
+    "name": "K.K. Bazaar",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Bazaar.jpg",
+    "mood": "Grumpy"
+  },
+  {
+    "name": "K.K. Blues",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Blues.jpg",
+    "mood": "It's hard to say"
+  },
+  {
+    "name": "K.K. Bossa",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Bossa.jpg",
+    "mood": "Laid-back"
+  },
+  {
+    "name": "K.K. Calypso",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Calypso.jpg",
+    "mood": "Good!"
+  },
+  {
+    "name": "K.K. Casbah",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Casbah.jpg",
+    "mood": "Grumpy"
+  },
+  {
+    "name": "K.K. Chorale",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Chorale.jpg",
+    "mood": "A little sad"
+  },
+  {
+    "name": "K.K. Condor",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Condor.jpg",
+    "mood": "A little sad"
+  },
+  {
+    "name": "K.K. Country",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Country.jpg",
+    "mood": "Gut!"
+  },
+  {
+    "name": "K.K. Cruisin'",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Cruisin'.jpg",
+    "mood": "Grumpy"
+  },
+  {
+    "name": "K.K. D&B",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. D&B.jpg",
+    "mood": "It's hard to say"
+  },
+  {
+    "name": "K.K. Dirge",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Dirge.jpg",
+    "mood": "A little sad"
+  },
+  {
+    "name": "K.K. Disco",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Disco.jpg",
+    "mood": "Good!"
+  },
+  {
+    "name": "K.K. Dixie",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Dixie.jpg",
+    "mood": "Good!"
+  },
+  {
+    "name": "K.K. Etude",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Etude.jpg",
+    "mood": "A little sad"
+  },
+  {
+    "name": "K.K. Faire",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Faire.jpg",
+    "mood": "Laid-back"
+  },
+  {
+    "name": "K.K. Flamenco",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Flamenco.jpg",
+    "mood": "Grumpy"
+  },
+  {
+    "name": "K.K. Folk",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Folk.jpg",
+    "mood": "It's hard to say"
+  },
+  {
+    "name": "K.K. Fusion",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Fusion.jpg",
+    "mood": "Laid-back"
+  },
+  {
+    "name": "K.K. Groove",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Groove.jpg",
+    "mood": "Good!"
+  },
+  {
+    "name": "K.K. Gumbo",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Gumbo.jpg",
+    "mood": "It's hard to say"
+  },
+  {
+    "name": "K.K. House",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. House.jpg",
+    "mood": "Grumpy"
+  },
+  {
+    "name": "K.K. Jazz",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Jazz.jpg",
+    "mood": "Laid-back"
+  },
+  {
+    "name": "K.K. Jongara",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Jongara.jpg",
+    "mood": "Grumpy"
+  },
+  {
+    "name": "K.K. Lament",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Lament.jpg",
+    "mood": "A little sad"
+  },
+  {
+    "name": "K.K. Love Song",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Love Song.jpg",
+    "mood": "Laid-back"
+  },
+  {
+    "name": "K.K. Lullaby",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Lullaby.jpg",
+    "mood": "A little sad"
+  },
+  {
+    "name": "K.K. Mambo",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Mambo.jpg",
+    "mood": "Gut!"
+  },
+  {
+    "name": "K.K. Marathon",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Marathon.jpg",
+    "mood": "It's hard to say"
+  },
+  {
+    "name": "K.K. March",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. March.jpg",
+    "mood": "Good!"
+  },
+  {
+    "name": "K.K. Mariachi",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Mariachi.jpg",
+    "mood": "Good!"
+  },
+  {
+    "name": "K.K. Metal",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Metal.jpg",
+    "mood": "Grumpy"
+  },
+  {
+    "name": "K.K. Milonga",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Milonga.jpg",
+    "mood": "A little sad"
+  },
+  {
+    "name": "K.K. Moody",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Moody.jpg",
+    "mood": "Laid-back"
+  },
+  {
+    "name": "K.K. Oasis",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Oasis.jpg",
+    "mood": "It's hard to say"
+  },
+  {
+    "name": "K.K. Parade",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Parade.jpg",
+    "mood": "Good!"
+  },
+  {
+    "name": "K.K. Ragtime",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Ragtime.jpg",
+    "mood": "Good!"
+  },
+  {
+    "name": "K.K. Rally",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Rally.jpg",
+    "mood": "It's hard to say"
+  },
+  {
+    "name": "K.K. Reggae",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Reggae.jpg",
+    "mood": "Laid-back"
+  },
+  {
+    "name": "K.K. Rock",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Rock.jpg",
+    "mood": "Grumpy"
+  },
+  {
+    "name": "K.K. Rockabilly",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Rockabilly.jpg",
+    "mood": "Good!"
+  },
+  {
+    "name": "K.K. Salsa",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Salsa.jpg",
+    "mood": "Good!"
+  },
+  {
+    "name": "K.K. Samba",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Samba.jpg",
+    "mood": "Good!"
+  },
+  {
+    "name": "K.K. Ska",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Ska.jpg",
+    "mood": "Good!"
+  },
+  {
+    "name": "K.K. Sonata",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Sonata.jpg",
+    "mood": "A little sad"
+  },
+  {
+    "name": "K.K. Song",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Song.jpg",
+    "mood": "It's hard to say"
+  },
+  {
+    "name": "K.K. Soul",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Soul.jpg",
+    "mood": "It's hard to say"
+  },
+  {
+    "name": "K.K. Steppe",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Steppe.jpg",
+    "mood": "Grumpy"
+  },
+  {
+    "name": "K.K. Stroll",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Stroll.jpg",
+    "mood": "Laid-back"
+  },
+  {
+    "name": "K.K. Swing",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Swing.jpg",
+    "mood": "Laid-back"
+  },
+  {
+    "name": "K.K. Synth",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Synth.jpg",
+    "mood": "Laid-back"
+  },
+  {
+    "name": "K.K. Tango",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Tango.jpg",
+    "mood": "Grumpy"
+  },
+  {
+    "name": "K.K. Technopop",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Technopop.jpg",
+    "mood": "It's hard to say"
+  },
+  {
+    "name": "K.K. Waltz",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Waltz.jpg",
+    "mood": "A little sad"
+  },
+  {
+    "name": "K.K. Western",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Western.jpg",
+    "mood": "A little sad"
+  },
+  {
+    "name": "K.K. Safari",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Safari.jpg",
+    "mood": "Grumpy"
+  },
+  {
+    "name": "King K.K.",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/King K.K..jpg",
+    "mood": "A little sad"
+  },
+  {
+    "name": "Lucky K.K.",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Lucky K.K..jpg",
+    "mood": "Grumpy"
+  },
+  {
+    "name": "Marine Song 2001",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Marine Song 2001.jpg",
+    "mood": "Laid-back"
+  },
+  {
+    "name": "Mountain Song",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Mountain Song.jpg",
+    "mood": "Good!"
+  },
+  {
+    "name": "Mr. K.K.",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Mr. K.K..jpg",
+    "mood": "Laid-back"
+  },
+  {
+    "name": "My Place",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/My Place.jpg",
+    "mood": "Laid-back"
+  },
+  {
+    "name": "Neapolitan",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Neapolitan.jpg",
+    "mood": "Good!"
+  },
+  {
+    "name": "Only Me",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Only Me.jpg",
+    "mood": "A little sad"
+  },
+  {
+    "name": "Pondering",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Pondering.jpg",
+    "mood": "Laid-back"
+  },
+  {
+    "name": "Rockin' K.K.",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Rockin' K.K..jpg",
+    "mood": "Grumpy"
+  },
+  {
+    "name": "Soulful K.K.",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Soulful K.K..jpg",
+    "mood": "Laid-back"
+  },
+  {
+    "name": "Space K.K.",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Space K.K..jpg",
+    "mood": "It's hard to say"
+  },
+  {
+    "name": "Spring Blossoms",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Spring Blossoms.jpg",
+    "mood": "Good!"
+  },
+  {
+    "name": "Stale Cupcakes",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Stale Cupcakes.jpg",
+    "mood": "A little sad"
+  },
+  {
+    "name": "Steep Hill",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Steep Hill.jpg",
+    "mood": "A little sad"
+  },
+  {
+    "name": "Surfin' K.K.",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Surfin' K.K..jpg",
+    "mood": "Grumpy"
+  },
+  {
+    "name": "The K. Funk",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/The K. Funk.jpg",
+    "mood": "It's hard to say"
+  },
+  {
+    "name": "To The Edge",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/To The Edge.jpg",
+    "mood": "It's hard to say"
+  },
+  {
+    "name": "Two Days Ago",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Two Days Ago.jpg",
+    "mood": "A little sad"
+  },
+  {
+    "name": "Wandering",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/Wandering.jpg",
+    "mood": "Laid-back"
+  },
+  {
+    "name": "K.K. Birthday",
+    "location": "Purchase from Nook Shopping",
+    "image": "/songs/K.K. Birthday.jpg",
+    "mood": "N/A, Special"
+  },
+  {
+    "name": "Welcome Horizons",
+    "location": "Tom Nook after first K.K. concert",
+    "image": "/songs/Welcome Horizons.jpg",
+    "mood": "N/A, Special"
   },
   {
     "name": "Drivin'",
-    "location": "Request from KK",
-    "image": "/songs/Drivin'.jpg"
+    "location": "Request from K.K.",
+    "image": "/songs/Drivin'.jpg",
+    "mood": "N/A, Hidden"
+  },
+  {
+    "name": "Farewell",
+    "location": "Request from K.K.",
+    "image": "/songs/Farewell.jpg",
+    "mood": "N/A, Hidden"
+  },
+  {
+    "name": "K.K. Island",
+    "location": "Request from K.K.",
+    "image": "/songs/K.K. Island.jpg",
+    "mood": "N/A, Hidden"
   }
 ]
