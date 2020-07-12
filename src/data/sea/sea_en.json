@@ -1,0 +1,322 @@
+[
+  {
+    "index": "1",
+    "name": "Seaweed",
+    "image": "",
+    "season": "10 - 7",
+    "time": "All day",
+    "value": "600"
+  },
+  {
+    "index": "2",
+    "name": "Sea Grapes",
+    "image": "",
+    "season": "6 - 9",
+    "time": "All day",
+    "value": "900"
+  },
+  {
+    "index": "3",
+    "name": "Sea Cucumber",
+    "image": "",
+    "season": "11 - 4",
+    "time": "All day",
+    "value": "900"
+  },
+  {
+    "index": "4",
+    "name": "Sea Pig",
+    "image": "",
+    "season": "11 - 2",
+    "time": "16 - 9h",
+    "value": "10000"
+  },
+  {
+    "index": "5",
+    "name": "Sea Star",
+    "image": "",
+    "season": "All year",
+    "time": "All day",
+    "value": "500"
+  },
+  {
+    "index": "6",
+    "name": "Sea Urchin",
+    "image": "",
+    "season": "5 - 9",
+    "time": "All day",
+    "value": "1700"
+  },
+  {
+    "index": "7",
+    "name": "Slate Pencil Urchin",
+    "image": "",
+    "season": "5 - 9",
+    "time": "16 - 9h",
+    "value": "2000"
+  },
+  {
+    "index": "8",
+    "name": "Sea Anemone",
+    "image": "",
+    "season": "All year",
+    "time": "9 - 16h",
+    "value": "1300"
+  },
+  {
+    "index": "9",
+    "name": "Moon Jellyfish",
+    "image": "",
+    "season": "All year",
+    "time": "All day",
+    "value": "500"
+  },
+  {
+    "index": "10",
+    "name": "Sea Slug",
+    "image": "",
+    "season": "7 - 9",
+    "time": "All day",
+    "value": "600"
+  },
+  {
+    "index": "11",
+    "name": "Pearl Oyster",
+    "image": "",
+    "season": "All year",
+    "time": "All day",
+    "value": "600"
+  },
+  {
+    "index": "12",
+    "name": "Mussel",
+    "image": "",
+    "season": "All year",
+    "time": "All day",
+    "value": "2800"
+  },
+  {
+    "index": "13",
+    "name": "Oyster",
+    "image": "",
+    "season": "9 - 2",
+    "time": "All day",
+    "value": "1100"
+  },
+  {
+    "index": "14",
+    "name": "Scallop",
+    "image": "",
+    "season": "All year",
+    "time": "All day",
+    "value": "1000"
+  },
+  {
+    "index": "15",
+    "name": "Whelk",
+    "image": "",
+    "season": "All year",
+    "time": "All day",
+    "value": "1000"
+  },
+  {
+    "index": "16",
+    "name": "Turban Shell",
+    "image": "",
+    "season": "3 - 5, 9 - 12",
+    "time": "All day",
+    "value": "1000"
+  },
+  {
+    "index": "17",
+    "name": "Abalone",
+    "image": "",
+    "season": "6 - 1",
+    "time": "16 - 9h",
+    "value": "2000"
+  },
+  {
+    "index": "18",
+    "name": "Gigas Giant Clam",
+    "image": "",
+    "season": "5 - 9",
+    "time": "All day",
+    "value": "15000"
+  },
+  {
+    "index": "19",
+    "name": "Chambered Nautilus ",
+    "image": "",
+    "season": "3 - 6, 9 - 11",
+    "time": "16 - 9h",
+    "value": "1800"
+  },
+  {
+    "index": "20",
+    "name": "Octopus",
+    "image": "",
+    "season": "All year",
+    "time": "All day",
+    "value": "1200"
+  },
+  {
+    "index": "21",
+    "name": "Umbrella Octopus",
+    "image": "",
+    "season": "3 - 6, 9 - 11",
+    "time": "All day",
+    "value": "6000"
+  },
+  {
+    "index": "22",
+    "name": "Vampire Squid",
+    "image": "",
+    "season": "5 - 8",
+    "time": "16 - 9h",
+    "value": "10000"
+  },
+  {
+    "index": "23",
+    "name": "Firefly Squid",
+    "image": "",
+    "season": "3 - 6",
+    "time": "21 - 4h",
+    "value": "1400"
+  },
+  {
+    "index": "24",
+    "name": "Gazami Crab",
+    "image": "",
+    "season": "6 - 11",
+    "time": "All day",
+    "value": "2200"
+  },
+  {
+    "index": "25",
+    "name": "Dungesness Crab",
+    "image": "",
+    "season": "11 - 5",
+    "time": "All day",
+    "value": "1900"
+  },
+  {
+    "index": "26",
+    "name": "Snow Crab",
+    "image": "",
+    "season": "11 - 4",
+    "time": "All day",
+    "value": "6000"
+  },
+  {
+    "index": "27",
+    "name": "Red King Crab",
+    "image": "",
+    "season": "11 - 3",
+    "time": "All day",
+    "value": "8000"
+  },
+  {
+    "index": "28",
+    "name": "Acorn Barnacle",
+    "image": "",
+    "season": "All year",
+    "time": "All day",
+    "value": "600"
+  },
+  {
+    "index": "29",
+    "name": "Spider Crab",
+    "image": "",
+    "season": "3 - 4",
+    "time": "All day",
+    "value": "10000"
+  },
+  {
+    "index": "30",
+    "name": "Tiger Prawn",
+    "image": "",
+    "season": "6 - 9",
+    "time": "16 - 9h",
+    "value": "3000"
+  },
+  {
+    "index": "31",
+    "name": "Sweet Shrimp",
+    "image": "",
+    "season": "9 - 2",
+    "time": "16 - 9h",
+    "value": "1400"
+  },
+  {
+    "index": "32",
+    "name": "Mantis Shrimp",
+    "image": "",
+    "season": "All year",
+    "time": "16 - 9h",
+    "value": "2500"
+  },
+  {
+    "index": "33",
+    "name": "Spiny Lobster",
+    "image": "",
+    "season": "10 - 12",
+    "time": "21 - 4h",
+    "value": "5000"
+  },
+  {
+    "index": "34",
+    "name": "Lobster",
+    "image": "",
+    "season": "4 - 6, 12 - 1",
+    "time": "All day",
+    "value": "4500"
+  },
+  {
+    "index": "35",
+    "name": "Giant Isopod",
+    "image": "",
+    "season": "7 - 10",
+    "time": "9 - 16h, 21 - 4h",
+    "value": "12000"
+  },
+  {
+    "index": "36",
+    "name": "Horseshoe Crab",
+    "image": "",
+    "season": "7 - 9",
+    "time": "21 - 4h",
+    "value": "2500"
+  },
+  {
+    "index": "37",
+    "name": "Sea Pineapple",
+    "image": "",
+    "season": "4 - 8",
+    "time": "All day",
+    "value": "1500"
+  },
+  {
+    "index": "38",
+    "name": "Spotted Garden Eel",
+    "image": "",
+    "season": "5 - 10",
+    "time": "4 - 21h",
+    "value": "1100"
+  },
+  {
+    "index": "39",
+    "name": "Flatworm",
+    "image": "",
+    "season": "8 - 9",
+    "time": "16 - 9h",
+    "value": "700"
+  },
+  {
+    "index": "40",
+    "name": "Venus' Flower Basket ",
+    "image": "",
+    "season": "10 - 2",
+    "time": "All day",
+    "value": "5000"
+  }
+]
