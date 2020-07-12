@@ -1,0 +1,322 @@
+[
+  {
+    "index": "1",
+    "name": "Wakame-Alge",
+    "image": "",
+    "season": "10 - 7",
+    "time": "Ganztägig",
+    "value": "600"
+  },
+  {
+    "index": "2",
+    "name": "Kriechsprossalge",
+    "image": "",
+    "season": "6 - 9",
+    "time": "Ganztägig",
+    "value": "900"
+  },
+  {
+    "index": "3",
+    "name": "(#3)",
+    "image": "",
+    "season": "11 - 4",
+    "time": "Ganztägig",
+    "value": "900"
+  },
+  {
+    "index": "4",
+    "name": "(#4)",
+    "image": "",
+    "season": "11 - 2",
+    "time": "16 - 9 Uhr",
+    "value": "10000"
+  },
+  {
+    "index": "5",
+    "name": "Seestern",
+    "image": "",
+    "season": "Ganzjährig",
+    "time": "Ganztägig",
+    "value": "500"
+  },
+  {
+    "index": "6",
+    "name": "Seeigel",
+    "image": "",
+    "season": "5 - 9",
+    "time": "Ganztägig",
+    "value": "1700"
+  },
+  {
+    "index": "7",
+    "name": "Griffelseeigel",
+    "image": "",
+    "season": "5 - 9",
+    "time": "16 - 9 Uhr",
+    "value": "2000"
+  },
+  {
+    "index": "8",
+    "name": "Seeanemone",
+    "image": "",
+    "season": "Ganzjährig",
+    "time": "9 - 16 Uhr",
+    "value": "1300"
+  },
+  {
+    "index": "9",
+    "name": "Ohrenqualle",
+    "image": "",
+    "season": "Ganzjährig",
+    "time": "Ganztägig",
+    "value": "500"
+  },
+  {
+    "index": "10",
+    "name": "Nacktkeimer",
+    "image": "",
+    "season": "7 - 9",
+    "time": "Ganztägig",
+    "value": "600"
+  },
+  {
+    "index": "11",
+    "name": "Perlmuschel",
+    "image": "",
+    "season": "Ganzjährig",
+    "time": "Ganztägig",
+    "value": "600"
+  },
+  {
+    "index": "12",
+    "name": "Miesmuschel",
+    "image": "",
+    "season": "Ganzjährig",
+    "time": "Ganztägig",
+    "value": "2800"
+  },
+  {
+    "index": "13",
+    "name": "(#13)",
+    "image": "",
+    "season": "9 - 2",
+    "time": "Ganztägig",
+    "value": "1100"
+  },
+  {
+    "index": "14",
+    "name": "Kammmuschel",
+    "image": "",
+    "season": "Ganzjährig",
+    "time": "Ganztägig",
+    "value": "1000"
+  },
+  {
+    "index": "15",
+    "name": "Babylon-Seeschnecke",
+    "image": "",
+    "season": "Ganzjährig",
+    "time": "Ganztägig",
+    "value": "1000"
+  },
+  {
+    "index": "16",
+    "name": "(#16)",
+    "image": "",
+    "season": "3 - 5, 9 - 12",
+    "time": "Ganztägig",
+    "value": "1000"
+  },
+  {
+    "index": "17",
+    "name": "Seeohr",
+    "image": "",
+    "season": "6 - 1",
+    "time": "16 - 9 Uhr",
+    "value": "2000"
+  },
+  {
+    "index": "18",
+    "name": "Gigas-Riesenmuschel",
+    "image": "",
+    "season": "5 - 9",
+    "time": "Ganztägig",
+    "value": "15000"
+  },
+  {
+    "index": "19",
+    "name": "(#19)",
+    "image": "",
+    "season": "3 - 6, 9 - 11",
+    "time": "16 - 9 Uhr",
+    "value": "1800"
+  },
+  {
+    "index": "20",
+    "name": "Oktopus",
+    "image": "",
+    "season": "Ganzjährig",
+    "time": "Ganztägig",
+    "value": "1200"
+  },
+  {
+    "index": "21",
+    "name": "(#21)",
+    "image": "",
+    "season": "3 - 6, 9 - 11",
+    "time": "Ganztägig",
+    "value": "6000"
+  },
+  {
+    "index": "22",
+    "name": "Vampirtintenfisch",
+    "image": "",
+    "season": "5 - 8",
+    "time": "16 - 9 Uhr",
+    "value": "10000"
+  },
+  {
+    "index": "23",
+    "name": "(#23)",
+    "image": "",
+    "season": "3 - 6",
+    "time": "21 - 4 Uhr",
+    "value": "1400"
+  },
+  {
+    "index": "24",
+    "name": "Gazami-Krabe",
+    "image": "",
+    "season": "6 - 11",
+    "time": "Ganztägig",
+    "value": "2200"
+  },
+  {
+    "index": "25",
+    "name": "(#25)",
+    "image": "",
+    "season": "11 - 5",
+    "time": "Ganztägig",
+    "value": "1900"
+  },
+  {
+    "index": "26",
+    "name": "(#26)",
+    "image": "",
+    "season": "11 - 4",
+    "time": "Ganztägig",
+    "value": "6000"
+  },
+  {
+    "index": "27",
+    "name": "(#27)",
+    "image": "",
+    "season": "11 - 3",
+    "time": "Ganztägig",
+    "value": "8000"
+  },
+  {
+    "index": "28",
+    "name": "Seepocke",
+    "image": "",
+    "season": "Ganzjährig",
+    "time": "Ganztägig",
+    "value": "600"
+  },
+  {
+    "index": "29",
+    "name": "(#29)",
+    "image": "",
+    "season": "3 - 4",
+    "time": "Ganztägig",
+    "value": "10000"
+  },
+  {
+    "index": "30",
+    "name": "Kuruma-Garnele",
+    "image": "",
+    "season": "6 - 9",
+    "time": "16 - 9 Uhr",
+    "value": "3000"
+  },
+  {
+    "index": "31",
+    "name": "(#31)",
+    "image": "",
+    "season": "9 - 2",
+    "time": "16 - 9 Uhr",
+    "value": "1400"
+  },
+  {
+    "index": "32",
+    "name": "Fangschreckenkrebs",
+    "image": "",
+    "season": "Ganzjährig",
+    "time": "16 - 9 Uhr",
+    "value": "2500"
+  },
+  {
+    "index": "33",
+    "name": "(#33)",
+    "image": "",
+    "season": "10 - 12",
+    "time": "21 - 4 Uhr",
+    "value": "5000"
+  },
+  {
+    "index": "34",
+    "name": "(#34)",
+    "image": "",
+    "season": "4 - 6, 12 - 1",
+    "time": "Ganztägig",
+    "value": "4500"
+  },
+  {
+    "index": "35",
+    "name": "Riesenassel",
+    "image": "",
+    "season": "7 - 10",
+    "time": "9 - 16 Uhr, 21 - 4 Uhr",
+    "value": "12000"
+  },
+  {
+    "index": "36",
+    "name": "Pfeilschwanzkrebs",
+    "image": "",
+    "season": "7 - 9",
+    "time": "21 - 4 Uhr",
+    "value": "2500"
+  },
+  {
+    "index": "37",
+    "name": "Seeananas",
+    "image": "",
+    "season": "4 - 8",
+    "time": "Ganztägig",
+    "value": "1500"
+  },
+  {
+    "index": "38",
+    "name": "Röhrenaal",
+    "image": "",
+    "season": "5 - 10",
+    "time": "4 - 21 Uhr",
+    "value": "1100"
+  },
+  {
+    "index": "39",
+    "name": "(#39)",
+    "image": "",
+    "season": "8 - 9",
+    "time": "16 - 9 Uhr",
+    "value": "700"
+  },
+  {
+    "index": "40",
+    "name": "(#40)",
+    "image": "",
+    "season": "10 - 2",
+    "time": "Ganztägig",
+    "value": "5000"
+  }
+]
